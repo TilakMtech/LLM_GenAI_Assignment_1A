@@ -1,0 +1,57 @@
+{
+  "documents_before": 4,
+  "documents_after": 4,
+  "stages": [
+    {
+      "stage": "basic_cleaning",
+      "documents_before": 4,
+      "documents_after": 4,
+      "documents_removed": 0,
+      "characters_before": 28380,
+      "characters_after": 26324,
+      "characters_removed": 2056
+    },
+    {
+      "stage": "length_filter",
+      "documents_before": 4,
+      "documents_after": 4,
+      "documents_removed": 0,
+      "characters_before": 26324,
+      "characters_after": 26324,
+      "characters_removed": 0
+    },
+    {
+      "stage": "deduplication",
+      "documents_before": 4,
+      "documents_after": 4,
+      "documents_removed": 0,
+      "characters_before": 26324,
+      "characters_after": 26324,
+      "characters_removed": 0
+    },
+    {
+      "stage": "english_filter",
+      "documents_before": 4,
+      "documents_after": 4,
+      "documents_removed": 0,
+      "characters_before": 26324,
+      "characters_after": 26324,
+      "characters_removed": 0
+    }
+  ],
+  "largest_document_removal_stages": [],
+  "largest_character_removal_stages": [
+    "basic_cleaning"
+  ],
+  "retained_document_words": {
+    "total": 4328,
+    "minimum": 634,
+    "maximum": 1426,
+    "mean": 1082,
+    "median": 1134.0
+  },
+  "characters_before": 28380,
+  "characters_after": 26324,
+  "character_reduction_percent": 7.24,
+  "language_detection_failures": 0
+}

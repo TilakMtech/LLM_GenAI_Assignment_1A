@@ -1,0 +1,5 @@
+file_name,word_count,min_words,status,reason,duplicate_of,language,characters_before,characters_after,characters_removed,reduction_percent
+Leave_Policy.txt,1165,100,kept,passes_filters,,en,7460,6983,477,6.39
+attendance_policy.txt,634,100,kept,passes_filters,,en,4142,3891,251,6.06
+exit_policy.txt,1426,100,kept,passes_filters,,en,9697,8868,829,8.55
+travel_policy.txt,1103,100,kept,passes_filters,,en,7081,6582,499,7.05

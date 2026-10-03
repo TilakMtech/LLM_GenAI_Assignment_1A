@@ -1,0 +1,34 @@
+{
+  "seed": 42,
+  "split_unit": "whole_document",
+  "requested_eval_fraction": 0.1,
+  "actual_eval_document_fraction": 0.25,
+  "actual_eval_word_fraction": 0.32948243992606285,
+  "note": "Four documents cannot yield an exact 10% whole-document holdout. Expand the corpus or explicitly revise the split strategy.",
+  "documents": {
+    "train": [
+      {
+        "document_id": "attendance_policy",
+        "source": "attendance_policy.txt",
+        "sha256": "542963dae587c56ec6991aaa96ca1b3f5d7ba97753b24cfdc12c6e90c6cdbcef"
+      },
+      {
+        "document_id": "travel_policy",
+        "source": "travel_policy.txt",
+        "sha256": "6702c004f30a7794aac1a692fd03231406d98799e2868f8da50e74b14dafa57b"
+      },
+      {
+        "document_id": "Leave_Policy",
+        "source": "Leave_Policy.txt",
+        "sha256": "cfe7e1ddf3fc291ab12930b9c7034d150d24e4167a449bba33487e873063be8b"
+      }
+    ],
+    "eval": [
+      {
+        "document_id": "exit_policy",
+        "source": "exit_policy.txt",
+        "sha256": "2d137124357ea7f770580fdeeb67f6efa71a893376c438eb2387958184f4e874"
+      }
+    ]
+  }
+}
