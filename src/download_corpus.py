@@ -7,19 +7,56 @@ and never stop the run, and anything that is not a real PDF is discarded.
     python -m src.download_corpus
 """
 import csv
+import ssl
 import time
+import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
 from src import config
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (CorpPolicyLM academic corpus builder)"}
+# Many institutional sites return 403/404 to non-browser user agents, so we
+# send ordinary browser headers (plus a same-site Referer).
+HEADERS = {
+    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                   "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"),
+    "Accept": "application/pdf,application/octet-stream;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+}
 
 
-def download(url: str, dest: Path, timeout: int = 60) -> str:
-    request = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        payload = response.read()
+def _ssl_context():
+    """Use certifi's CA bundle when available (fixes 'unable to get local issuer
+    certificate' on some hosts). Verification is never disabled."""
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except ImportError:
+        return ssl.create_default_context()
+
+
+def _fetch(url: str, timeout: int) -> bytes:
+    parts = urllib.parse.urlsplit(url)
+    safe_url = urllib.parse.urlunsplit(parts._replace(path=urllib.parse.quote(parts.path, safe="/%")))
+    headers = {**HEADERS, "Referer": f"{parts.scheme}://{parts.netloc}/"}
+    request = urllib.request.Request(safe_url, headers=headers)
+    with urllib.request.urlopen(request, timeout=timeout, context=_ssl_context()) as response:
+        return response.read()
+
+
+def download(url: str, dest: Path, timeout: int = 60, retries: int = 2) -> str:
+    for attempt in range(retries + 1):
+        try:
+            payload = _fetch(url, timeout)
+            break
+        except urllib.error.HTTPError as error:
+            if error.code in (404, 410) or attempt == retries:
+                raise  # missing / gone: retrying will not help
+        except urllib.error.URLError:
+            if attempt == retries:
+                raise
+        time.sleep(2 * (attempt + 1))
     if not payload.startswith(b"%PDF"):
         return "not_a_pdf"
     dest.write_bytes(payload)
