@@ -3,11 +3,7 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
-
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-RAW_PDF_DIR = PROJECT_ROOT / "data" / "raw_pdfs"
-EXTRACTED_TEXT_DIR = PROJECT_ROOT / "data" / "extracted_text"
-REPORT_DIR = PROJECT_ROOT / "outputs" / "reports"
+from src.config import EXTRACTED_TEXT_DIR, RAW_PDF_DIR, REPORT_DIR
 
 
 def extract_pdf_page_by_page(pdf_path: Path):
@@ -60,7 +56,13 @@ def extract_corpus(input_dir: Path, output_dir: Path, report_path: Path):
     records = []
 
     for pdf_path in pdf_files:
-        full_text, stats = extract_pdf_page_by_page(pdf_path)
+        try:
+            full_text, stats = extract_pdf_page_by_page(pdf_path)
+        except Exception as error:  # corrupt / encrypted PDFs are reported, not fatal
+            print(f"Skipped {pdf_path.name}: {type(error).__name__}: {error}")
+            records.append({"file_name": pdf_path.name, "total_pages": 0, "text_pages": 0,
+                            "empty_pages": 0, "characters_extracted": 0})
+            continue
         output_path = output_dir / f"{pdf_path.stem}.txt"
         output_path.write_text(full_text, encoding="utf-8")
         records.append(stats)
