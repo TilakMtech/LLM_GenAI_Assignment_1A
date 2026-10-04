@@ -153,7 +153,9 @@ def train_cpt(model_id: str = config.MODEL_ID, output_dir: Path = config.CPT_MOD
     # Persist the CPT checkpoint (bf16 halves the size) + tokenizer for Step 5 / Part B.
     output_dir.mkdir(parents=True, exist_ok=True)
     trainer.model.config.use_cache = True
-    trainer.model.to(torch.bfloat16).save_pretrained(output_dir, safe_serialization=True)
+    # Small shards keep host-RAM use low while serialising (6 GiB pod limit).
+    trainer.model.to(torch.bfloat16).save_pretrained(output_dir, safe_serialization=True,
+                                                     max_shard_size="500MB")
     tokenizer.save_pretrained(output_dir)
 
     summary = {

@@ -46,9 +46,9 @@ for path in ("/sys/fs/cgroup/memory.max", "/sys/fs/cgroup/memory/memory.limit_in
 avail = int([l.split()[1] for l in open("/proc/meminfo") if l.startswith("MemAvailable")][0]) * 1024
 disk = shutil.disk_usage(".").free
 print(f"RAM available {gib(avail)} | container RAM limit {gib(limit) if limit else 'none'} | free disk {gib(disk)}")
-if (limit and limit < 16 * 2**30) or avail < 12 * 2**30:
-    print("WARNING: <16 GiB RAM. CPT loads the 1.1B model in fp32 (~4.4 GiB) plus a bf16 copy for saving;"
-          " close other notebook kernels first (Running panel -> Shut Down All).")
+if (limit and limit < 6 * 2**30) or avail < 5 * 2**30:
+    print("WARNING: <6 GiB RAM available. Models are streamed straight to the GPU, but other"
+          " notebook kernels share this limit - shut them down first (Running panel -> Shut Down All).")
 if disk < 10 * 2**30:
     print("WARNING: <10 GiB free disk; the CPT checkpoint needs ~2.2 GiB plus HF cache.")
 PYCHECK
