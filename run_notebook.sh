@@ -17,6 +17,7 @@ echo "1/4 Installing requirements (before any kernel starts) ..." | tee -a "$LOG
 "$PY" -m pip install -q -r requirements.txt 2>&1 | tee -a "$LOG"
 
 echo "2/4 Checking the environment ..." | tee -a "$LOG"
+check_env() {
 "$PY" - <<'PYCHECK' 2>&1 | tee -a "$LOG"
 import sys
 try:
@@ -24,16 +25,12 @@ try:
     from transformers import AutoModelForCausalLM  # pulls in generation -> sklearn/scipy
     pandas.DataFrame([{"a": 1, "b": "x"}])          # fails fast on numpy/pandas binary mismatch
 except Exception as error:
-    print(f"\nENVIRONMENT CHECK FAILED: {type(error).__name__}: {error}\n")
-    print("numpy/scipy/scikit-learn/pandas were built against different numpy versions.")
-    print("Repair them as one consistent set, then re-run this script:")
-    print(f"    {sys.executable} -m pip install --upgrade --force-reinstall numpy scipy scikit-learn pandas")
+    print(f"ENVIRONMENT CHECK FAILED: {type(error).__name__}: {str(error)[:160]}")
     sys.exit(1)
 print(f"numpy {numpy.__version__} | scipy {scipy.__version__} | sklearn {sklearn.__version__} | "
-      f"pandas {pandas.__version__} | pyarrow {pyarrow.__version__} | torch {torch.__version__} "
-      f"(CUDA {torch.cuda.is_available()}) | transformers {transformers.__version__} | "
-      f"trl {trl.__version__} | peft {peft.__version__}")
-import os, shutil
+      f"pandas {pandas.__version__} | torch {torch.__version__} (CUDA {torch.cuda.is_available()}) | "
+      f"transformers {transformers.__version__} | trl {trl.__version__} | peft {peft.__version__}")
+import shutil
 def gib(n): return f"{n / 2**30:.1f} GiB"
 limit = None
 for path in ("/sys/fs/cgroup/memory.max", "/sys/fs/cgroup/memory/memory.limit_in_bytes"):
@@ -44,14 +41,24 @@ for path in ("/sys/fs/cgroup/memory.max", "/sys/fs/cgroup/memory/memory.limit_in
     except Exception:
         pass
 avail = int([l.split()[1] for l in open("/proc/meminfo") if l.startswith("MemAvailable")][0]) * 1024
-disk = shutil.disk_usage(".").free
-print(f"RAM available {gib(avail)} | container RAM limit {gib(limit) if limit else 'none'} | free disk {gib(disk)}")
-if (limit and limit < 6 * 2**30) or avail < 5 * 2**30:
-    print("WARNING: <6 GiB RAM available. Models are streamed straight to the GPU, but other"
-          " notebook kernels share this limit - shut them down first (Running panel -> Shut Down All).")
-if disk < 10 * 2**30:
-    print("WARNING: <10 GiB free disk; the CPT checkpoint needs ~2.2 GiB plus HF cache.")
+print(f"RAM available {gib(avail)} | container RAM limit {gib(limit) if limit else 'none'} | "
+      f"free disk {gib(shutil.disk_usage('.').free)}")
 PYCHECK
+return "${PIPESTATUS[0]}"
+}
+
+if ! check_env; then
+    # numpy, scipy, scikit-learn and pandas were built against different numpy
+    # versions (typically after packages were upgraded inside a running kernel).
+    # Reinstall them as one consistent set, keeping the installed numpy version.
+    NUMPY_VER=$("$PY" -c "import numpy; print(numpy.__version__)")
+    echo "Repairing numpy/scipy/scikit-learn/pandas (numpy $NUMPY_VER) - one-time, ~1-2 min ..." | tee -a "$LOG"
+    "$PY" -m pip install -q --force-reinstall "numpy==$NUMPY_VER" scipy scikit-learn pandas 2>&1 | tee -a "$LOG"
+    if ! check_env; then
+        echo "Environment still broken after repair - paste the lines above to Claude." | tee -a "$LOG"
+        exit 1
+    fi
+fi
 
 echo "3/4 Executing $NB (CPT + QLoRA; ~10-15 min on an L40S/A100) ..." | tee -a "$LOG"
 # papermill prints each cell's output live and saves the notebook after every
