@@ -3,6 +3,7 @@ pypdf>=5.0
 langdetect==1.0.9
 pandas>=2.0
 pyarrow>=15.0
+cryptography>=42  # pypdf needs it for AES-encrypted PDFs (CCS Conduct Rules)
 matplotlib>=3.8
 # Steps 2-5 and Part B (Colab GPU; torch is preinstalled on Colab)
 transformers==5.18.0

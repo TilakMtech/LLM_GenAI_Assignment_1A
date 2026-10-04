@@ -41,7 +41,7 @@ def repeated_lines(text: str, min_pages: int = 3) -> set:
     return {line for line, n in counts.items() if n >= threshold and len(line) < 120}
 
 
-def clean_text(text: str) -> str:
+def clean_text(text: str, vocabulary: Counter | None = None) -> str:
     """Remove page labels and boilerplate while preserving the line structure."""
     boilerplate = repeated_lines(text)
     text = unicodedata.normalize("NFKC", text)
@@ -55,10 +55,53 @@ def clean_text(text: str) -> str:
             continue
         if line in boilerplate:
             continue
+        if DOT_LEADER.search(line):
+            continue  # table-of-contents line ("Leave Rules ........ 12")
+        line = re.sub(r" {2,}", " ", INLINE_PAGE.sub("", line)).strip()
         if not line and (not cleaned_lines or cleaned_lines[-1] == ""):
             continue  # keep at most one blank line between paragraphs
         cleaned_lines.append(line)
-    return "\n".join(cleaned_lines).strip()
+    return repair_split_words("\n".join(cleaned_lines).strip(), vocabulary)
+
+
+def word_counts(text: str) -> Counter:
+    return Counter(w.lower() for w in re.findall(r"[A-Za-z]+", text))
+
+
+def repair_split_words(text: str, vocabulary: Counter | None = None) -> str:
+    """Re-join words that PDF extraction split with a space ("exc eeding",
+    "dis rupt"): join "a b" when "ab" occurs elsewhere in the same document
+    as a whole word (in this document or, if given, anywhere in the corpus
+    vocabulary) and at least one fragment is rare on its own."""
+    counts = word_counts(text)
+    if vocabulary is not None:
+        counts = counts + vocabulary
+
+    def repair_line(line: str) -> str:
+        tokens = line.split(" ")
+        out, i = [], 0
+        while i < len(tokens):
+            a = tokens[i]
+            b = tokens[i + 1] if i + 1 < len(tokens) else ""
+            if (a.isalpha() and len(a) >= 2 and re.fullmatch(r"[a-z]{2,}[.,;:]?", b or "-")):
+                core_b = b.rstrip(".,;:")
+                whole = (a + core_b).lower()
+                if (counts[whole] >= 1 and min(counts[a.lower()], counts[core_b]) <= (3 if vocabulary is not None else 1)
+                        and a.lower() not in COMMON_WORDS and core_b not in COMMON_WORDS):
+                    out.append(a + b)
+                    i += 2
+                    continue
+            out.append(a)
+            i += 1
+        return " ".join(out)
+
+    return "\n".join(repair_line(line) for line in text.split("\n"))
+
+
+COMMON_WORDS = {"a", "an", "the", "of", "to", "in", "on", "at", "by", "for", "or", "and", "be", "is",
+                "as", "it", "no", "not", "any", "all", "per", "if", "may", "can", "will", "with"}
+DOT_LEADER = re.compile(r"(\.\s?){5,}|…{2,}|_{5,}")
+INLINE_PAGE = re.compile(r"\bPage\s+\d+\s+(of|/)\s+\d+\b", re.I)
 
 
 def shingles(text: str, n: int = 5) -> set:
@@ -79,7 +122,9 @@ def clean_corpus(input_dir: Path, output_dir: Path, report_path: Path,
         raise FileNotFoundError(f"Extracted text folder not found: {input_dir}")
     if input_dir.resolve() == output_dir.resolve():
         raise ValueError("Use a separate output folder to preserve extracted text.")
-    text_files = sorted(p for p in input_dir.glob("*.txt") if p.is_file())
+    # Files named *_dup* sort last so an original is kept and its copy is the duplicate.
+    text_files = sorted((p for p in input_dir.glob("*.txt") if p.is_file()),
+                        key=lambda p: ("dup" in p.stem.lower(), p.name.lower()))
     if not text_files:
         raise FileNotFoundError(f"No text files found in: {input_dir}")
 
@@ -89,9 +134,14 @@ def clean_corpus(input_dir: Path, output_dir: Path, report_path: Path,
     seen_hashes = {}   # sha256 -> first file kept
     kept_shingles = {}  # file -> shingles, for near-duplicate search
 
+    # Corpus-wide vocabulary lets the split-word repair use evidence from every document.
+    vocabulary = Counter()
+    for text_path in text_files:
+        vocabulary.update(word_counts(text_path.read_text(encoding="utf-8")))
+
     for text_path in text_files:
         original_text = text_path.read_text(encoding="utf-8")
-        cleaned_text = clean_text(original_text)
+        cleaned_text = clean_text(original_text, vocabulary)
         word_count = len(cleaned_text.split())
         digest = hashlib.sha256(" ".join(cleaned_text.split()).lower().encode()).hexdigest()
         duplicate_of, similarity, language = "", 0.0, "not_checked"

@@ -2,9 +2,7 @@
 import gc
 import math
 
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt  # noqa: E402
+import matplotlib.pyplot as plt  # noqa: E402  (no backend override: notebook keeps inline plots)
 import pandas as pd  # noqa: E402
 import torch  # noqa: E402
 
@@ -46,6 +44,13 @@ def plot_loss_curve(log_csv=config.EVAL_DIR / "cpt_loss_log.csv",
     window = max(3, len(train) // 10)
     plateau_idx = find_plateau(train["loss"].tolist(), window=window)
     plateau_step = int(train["step"].iloc[plateau_idx]) if plateau_idx is not None else None
+    # Held-out plateau: first eval point after which held-out loss improves < 1% in total.
+    eval_plateau_step = None
+    ev = evals["eval_loss"].tolist()
+    for i in range(len(ev) - 1):
+        if (ev[i] - min(ev[i + 1:])) / ev[i] < 0.01:
+            eval_plateau_step = int(evals["step"].iloc[i])
+            break
 
     fig, ax = plt.subplots(figsize=(9, 4.5))
     ax.plot(train["step"], train["loss"], color="#9db4d6", lw=1, label="train loss (every step)")
@@ -56,8 +61,13 @@ def plot_loss_curve(log_csv=config.EVAL_DIR / "cpt_loss_log.csv",
                 label="held-out eval loss")
     if plateau_step is not None:
         ax.axvline(plateau_step, ls="--", color="grey")
-        ax.annotate(f"plateau ≈ step {plateau_step}", (plateau_step, train["loss"].max()),
+        ax.annotate(f"train plateau ≈ step {plateau_step}", (plateau_step, train["loss"].max()),
                     xytext=(5, -5), textcoords="offset points", color="grey")
+    if eval_plateau_step is not None:
+        ax.axvline(eval_plateau_step, ls=":", color="#c0504d")
+        ax.annotate(f"held-out plateau ≈ step {eval_plateau_step}",
+                    (eval_plateau_step, train["loss"].min()), xytext=(5, 5),
+                    textcoords="offset points", color="#c0504d")
     ax.set_xlabel("optimiser step")
     ax.set_ylabel("cross-entropy loss")
     ax.set_title("Continual pre-training loss — TinyLlama-1.1B on HR policy corpus")
@@ -74,6 +84,9 @@ def plot_loss_curve(log_csv=config.EVAL_DIR / "cpt_loss_log.csv",
         "loss_drop_percent": float(round(100 * (1 - train["loss"].iloc[-window:].mean()
                                           / train["loss"].iloc[:window].mean()), 2)),
         "plateau_step": plateau_step,
+        "eval_plateau_step": eval_plateau_step,
+        "final_train_eval_gap": (round(float(train["loss"].iloc[-window:].mean())
+                                       - float(evals["eval_loss"].iloc[-1]), 4) if len(evals) else None),
         "first_eval_loss": float(evals["eval_loss"].iloc[0]) if len(evals) else None,
         "last_eval_loss": float(evals["eval_loss"].iloc[-1]) if len(evals) else None,
     }

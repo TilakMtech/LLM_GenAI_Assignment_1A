@@ -46,7 +46,9 @@ BLOCK_SIZE = _env("BLOCK_SIZE", 2048, int)
 # ---------------------------------------------------------------- cleaning
 MIN_WORDS = _env("MIN_WORDS", 100, int)
 NEAR_DUP_THRESHOLD = _env("NEAR_DUP_THRESHOLD", 0.8, float)  # shingle Jaccard
-EVAL_FRACTION = _env("EVAL_FRACTION", 0.1, float)
+EVAL_FRACTION = _env("EVAL_FRACTION", 0.1, float)  # share of corpus *words* held out
+# Documents the probe prompts ask about (kept in the CPT training split).
+PROBE_DOCUMENTS = ["Leave_Policy.txt", "travel_policy.txt", "mygov_travel_policy_dup.txt", "exit_policy.txt"]
 SEED = _env("SEED", 42, int)
 
 # ---------------------------------------------------------------- CPT

@@ -43,13 +43,28 @@ MODAL = re.compile(
     r"^(?P<subj>[A-Z][^.;:]{2,70}?)\s+(?P<verb>shall|must|should|will be|will|is entitled|are entitled|"
     r"is eligible|are eligible|can not|cannot|can|may|is not|are not|is required|are required)\b",
     re.I)
+SKIP_SECTIONS = re.compile(r"\b(index|contents|appendix|annexure|annex|form|format|proforma|"
+                           r"application|declaration|undertaking|checklist)\b", re.I)
 GENERIC_SUBJECTS = {"leave", "resource", "resources", "employee", "employees", "policy", "process",
                     "purpose", "it", "they", "he", "she", "this", "these", "staff", "company",
                     "organisation", "organization", "management", "he/she", "member", "members"}
 WORDS = lambda s: len(s.split())  # noqa: E731
 
 
+def source_titles() -> dict:
+    """Curated titles from data/sources.csv keyed by the extracted .txt name."""
+    import csv
+    if not config.SOURCES_CSV.exists():
+        return {}
+    with config.SOURCES_CSV.open(encoding="utf-8") as handle:
+        return {Path(r["file_name"]).with_suffix(".txt").name: r["title"]
+                for r in csv.DictReader(handle) if r.get("title")}
+
+
 def document_title(path: Path, text: str) -> str:
+    curated = source_titles().get(path.name)
+    if curated:
+        return curated
     first = next((l.strip() for l in text.splitlines() if l.strip()), "")
     if re.search(r"polic|rule|manual|code|guideline|program|procedure", first, re.I) and WORDS(first) <= 12:
         title = first
@@ -130,6 +145,8 @@ def heuristic_pairs(path: Path, max_per_doc: int = 150, seed: int = config.SEED)
     pairs = []
     for s_idx, (heading, lines) in enumerate(split_sections(text)):
         group = f"{path.stem}::{s_idx}"
+        if SKIP_SECTIONS.search(heading):
+            continue  # tables of contents, annexures and blank forms are not policy text
         body = " ".join(lines)
         body = re.sub(r"\s+", " ", body).strip()
         if WORDS(body) >= 20 and heading != "Overview":
@@ -214,13 +231,17 @@ def grouped_split(pairs, train_fraction=config.INSTRUCTION_TRAIN_FRACTION, seed=
 
 def build_instruction_dataset(method: str = "heuristic", corpus_dir: Path = config.DOMAIN_CORPUS_DIR,
                               output_dir: Path = config.INSTRUCTION_DIR):
-    pairs, seen = [], set()
+    pairs, seen, seen_responses = [], set(), set()
     for path in sorted(corpus_dir.glob("*.txt")):
         for pair in (llm_pairs(path) if method == "llm" else heuristic_pairs(path)):
             key = re.sub(r"\W+", " ", pair["instruction"].lower()).strip()
-            if key in seen or not 3 <= WORDS(pair["response"]) <= 250:
+            response_key = re.sub(r"\W+", " ", pair["response"].lower()).strip()
+            if key in seen or response_key in seen_responses or not 3 <= WORDS(pair["response"]) <= 250:
                 continue
+            if re.search(r"(\.\s?){5,}|_{5,}", pair["response"]):
+                continue  # residual table-of-contents / form-blank text
             seen.add(key)
+            seen_responses.add(response_key)
             pair["method"] = method
             pairs.append(pair)
     if len(pairs) < 10:

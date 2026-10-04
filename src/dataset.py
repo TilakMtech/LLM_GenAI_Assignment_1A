@@ -32,24 +32,40 @@ def split_corpus(input_dir: Path = config.DOMAIN_CORPUS_DIR,
     if len(documents) < 2:
         raise ValueError("At least two documents are needed for a holdout")
 
-    random.Random(seed).shuffle(documents)
-    count = min(len(documents) - 1, max(1, round(len(documents) * eval_fraction)))
-    splits = {"train": documents[count:], "eval": documents[:count]}
+    # Select held-out documents until they hold ~eval_fraction of all *words*
+    # (documents range from 1-page policies to 200-page manuals, so a 10% share
+    # of documents can be only ~3% of the text). Documents that the Step-3/5/B3
+    # probe prompts ask about are pinned to train (their facts must be learnable).
+    total_words = sum(r["words"] for r in documents)
+    target = eval_fraction * total_words
+    pinned = {p.lower() for p in config.PROBE_DOCUMENTS}
+    candidates = [d for d in documents if d["source"].lower() not in pinned]
+    random.Random(seed).shuffle(candidates)
+    eval_docs, eval_words = [], 0
+    for doc in candidates:
+        if eval_words >= target:
+            break
+        if eval_words + doc["words"] > 1.5 * target:
+            continue  # skip a document so large it would overshoot the target
+        eval_docs.append(doc)
+        eval_words += doc["words"]
+    if not eval_docs:
+        raise ValueError("Could not select a held-out set; add documents")
+    eval_ids = {d["document_id"] for d in eval_docs}
+    splits = {"train": [d for d in documents if d["document_id"] not in eval_ids], "eval": eval_docs}
+    count = len(eval_docs)
     output_dir.mkdir(parents=True, exist_ok=True)
     for name, rows in splits.items():
         with (output_dir / f"{name}.jsonl").open("w", encoding="utf-8") as handle:
             for row in rows:
                 handle.write(json.dumps(row, ensure_ascii=False) + "\n")
 
-    total_words = sum(r["words"] for r in documents)
-    eval_words = sum(r["words"] for r in splits["eval"])
     doc_fraction = count / len(documents)
-    note = ("Whole-document holdout close to the requested fraction."
-            if abs(doc_fraction - eval_fraction) <= 0.05 else
-            f"Only {len(documents)} documents: a whole-document holdout cannot hit "
-            f"{eval_fraction:.0%} exactly; expand the corpus for a tighter split.")
+    word_fraction = eval_words / total_words
+    note = (f"Whole-document holdout = {word_fraction:.1%} of words (target {eval_fraction:.0%}); "
+            f"probe documents pinned to train: {sorted(pinned)}")
     report = {
-        "seed": seed, "split_unit": "whole_document",
+        "seed": seed, "split_unit": "whole_document, sized by word share",
         "requested_eval_fraction": eval_fraction,
         "documents_total": len(documents),
         "documents_train": len(splits["train"]), "documents_eval": count,

@@ -1,4 +1,5 @@
 """Step 3 - model loading, architecture audit, and text generation helpers."""
+import copy
 import json
 from pathlib import Path
 
@@ -65,28 +66,41 @@ def architecture_audit(model, tokenizer):
 
 @torch.no_grad()
 def generate(model, tokenizer, prompts, max_new_tokens=config.GEN_MAX_NEW_TOKENS,
-             chat: bool = False, system_prompt: str | None = None):
+             chat: bool = False, system_prompt: str | None = None, batch_size: int = 8):
     """Greedy, deterministic generation (repetition penalty keeps small models on track).
 
     chat=False -> raw completion of the prompt (base / CPT models).
     chat=True  -> wrap the prompt with the tokenizer's chat template (SFT model).
+    Prompts are generated in left-padded batches for speed.
     """
     model.eval()
-    outputs = []
-    for prompt in prompts:
-        if chat:
+    if chat:
+        texts = []
+        for prompt in prompts:
             messages = ([{"role": "system", "content": system_prompt}] if system_prompt else [])
             messages.append({"role": "user", "content": prompt})
-            text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-            inputs = tokenizer(text, return_tensors="pt", add_special_tokens=False)
-        else:
-            inputs = tokenizer(prompt, return_tensors="pt")
-        inputs = {k: v.to(model.device) for k, v in inputs.items()}
-        generated = model.generate(
-            **inputs, max_new_tokens=max_new_tokens, do_sample=False,
-            repetition_penalty=1.15, pad_token_id=tokenizer.pad_token_id or tokenizer.eos_token_id)
-        new_tokens = generated[0, inputs["input_ids"].shape[1]:]
-        outputs.append(tokenizer.decode(new_tokens, skip_special_tokens=True).strip())
+            texts.append(tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True))
+    else:
+        texts = list(prompts)
+    pad_id = tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id
+    side = tokenizer.padding_side
+    tokenizer.padding_side = "left"  # decoder-only models must be left-padded
+    # The checkpoint's generation_config carries max_length=2048; clear it so
+    # max_new_tokens is the only length limit (avoids a warning per call).
+    gen_config = copy.deepcopy(model.generation_config)
+    gen_config.max_length = None
+    outputs = []
+    try:
+        for i in range(0, len(texts), batch_size):
+            batch = tokenizer(texts[i:i + batch_size], return_tensors="pt", padding=True,
+                              add_special_tokens=not chat).to(model.device)
+            generated = model.generate(
+                **batch, generation_config=gen_config, max_new_tokens=max_new_tokens,
+                do_sample=False, repetition_penalty=1.15, pad_token_id=pad_id)
+            new_tokens = generated[:, batch["input_ids"].shape[1]:]
+            outputs.extend(t.strip() for t in tokenizer.batch_decode(new_tokens, skip_special_tokens=True))
+    finally:
+        tokenizer.padding_side = side
     return outputs
 
 
