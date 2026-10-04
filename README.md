@@ -21,15 +21,25 @@ built on `TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T` and trained on a 
 All settings live in `src/config.py` (override any of them with an environment variable of the same name,
 e.g. `BLOCK_SIZE=1024`).
 
-## How to run (Colab T4)
+## How to run
 
-1. Copy the whole `CorpPolicyLM` folder to Google Drive as `MyDrive/CorpPolicyLM`.
-2. Open `notebooks/CorpPolicyLM_Assignment1A.ipynb` in Colab → *Runtime → Change runtime type → T4 GPU*.
-3. Run the install cell, restart the session once, then *Run all*. Approx. time on T4: CPT 10–25 min, QLoRA 5–10 min.
-4. *File → Save*, then run the last cell to export the HTML.
-5. Copy back to OneDrive: `notebooks/*.ipynb`, `notebooks/*.html`, `instruction_dataset.jsonl`,
-   `data/domain_corpus/`, `data/instruction/`, `data/splits/`, `outputs/`.
-   (`models/` stays on Drive — it is git-ignored.)
+**Recommended — headless (BITS lab A100/L40S or any Jupyter machine):**
+
+```bash
+bash run_notebook.sh
+```
+
+Executes every cell, saves the outputs into `notebooks/CorpPolicyLM_Assignment1A.ipynb`, then exports
+`notebooks/CorpPolicyLM_Assignment1A.html` and copies `instruction_dataset.jsonl` to the root (~10–15 min on an L40S).
+Use this rather than *Run All*: `nbconvert` converts the `.ipynb` on disk, which during an interactive run holds
+only the last autosave, so an HTML exported at the end of *Run All* shows a half-finished run.
+
+**Interactive (Colab T4 or Jupyter):** copy the folder to `MyDrive/CorpPolicyLM` on Colab, run the install cell,
+restart the session once, *Run All*, wait for the last cell, press **Ctrl+S**, then run the final Export cell again
+(it refuses to export a stale file and tells you so).
+
+Copy back to OneDrive: `notebooks/*.ipynb`, `notebooks/*.html`, `instruction_dataset.jsonl`, `data/domain_corpus/`,
+`data/instruction/`, `data/splits/`, `outputs/` (`models/` is git-ignored).
 
 ## Submission deliverables
 * `notebooks/CorpPolicyLM_Assignment1A.ipynb` (with outputs) and `.html`
