@@ -85,18 +85,19 @@ def generate(model, tokenizer, prompts, max_new_tokens=config.GEN_MAX_NEW_TOKENS
     pad_id = tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id
     side = tokenizer.padding_side
     tokenizer.padding_side = "left"  # decoder-only models must be left-padded
-    # The checkpoint's generation_config carries max_length=2048; clear it so
-    # max_new_tokens is the only length limit (avoids a warning per call).
+    # All decoding settings go into one GenerationConfig. The length limit is
+    # expressed only as max_length = prompt + max_new_tokens, so it never clashes
+    # with the checkpoint's own max_length=2048 (avoids a warning per call).
     gen_config = copy.deepcopy(model.generation_config)
-    gen_config.max_length = None
+    gen_config.update(do_sample=False, repetition_penalty=1.15, pad_token_id=pad_id,
+                      max_new_tokens=None, temperature=None, top_p=None, top_k=None)
     outputs = []
     try:
         for i in range(0, len(texts), batch_size):
             batch = tokenizer(texts[i:i + batch_size], return_tensors="pt", padding=True,
                               add_special_tokens=not chat).to(model.device)
-            generated = model.generate(
-                **batch, generation_config=gen_config, max_new_tokens=max_new_tokens,
-                do_sample=False, repetition_penalty=1.15, pad_token_id=pad_id)
+            gen_config.max_length = batch["input_ids"].shape[1] + max_new_tokens
+            generated = model.generate(**batch, generation_config=gen_config)
             new_tokens = generated[:, batch["input_ids"].shape[1]:]
             outputs.extend(t.strip() for t in tokenizer.batch_decode(new_tokens, skip_special_tokens=True))
     finally:

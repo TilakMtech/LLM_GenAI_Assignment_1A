@@ -44,7 +44,11 @@ MODAL = re.compile(
     r"is eligible|are eligible|can not|cannot|can|may|is not|are not|is required|are required)\b",
     re.I)
 SKIP_SECTIONS = re.compile(r"\b(index|contents|appendix|annexure|annex|form|format|proforma|"
-                           r"application|declaration|undertaking|checklist)\b", re.I)
+                           r"application|declaration|undertaking|checklist|signature|approver|"
+                           r"prepared by|reviewed by|approved by|revision history|version history|"
+                           r"document control|miscellany)\b", re.I)
+DANGLING_END = re.compile(r"\b(or|and|of|the|to|for|in|with|by|on|a|an|as|at)[\s:,-]*$", re.I)
+TOC_LIKE = re.compile(r"(?:[A-Za-z)] \d{1,3} [A-Z(].*){3,}")  # "Benefits 7 Retirement 8 Leave 9 ..."
 GENERIC_SUBJECTS = {"leave", "resource", "resources", "employee", "employees", "policy", "process",
                     "purpose", "it", "they", "he", "she", "this", "these", "staff", "company",
                     "organisation", "organization", "management", "he/she", "member", "members"}
@@ -85,7 +89,8 @@ def split_sections(text: str):
         match = HEADING.match(line)
         is_caps = (CAPS_HEADING.match(line) and WORDS(line) <= 8
                    and sum(ch.isalpha() for ch in line) >= 0.7 * len(line.replace(" ", "")))
-        if (match and WORDS(match.group("title")) <= 10) or is_caps:
+        dangling = DANGLING_END.search(line)
+        if ((match and WORDS(match.group("title")) <= 10) or is_caps) and not dangling:
             if body:
                 sections.append((heading, body))
             if match:
@@ -111,13 +116,34 @@ def split_items(lines):
             current = f"{current} {line}".strip()
     if current:
         items.append(current)
-    clauses = []
+    clauses, bullets = [], []
     for item in items:
+        is_bullet = bool(re.match(r"^[o•▪\-\*]\s", item))
         item = ITEM_START.sub("", item).strip()
         # long paragraphs -> sentences
         parts = re.split(r"(?<=[.;])\s+(?=[A-Z])", item) if WORDS(item) > 80 else [item]
-        clauses.extend(p.strip() for p in parts if p.strip())
-    return clauses
+        for part in (p.strip() for p in parts if p.strip()):
+            clauses.append(part)
+            bullets.append(is_bullet)
+    # "A resource can avail the following types of leave:" + its short list items
+    # become one clause, so the answer contains the list instead of ending at ":".
+    merged, i = [], 0
+    while i < len(clauses):
+        clause = clauses[i]
+        if clause.endswith(":"):
+            tail, j = [], i + 1
+            while (j < len(clauses) and len(tail) < 8
+                   and (bullets[j] or WORDS(clauses[j]) <= 6) and WORDS(clauses[j]) <= 25):
+                tail.append(clauses[j].rstrip(" ;,."))
+                j += 1
+            if tail:
+                clause = f"{clause} {'; '.join(tail)}."
+                i = j
+                merged.append(clause)
+                continue
+        merged.append(clause)
+        i += 1
+    return merged
 
 
 def truncate_words(text: str, limit: int) -> str:
@@ -238,8 +264,11 @@ def build_instruction_dataset(method: str = "heuristic", corpus_dir: Path = conf
             response_key = re.sub(r"\W+", " ", pair["response"].lower()).strip()
             if key in seen or response_key in seen_responses or not 3 <= WORDS(pair["response"]) <= 250:
                 continue
-            if re.search(r"(\.\s?){5,}|_{5,}", pair["response"]):
+            pair["response"] = re.sub(r"\s+\d{1,3}$", "", pair["response"]).strip()  # page no.
+            if re.search(r"(\.\s?){5,}|_{5,}", pair["response"]) or TOC_LIKE.search(pair["response"]):
                 continue  # residual table-of-contents / form-blank text
+            if pair["response"].endswith(":"):
+                continue  # intro sentence whose list/table was lost in extraction
             seen.add(key)
             seen_responses.add(response_key)
             pair["method"] = method

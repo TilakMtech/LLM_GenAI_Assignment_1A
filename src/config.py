@@ -53,7 +53,7 @@ SEED = _env("SEED", 42, int)
 
 # ---------------------------------------------------------------- CPT
 CPT = {
-    "learning_rate": _env("CPT_LR", 2e-5, float),
+    "learning_rate": _env("CPT_LR", 5e-5, float),
     "num_train_epochs": _env("CPT_EPOCHS", 2, float),
     "max_steps": _env("CPT_MAX_STEPS", -1, int),
     "per_device_train_batch_size": _env("CPT_BATCH", 1, int),

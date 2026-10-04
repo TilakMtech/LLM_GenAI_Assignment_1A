@@ -29,6 +29,23 @@ PAGE_MARKER = re.compile(r"--- PAGE \d+ ---")
 PAGE_NUMBER = re.compile(r"(Page\s*)?\d+\s*(of|/)\s*\d+|Page\s*\d+|-\s*\d{1,3}\s*-", re.I)
 
 
+def strip_page_edge_numbers(text: str) -> str:
+    """Drop bare page numbers ("67", "- 4 -", "iv") that sit on the first or
+    last non-empty line of a page; numbers inside tables are left alone."""
+    pages = re.split(r"(--- PAGE \d+ ---)", text)
+    edge = re.compile(r"^\s*[-–]?\s*(\d{1,4}|[ivxlc]{1,6})\s*[-–]?\s*$", re.I)
+    for k, page in enumerate(pages):
+        if PAGE_MARKER.fullmatch(page.strip()):
+            continue
+        lines = page.split("\n")
+        idx = [i for i, l in enumerate(lines) if l.strip()]
+        for i in (idx[:1] + idx[-1:]) if idx else []:
+            if edge.match(lines[i]):
+                lines[i] = ""
+        pages[k] = "\n".join(lines)
+    return "".join(pages)
+
+
 def repeated_lines(text: str, min_pages: int = 3) -> set:
     """Lines that repeat on many pages are running headers / footers."""
     pages = PAGE_MARKER.split(text)
@@ -44,6 +61,7 @@ def repeated_lines(text: str, min_pages: int = 3) -> set:
 def clean_text(text: str, vocabulary: Counter | None = None) -> str:
     """Remove page labels and boilerplate while preserving the line structure."""
     boilerplate = repeated_lines(text)
+    text = strip_page_edge_numbers(text)
     text = unicodedata.normalize("NFKC", text)
     text = "".join(ch for ch in text if ch in "\n\t" or unicodedata.category(ch)[0] != "C")
     text = re.sub(r"(\w)-\n(\w)", r"\1\2", text)  # re-join hyphenated line breaks
@@ -55,6 +73,8 @@ def clean_text(text: str, vocabulary: Counter | None = None) -> str:
             continue
         if line in boilerplate:
             continue
+        if DOC_CONTROL.match(line) and len(line.split()) <= 12:
+            continue  # document-control metadata (Ref No / Version / Effective Date ...)
         if DOT_LEADER.search(line):
             continue  # table-of-contents line ("Leave Rules ........ 12")
         line = re.sub(r" {2,}", " ", INLINE_PAGE.sub("", line)).strip()
@@ -83,10 +103,12 @@ def repair_split_words(text: str, vocabulary: Counter | None = None) -> str:
         while i < len(tokens):
             a = tokens[i]
             b = tokens[i + 1] if i + 1 < len(tokens) else ""
-            if (a.isalpha() and len(a) >= 2 and re.fullmatch(r"[a-z]{2,}[.,;:]?", b or "-")):
+            if (a.isalpha() and re.fullmatch(r"[a-z]{1,}[.,;:]?", b or "-")
+                    and a.lower() not in {"a", "i", "o"} and b.rstrip(".,;:") not in {"a", "i"}):
                 core_b = b.rstrip(".,;:")
                 whole = (a + core_b).lower()
-                if (counts[whole] >= 1 and min(counts[a.lower()], counts[core_b]) <= (3 if vocabulary is not None else 1)
+                needed = 3 if min(len(a), len(core_b)) == 1 else 1
+                if (counts[whole] >= needed and min(counts[a.lower()], counts[core_b]) <= (3 if vocabulary is not None else 1)
                         and a.lower() not in COMMON_WORDS and core_b not in COMMON_WORDS):
                     out.append(a + b)
                     i += 2
@@ -100,6 +122,9 @@ def repair_split_words(text: str, vocabulary: Counter | None = None) -> str:
 
 COMMON_WORDS = {"a", "an", "the", "of", "to", "in", "on", "at", "by", "for", "or", "and", "be", "is",
                 "as", "it", "no", "not", "any", "all", "per", "if", "may", "can", "will", "with"}
+DOC_CONTROL = re.compile(r"^(ref\.? no|reference no|version( no)?|date of issue|issue date|effective date|"
+                         r"document owner|approved by|reviewed by|prepared by|document type|"
+                         r"subcategory|policy owner|revision date|next review date)\s*[:.-]", re.I)
 DOT_LEADER = re.compile(r"(\.\s?){5,}|…{2,}|_{5,}")
 INLINE_PAGE = re.compile(r"\bPage\s+\d+\s+(of|/)\s+\d+\b", re.I)
 
