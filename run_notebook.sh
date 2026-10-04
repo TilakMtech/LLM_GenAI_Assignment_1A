@@ -17,10 +17,20 @@ echo "1/4 Installing requirements (before any kernel starts) ..." | tee -a "$LOG
 
 echo "2/4 Checking the environment ..." | tee -a "$LOG"
 "$PY" - <<'PYCHECK' 2>&1 | tee -a "$LOG"
-import numpy, pandas, pyarrow, torch, transformers, trl, peft
-pandas.DataFrame([{"a": 1, "b": "x"}])            # fails fast on a numpy/pandas binary mismatch
-print(f"numpy {numpy.__version__} | pandas {pandas.__version__} | pyarrow {pyarrow.__version__} | "
-      f"torch {torch.__version__} (CUDA {torch.cuda.is_available()}) | transformers {transformers.__version__} | "
+import sys
+try:
+    import numpy, scipy, scipy.special, sklearn, pandas, pyarrow, torch, transformers, trl, peft
+    from transformers import AutoModelForCausalLM  # pulls in generation -> sklearn/scipy
+    pandas.DataFrame([{"a": 1, "b": "x"}])          # fails fast on numpy/pandas binary mismatch
+except Exception as error:
+    print(f"\nENVIRONMENT CHECK FAILED: {type(error).__name__}: {error}\n")
+    print("numpy/scipy/scikit-learn/pandas were built against different numpy versions.")
+    print("Repair them as one consistent set, then re-run this script:")
+    print(f"    {sys.executable} -m pip install --upgrade --force-reinstall numpy scipy scikit-learn pandas")
+    sys.exit(1)
+print(f"numpy {numpy.__version__} | scipy {scipy.__version__} | sklearn {sklearn.__version__} | "
+      f"pandas {pandas.__version__} | pyarrow {pyarrow.__version__} | torch {torch.__version__} "
+      f"(CUDA {torch.cuda.is_available()}) | transformers {transformers.__version__} | "
       f"trl {trl.__version__} | peft {peft.__version__}")
 PYCHECK
 
