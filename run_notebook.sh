@@ -33,6 +33,24 @@ print(f"numpy {numpy.__version__} | scipy {scipy.__version__} | sklearn {sklearn
       f"pandas {pandas.__version__} | pyarrow {pyarrow.__version__} | torch {torch.__version__} "
       f"(CUDA {torch.cuda.is_available()}) | transformers {transformers.__version__} | "
       f"trl {trl.__version__} | peft {peft.__version__}")
+import os, shutil
+def gib(n): return f"{n / 2**30:.1f} GiB"
+limit = None
+for path in ("/sys/fs/cgroup/memory.max", "/sys/fs/cgroup/memory/memory.limit_in_bytes"):
+    try:
+        raw = open(path).read().strip()
+        limit = None if raw == "max" or int(raw) > 2**50 else int(raw)
+        break
+    except Exception:
+        pass
+avail = int([l.split()[1] for l in open("/proc/meminfo") if l.startswith("MemAvailable")][0]) * 1024
+disk = shutil.disk_usage(".").free
+print(f"RAM available {gib(avail)} | container RAM limit {gib(limit) if limit else 'none'} | free disk {gib(disk)}")
+if (limit and limit < 16 * 2**30) or avail < 12 * 2**30:
+    print("WARNING: <16 GiB RAM. CPT loads the 1.1B model in fp32 (~4.4 GiB) plus a bf16 copy for saving;"
+          " close other notebook kernels first (Running panel -> Shut Down All).")
+if disk < 10 * 2**30:
+    print("WARNING: <10 GiB free disk; the CPT checkpoint needs ~2.2 GiB plus HF cache.")
 PYCHECK
 
 echo "3/4 Executing $NB (CPT + QLoRA; ~10-15 min on an L40S/A100) ..." | tee -a "$LOG"
@@ -40,8 +58,15 @@ echo "3/4 Executing $NB (CPT + QLoRA; ~10-15 min on an L40S/A100) ..." | tee -a 
 # cell, so progress is visible and a crash still leaves the finished cells on disk.
 "$PY" -m pip install -q papermill 2>&1 | tee -a "$LOG"
 TMP_NB=notebooks/.run_in_progress.ipynb
+set +e
 NOTEBOOK_HEADLESS=1 "$PY" -m papermill "$NB" "$TMP_NB" -k python3 --cwd notebooks \
     --log-output --progress-bar --request-save-on-cell-execute 2>&1 | tee -a "$LOG"
+status=${PIPESTATUS[0]}
+set -e
+if [ "$status" -ne 0 ] || [ ! -s "$TMP_NB" ]; then
+    echo "Notebook run FAILED (exit $status). Finished cells are saved in $TMP_NB; see the log above." | tee -a "$LOG"
+    exit 1
+fi
 mv "$TMP_NB" "$NB"
 
 echo "4/4 Exporting HTML ..." | tee -a "$LOG"
