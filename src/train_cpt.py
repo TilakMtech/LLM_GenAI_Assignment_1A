@@ -96,7 +96,7 @@ def pick_optimizer():
     return "adamw_torch"
 
 
-CHECKPOINT_GB = 2.6  # bf16 TinyLlama-1.1B (~2.2 GB) + tokenizer + headroom
+CHECKPOINT_GB = 2.3  # bf16 TinyLlama-1.1B = 2.05 GiB + tokenizer + small headroom
 
 
 def dir_size(path: Path) -> int:
