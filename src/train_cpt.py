@@ -14,6 +14,7 @@ plus gradient checkpointing and a paged 8-bit AdamW (bitsandbytes) so a
 """
 import csv
 import math
+import shutil
 import time
 from pathlib import Path
 
@@ -95,6 +96,27 @@ def pick_optimizer():
     return "adamw_torch"
 
 
+CHECKPOINT_GB = 2.6  # bf16 TinyLlama-1.1B (~2.2 GB) + tokenizer + headroom
+
+
+def dir_size(path: Path) -> int:
+    return sum(f.stat().st_size for f in path.rglob("*") if f.is_file()) if path.exists() else 0
+
+
+def check_disk_space(output_dir: Path, need_gb: float = CHECKPOINT_GB):
+    """Fail *before* training if the checkpoint will not fit (an old checkpoint in
+    output_dir is counted as reclaimable because it is replaced)."""
+    probe = output_dir if output_dir.exists() else output_dir.parent
+    probe.mkdir(parents=True, exist_ok=True)
+    free = shutil.disk_usage(probe).free + dir_size(output_dir)
+    if free < need_gb * 2**30:
+        raise RuntimeError(
+            f"Only {free / 2**30:.1f} GiB free for {output_dir} but the CPT checkpoint needs "
+            f"~{need_gb} GiB. Free space first (see `du -sh ~/.cache/* ~/datavol-1/* ~/.local`), "
+            "e.g. `pip cache purge`, delete old checkpoints/venvs, or set MODELS_DIR to a bigger volume.")
+    return free
+
+
 def train_cpt(model_id: str = config.MODEL_ID, output_dir: Path = config.CPT_MODEL_DIR,
               hparams: dict | None = None):
     hp = {**config.CPT, **(hparams or {})}
@@ -103,6 +125,8 @@ def train_cpt(model_id: str = config.MODEL_ID, output_dir: Path = config.CPT_MOD
     eval_ds = PackedDataset(config.PROCESSED_DIR / "eval_packed.parquet")
 
     # fp32 master weights; autocast handles the low-precision compute.
+    free = check_disk_space(output_dir)
+    print(f"Disk space for checkpoint: {free / 2**30:.1f} GiB available (need ~{CHECKPOINT_GB} GiB)")
     model = load_model(model_id, dtype=torch.float32, gradient_checkpointing=True)
     start_loss = mean_loss(model, train_ds, max_blocks=4)
     start_eval_loss = mean_loss(model, eval_ds)
@@ -151,6 +175,8 @@ def train_cpt(model_id: str = config.MODEL_ID, output_dir: Path = config.CPT_MOD
     minutes = (time.time() - t0) / 60
 
     # Persist the CPT checkpoint (bf16 halves the size) + tokenizer for Step 5 / Part B.
+    if output_dir.exists():
+        shutil.rmtree(output_dir)  # drop the previous (or partially written) checkpoint first
     output_dir.mkdir(parents=True, exist_ok=True)
     trainer.model.config.use_cache = True
     # Small shards keep host-RAM use low while serialising (6 GiB pod limit).
