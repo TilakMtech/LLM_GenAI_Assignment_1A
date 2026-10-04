@@ -29,7 +29,7 @@ e.g. `BLOCK_SIZE=1024`).
 bash run_notebook.sh
 ```
 
-Executes every cell, saves the outputs into `notebooks/CorpPolicyLM_Assignment1A.ipynb`, then exports
+Executes every cell with papermill (live cell-by-cell output and a progress bar in the terminal), saves the outputs into `notebooks/CorpPolicyLM_Assignment1A.ipynb`, then exports
 `notebooks/CorpPolicyLM_Assignment1A.html` and copies `instruction_dataset.jsonl` to the root (~10–15 min on an L40S).
 Use this rather than *Run All*: `nbconvert` converts the `.ipynb` on disk, which during an interactive run holds
 only the last autosave, so an HTML exported at the end of *Run All* shows a half-finished run.

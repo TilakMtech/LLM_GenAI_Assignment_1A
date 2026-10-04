@@ -45,18 +45,21 @@ def _fetch(url: str, timeout: int) -> bytes:
         return response.read()
 
 
-def download(url: str, dest: Path, timeout: int = 60, retries: int = 2) -> str:
+def download(url: str, dest: Path, timeout: int = 30, retries: int = 1) -> str:
+    """Retry only transient network errors; HTTP 4xx and TLS failures are final."""
     for attempt in range(retries + 1):
         try:
             payload = _fetch(url, timeout)
             break
-        except urllib.error.HTTPError as error:
-            if error.code in (404, 410) or attempt == retries:
-                raise  # missing / gone: retrying will not help
-        except urllib.error.URLError:
+        except urllib.error.HTTPError:
+            raise  # 403/404/410: the server answered - retrying will not help
+        except urllib.error.URLError as error:
+            if isinstance(error.reason, ssl.SSLError) or attempt == retries:
+                raise
+        except (TimeoutError, ConnectionError):
             if attempt == retries:
                 raise
-        time.sleep(2 * (attempt + 1))
+        time.sleep(2)
     if not payload.startswith(b"%PDF"):
         return "not_a_pdf"
     dest.write_bytes(payload)

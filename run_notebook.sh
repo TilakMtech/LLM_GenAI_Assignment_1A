@@ -2,6 +2,7 @@
 # Run the whole Assignment 1A notebook headless, save every output into the
 # .ipynb, then export the HTML deliverable. From the project root:
 #     bash run_notebook.sh
+# Progress is printed cell by cell; the full log is in outputs/logs/.
 # (Use this instead of "Run All": nbconvert converts the .ipynb on disk, which
 #  during an interactive run holds only the last autosave.)
 set -euo pipefail
@@ -35,8 +36,13 @@ print(f"numpy {numpy.__version__} | scipy {scipy.__version__} | sklearn {sklearn
 PYCHECK
 
 echo "3/4 Executing $NB (CPT + QLoRA; ~10-15 min on an L40S/A100) ..." | tee -a "$LOG"
-NOTEBOOK_HEADLESS=1 jupyter nbconvert --to notebook --execute --inplace \
-    --ExecutePreprocessor.timeout=-1 --ExecutePreprocessor.kernel_name=python3 "$NB" 2>&1 | tee -a "$LOG"
+# papermill prints each cell's output live and saves the notebook after every
+# cell, so progress is visible and a crash still leaves the finished cells on disk.
+"$PY" -m pip install -q papermill 2>&1 | tee -a "$LOG"
+TMP_NB=notebooks/.run_in_progress.ipynb
+NOTEBOOK_HEADLESS=1 "$PY" -m papermill "$NB" "$TMP_NB" -k python3 --cwd notebooks \
+    --log-output --progress-bar --request-save-on-cell-execute 2>&1 | tee -a "$LOG"
+mv "$TMP_NB" "$NB"
 
 echo "4/4 Exporting HTML ..." | tee -a "$LOG"
 jupyter nbconvert --to html "$NB" --output-dir notebooks 2>&1 | tee -a "$LOG"
