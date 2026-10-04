@@ -66,11 +66,15 @@ def build_packed_dataset(model_id: str = config.MODEL_ID, block_size: int = conf
              "vocab_size": len(tokenizer), "bos_token": tokenizer.bos_token,
              "eos_token": tokenizer.eos_token, "block_size": block_size, "splits": {}}
 
-    for split in ("train", "eval"):
-        documents = read_split(splits_dir / f"{split}.jsonl")
+    for split in ("train", "eval", "eval_unseen"):
+        path = splits_dir / f"{split}.jsonl"
+        documents = read_split(path) if path.exists() else []
+        if not documents and split == "eval_unseen":
+            (output_dir / f"{split}_packed.parquet").unlink(missing_ok=True)
+            continue  # optional secondary set (empty for very small corpora)
         encoded = encode_documents(documents, tokenizer)
         lengths = [len(seq) for seq in encoded]
-        blocks, total, dropped = pack(encoded, block_size, keep_remainder=(split == "eval"))
+        blocks, total, dropped = pack(encoded, block_size, keep_remainder=(split != "train"))
         if not blocks:
             raise ValueError(f"{split}: only {total} tokens - fewer than one {block_size}-token block. "
                              "Add documents or lower BLOCK_SIZE.")

@@ -249,6 +249,12 @@ def grouped_split(pairs, train_fraction=config.INSTRUCTION_TRAIN_FRACTION, seed=
         groups[pair["group"]].append(pair)
     keys = sorted(groups)
     random.Random(seed).shuffle(keys)
+    # Sections of the documents the B3 probe questions ask about go to train
+    # first, so B3 tests recall of trained policy facts; generalisation is measured
+    # separately on the held-out pairs (ROUGE-L).
+    pinned = {p.lower() for p in config.PROBE_DOCUMENTS}
+    keys = ([k for k in keys if groups[k][0]["source"].lower() in pinned]
+            + [k for k in keys if groups[k][0]["source"].lower() not in pinned])
     train, evaluation, target = [], [], train_fraction * len(pairs)
     for key in keys:
         (train if len(train) < target else evaluation).extend(groups[key])

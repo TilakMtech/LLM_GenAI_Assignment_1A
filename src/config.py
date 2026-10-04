@@ -46,7 +46,8 @@ BLOCK_SIZE = _env("BLOCK_SIZE", 2048, int)
 # ---------------------------------------------------------------- cleaning
 MIN_WORDS = _env("MIN_WORDS", 100, int)
 NEAR_DUP_THRESHOLD = _env("NEAR_DUP_THRESHOLD", 0.8, float)  # shingle Jaccard
-EVAL_FRACTION = _env("EVAL_FRACTION", 0.1, float)  # share of corpus *words* held out
+EVAL_FRACTION = _env("EVAL_FRACTION", 0.1, float)    # last 10% of every document -> eval
+UNSEEN_FRACTION = _env("UNSEEN_FRACTION", 0.05, float)  # whole documents never seen -> eval_unseen
 # Documents the probe prompts ask about (kept in the CPT training split).
 PROBE_DOCUMENTS = ["Leave_Policy.txt", "travel_policy.txt", "mygov_travel_policy_dup.txt", "exit_policy.txt"]
 SEED = _env("SEED", 42, int)
@@ -110,15 +111,15 @@ SYSTEM_PROMPT = (
 
 # ---------------------------------------------------------------- prompts
 DOMAIN_PROMPTS = [
-    "Under the leave policy, an employee on probation is eligible for",
-    "According to the travel policy, an employee who drives his own vehicle on business travel can claim",
-    "As per the exit policy, either party may terminate the agreement by giving a written notice of",
+    "Under the MyGov Leave Policy, resources are eligible to avail during the probation only",
+    "According to the MyGov Domestic Travel Policy, a resource who drives his own vehicle can claim expenses @",
+    "As per the MyGov Exit Policy, either party may terminate the Agreement by giving a written notice of",
 ]
 # Same three topics phrased as questions for the instruction-tuned model (Part B3).
 DOMAIN_QUESTIONS = [
-    "What types of leave can an employee avail during the probation period?",
-    "How much can an employee claim for driving his own vehicle on business travel?",
-    "How many days of written notice are required to terminate the agreement under the exit policy?",
+    "Under the MyGov Leave Policy, what leave can a resource avail during probation?",
+    "Under the MyGov Domestic Travel Policy, how much can a resource claim for driving his own vehicle?",
+    "Under the MyGov Exit Policy, how many days of written notice are needed to terminate the Agreement?",
 ]
 # Reference answers taken verbatim from the MyGov policies (used to score outputs).
 DOMAIN_REFERENCE = [

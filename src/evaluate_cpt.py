@@ -113,18 +113,27 @@ def perplexity(model, dataset):
 
 
 def domain_perplexity(base_id=config.MODEL_ID, cpt_dir=config.CPT_MODEL_DIR):
-    eval_ds = PackedDataset(config.PROCESSED_DIR / "eval_packed.parquet")
-    results = {}
+    """PPL of base vs CPT model on both held-out sets (no gradients, no training)."""
+    sets = {"eval": "held-out last 10% of every document",
+            "eval_unseen": "whole documents never seen in CPT"}
+    data = {k: PackedDataset(config.PROCESSED_DIR / f"{k}_packed.parquet") for k in sets
+            if (config.PROCESSED_DIR / f"{k}_packed.parquet").exists()}
+    results = {k: {} for k in data}
     for name, path in [("base", base_id), ("cpt", str(cpt_dir))]:
         model = load_model(path, dtype=inference_dtype())
-        ppl, n = perplexity(model, eval_ds)
-        results[name] = ppl
-        print(f"{name} model domain PPL: {ppl:.3f} over {n:,} held-out tokens")
+        for key, ds in data.items():
+            ppl, n = perplexity(model, ds)
+            results[key][name], results[key]["tokens"] = ppl, n
+            print(f"{name:>4} model PPL on {key:<11} ({sets[key]}): {ppl:.3f} over {n:,} tokens")
         free(model)
-    reduction = 100 * (results["base"] - results["cpt"]) / results["base"]
-    out = {"eval_tokens": n, "base_ppl": round(results["base"], 4),
-           "cpt_ppl": round(results["cpt"], 4), "ppl_reduction_percent": round(reduction, 2),
-           "within_expected_10_40_percent": 10 <= reduction <= 40}
+    out = {}
+    for key, r in results.items():
+        reduction = 100 * (r["base"] - r["cpt"]) / r["base"]
+        prefix = "" if key == "eval" else "unseen_"
+        out.update({f"{prefix}eval_tokens": r["tokens"], f"{prefix}base_ppl": round(r["base"], 4),
+                    f"{prefix}cpt_ppl": round(r["cpt"], 4),
+                    f"{prefix}ppl_reduction_percent": round(reduction, 2)})
+    out["within_expected_10_40_percent"] = 10 <= out["ppl_reduction_percent"] <= 40
     save_json(out, config.EVAL_DIR / "perplexity.json")
     return out
 
