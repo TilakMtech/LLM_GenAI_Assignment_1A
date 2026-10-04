@@ -1,20 +1,34 @@
 #!/usr/bin/env bash
 # Run the whole Assignment 1A notebook headless, save every output into the
-# .ipynb, then export the HTML deliverable. Run from the project root:
+# .ipynb, then export the HTML deliverable. From the project root:
 #     bash run_notebook.sh
-# (Use this instead of "Run All" + manual save: nbconvert only sees the file on
-#  disk, which during an interactive run holds just the last autosave.)
+# (Use this instead of "Run All": nbconvert converts the .ipynb on disk, which
+#  during an interactive run holds only the last autosave.)
 set -euo pipefail
 cd "$(dirname "$0")"
 NB=notebooks/CorpPolicyLM_Assignment1A.ipynb
-LOG=outputs/logs/run_notebook_$(date +%Y%m%d_%H%M%S).log
 mkdir -p outputs/logs
+LOG=outputs/logs/run_notebook_$(date +%Y%m%d_%H%M%S).log
+PY=$(command -v python)
 
-echo "Executing $NB (CPT + QLoRA; ~10-15 min on an L40S/A100) ... log: $LOG"
+echo "Python: $PY" | tee "$LOG"
+echo "1/4 Installing requirements (before any kernel starts) ..." | tee -a "$LOG"
+"$PY" -m pip install -q -r requirements.txt 2>&1 | tee -a "$LOG"
+
+echo "2/4 Checking the environment ..." | tee -a "$LOG"
+"$PY" - <<'PYCHECK' 2>&1 | tee -a "$LOG"
+import numpy, pandas, pyarrow, torch, transformers, trl, peft
+pandas.DataFrame([{"a": 1, "b": "x"}])            # fails fast on a numpy/pandas binary mismatch
+print(f"numpy {numpy.__version__} | pandas {pandas.__version__} | pyarrow {pyarrow.__version__} | "
+      f"torch {torch.__version__} (CUDA {torch.cuda.is_available()}) | transformers {transformers.__version__} | "
+      f"trl {trl.__version__} | peft {peft.__version__}")
+PYCHECK
+
+echo "3/4 Executing $NB (CPT + QLoRA; ~10-15 min on an L40S/A100) ..." | tee -a "$LOG"
 NOTEBOOK_HEADLESS=1 jupyter nbconvert --to notebook --execute --inplace \
-    --ExecutePreprocessor.timeout=-1 "$NB" 2>&1 | tee "$LOG"
+    --ExecutePreprocessor.timeout=-1 --ExecutePreprocessor.kernel_name=python3 "$NB" 2>&1 | tee -a "$LOG"
 
-echo "Exporting HTML ..."
+echo "4/4 Exporting HTML ..." | tee -a "$LOG"
 jupyter nbconvert --to html "$NB" --output-dir notebooks 2>&1 | tee -a "$LOG"
 cp data/instruction/instruction_dataset.jsonl instruction_dataset.jsonl
-echo "Done: notebooks/CorpPolicyLM_Assignment1A.ipynb (with outputs), notebooks/CorpPolicyLM_Assignment1A.html, instruction_dataset.jsonl"
+echo "Done: $NB (with outputs), notebooks/CorpPolicyLM_Assignment1A.html, instruction_dataset.jsonl" | tee -a "$LOG"
