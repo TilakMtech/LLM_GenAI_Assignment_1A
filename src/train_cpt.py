@@ -118,15 +118,19 @@ def check_disk_space(output_dir: Path, need_gb: float = CHECKPOINT_GB):
 
 
 def train_cpt(model_id: str = config.MODEL_ID, output_dir: Path = config.CPT_MODEL_DIR,
-              hparams: dict | None = None):
+              hparams: dict | None = None, save: bool = True, tag: str = "",
+              return_model: bool = False):
+    """Full CPT run. save=False / return_model=True is used by the LR sweep
+    (src/cpt_sweep.py), which scores candidates in memory without writing checkpoints."""
     hp = {**config.CPT, **(hparams or {})}
     tokenizer = load_tokenizer(model_id)
     train_ds = PackedDataset(config.PROCESSED_DIR / "train_packed.parquet")
     eval_ds = PackedDataset(config.PROCESSED_DIR / "eval_packed.parquet")
 
     # fp32 master weights; autocast handles the low-precision compute.
-    free = check_disk_space(output_dir)
-    print(f"Disk space for checkpoint: {free / 2**30:.1f} GiB available (need ~{CHECKPOINT_GB} GiB)")
+    if save:
+        free = check_disk_space(output_dir)
+        print(f"Disk space for checkpoint: {free / 2**30:.1f} GiB available (need ~{CHECKPOINT_GB} GiB)")
     model = load_model(model_id, dtype=torch.float32, gradient_checkpointing=True)
     start_loss = mean_loss(model, train_ds, max_blocks=4)
     start_eval_loss = mean_loss(model, eval_ds)
@@ -164,7 +168,7 @@ def train_cpt(model_id: str = config.MODEL_ID, output_dir: Path = config.CPT_MOD
         dataloader_pin_memory=torch.cuda.is_available(),
         **flags,
     )
-    recorder = LossRecorderCallback(config.EVAL_DIR / "cpt_loss_log.csv")
+    recorder = LossRecorderCallback(config.EVAL_DIR / f"cpt_loss_log{tag}.csv")
     trainer = Trainer(model=model, args=args, train_dataset=train_ds, eval_dataset=eval_ds,
                       data_collator=default_data_collator, callbacks=[recorder])
 
@@ -173,6 +177,16 @@ def train_cpt(model_id: str = config.MODEL_ID, output_dir: Path = config.CPT_MOD
     t0 = time.time()
     result = trainer.train()
     minutes = (time.time() - t0) / 60
+
+    if not save:
+        model = trainer.model
+        del trainer  # releases the optimiser state
+        summary = {"hyperparameters": hp, "optimizer_updates": result.global_step,
+                   "start_train_loss": round(start_loss, 4), "start_eval_loss": round(start_eval_loss, 4),
+                   "final_logged_train_loss": next((r["loss"] for r in reversed(recorder.rows) if r["loss"]), None),
+                   "last_eval_loss": next((r["eval_loss"] for r in reversed(recorder.rows) if r["eval_loss"]), None),
+                   "train_minutes": round(minutes, 2)}
+        return (summary, recorder.rows, model) if return_model else (summary, recorder.rows)
 
     # Persist the CPT checkpoint (bf16 halves the size) + tokenizer for Step 5 / Part B.
     if output_dir.exists():

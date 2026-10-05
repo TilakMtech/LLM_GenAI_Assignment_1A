@@ -1,6 +1,7 @@
 """Step 4 (loss curve) and Step 5 (perplexity + catastrophic forgetting)."""
 import gc
 import math
+import re
 
 import matplotlib.pyplot as plt  # noqa: E402  (no backend override: notebook keeps inline plots)
 import pandas as pd  # noqa: E402
@@ -140,8 +141,16 @@ def domain_perplexity(base_id=config.MODEL_ID, cpt_dir=config.CPT_MODEL_DIR):
 
 # ------------------------------------------------------------------ Step 5B
 def keyword_verdict(text: str, keywords) -> bool:
+    """True if any keyword occurs; a keyword ending in a digit must not be followed by
+    another digit ("Rs. 10" must not match "Rs. 1000", "100" must not match "1000")."""
     text = text.lower().replace("°", " ")
-    return any(k.lower() in text for k in keywords)
+    for keyword in keywords:
+        pattern = re.escape(keyword.lower())
+        if keyword[-1].isdigit():
+            pattern += r"(?![\d,])"
+        if re.search(pattern, text):
+            return True
+    return False
 
 
 def forgetting_check(base_id=config.MODEL_ID, cpt_dir=config.CPT_MODEL_DIR):
