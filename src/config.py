@@ -125,7 +125,8 @@ DOMAIN_QUESTIONS = [
 DOMAIN_REFERENCE = [
     ["casual", "sick"],
     ["rs.10", "rs. 10", "10 per km", "₹10"],
-    ["60 days", "sixty"],
+    # Exit notice depends on tenure: 60 days after 3 years' service, 90 days after 5 years.
+    ["60 days", "90 days", "sixty", "ninety"],
 ]
 GENERAL_PROMPTS = [
     ("The capital of France is", ["paris"]),

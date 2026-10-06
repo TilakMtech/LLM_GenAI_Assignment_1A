@@ -60,15 +60,13 @@ def plot_loss_curve(log_csv=config.EVAL_DIR / "cpt_loss_log.csv",
     if len(evals):
         ax.plot(evals["step"], evals["eval_loss"], "o-", color="#c0504d", lw=1.5,
                 label="held-out eval loss")
-    if plateau_step is not None:
-        ax.axvline(plateau_step, ls="--", color="grey")
-        ax.annotate(f"train plateau ≈ step {plateau_step}", (plateau_step, train["loss"].max()),
-                    xytext=(5, -5), textcoords="offset points", color="grey")
-    if eval_plateau_step is not None:
-        ax.axvline(eval_plateau_step, ls=":", color="#c0504d")
-        ax.annotate(f"held-out plateau ≈ step {eval_plateau_step}",
-                    (eval_plateau_step, train["loss"].min()), xytext=(5, 5),
-                    textcoords="offset points", color="#c0504d")
+    if len(evals):
+        # Mark the held-out minimum: the point after which further training overfits.
+        best = evals.loc[evals["eval_loss"].idxmin()]
+        ax.axvline(best["step"], ls=":", color="#c0504d")
+        ax.annotate(f"held-out minimum {best['eval_loss']:.4f} (step {int(best['step'])})",
+                    (best["step"], best["eval_loss"]), xytext=(10, -30), textcoords="offset points",
+                    arrowprops=dict(arrowstyle="->", color="#c0504d"), color="#c0504d")
     ax.set_xlabel("optimiser step")
     ax.set_ylabel("cross-entropy loss")
     ax.set_title("Continual pre-training loss — TinyLlama-1.1B on HR policy corpus")
@@ -82,15 +80,23 @@ def plot_loss_curve(log_csv=config.EVAL_DIR / "cpt_loss_log.csv",
         "first_logged_loss": float(train["loss"].iloc[0]),
         "last_logged_loss": float(train["loss"].iloc[-1]),
         "min_loss": float(train["loss"].min()),
-        "loss_drop_percent": float(round(100 * (1 - train["loss"].iloc[-window:].mean()
-                                          / train["loss"].iloc[:window].mean()), 2)),
+        # Two different definitions - report both, clearly labelled.
+        "endpoint_loss_drop_percent": float(round(100 * (1 - train["loss"].iloc[-1]
+                                                   / train["loss"].iloc[0]), 2)),
+        "window_mean_loss_drop_percent": float(round(100 * (1 - train["loss"].iloc[-window:].mean()
+                                                      / train["loss"].iloc[:window].mean()), 2)),
+        "window": window,
+        "loss_drop_percent": None,  # kept for older notebook cells; = window-mean drop (filled below)
         "plateau_step": plateau_step,
         "eval_plateau_step": eval_plateau_step,
         "final_train_eval_gap": (round(float(train["loss"].iloc[-window:].mean())
                                        - float(evals["eval_loss"].iloc[-1]), 4) if len(evals) else None),
         "first_eval_loss": float(evals["eval_loss"].iloc[0]) if len(evals) else None,
         "last_eval_loss": float(evals["eval_loss"].iloc[-1]) if len(evals) else None,
+        "min_eval_loss": float(evals["eval_loss"].min()) if len(evals) else None,
+        "min_eval_loss_step": int(evals.loc[evals["eval_loss"].idxmin(), "step"]) if len(evals) else None,
     }
+    stats["loss_drop_percent"] = stats["window_mean_loss_drop_percent"]
     save_json(stats, config.EVAL_DIR / "cpt_loss_stats.json")
     return stats, out_png
 
