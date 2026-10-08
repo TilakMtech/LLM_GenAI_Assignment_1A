@@ -1,11 +1,12 @@
 {
+  "instruction_dataset_fingerprint": "90d6353c33461aac7fb9b2ce7a000b62ca0105bb0ef8a77eb136b7dbd882975e",
   "adapter": "B",
-  "heldout_pairs_scored": 30,
-  "rougeL_cpt_no_adapter": 0.0626,
-  "rougeL_sft_adapter": 0.3823,
+  "heldout_pairs_scored": 12,
+  "rougeL_cpt_no_adapter": 0.032,
+  "rougeL_sft_adapter": 0.1904,
   "domain_prompts_with_reference_fact": {
     "cpt_no_adapter": 0,
-    "sft_adapter": 1
+    "sft_adapter": 0
   },
   "general_prompts_correct_after_sft": 2
 }

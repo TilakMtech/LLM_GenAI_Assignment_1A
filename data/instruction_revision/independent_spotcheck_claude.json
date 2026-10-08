@@ -1,0 +1,127 @@
+{
+  "reviewer": "Claude (Cowork session) - independent of the generating assistant, not a human review",
+  "sample": "random.seed(2026); random.sample(rows, 15) over data/instruction/instruction_dataset.jsonl",
+  "criteria": "grounded in evidence_quote; own words (not lifted); concise; question type plausible",
+  "rows": [
+    {
+      "n": 1,
+      "id": "9f1a152cfbd7abba",
+      "source": "aurobindo_human_rights_policy.txt",
+      "question_type": "comparative",
+      "verdict": "pass",
+      "note": "Three-day confidential preliminary enquiry and the HR/HOD detailed enquiry with multipartite discussion are both in the excerpt; contrast is real."
+    },
+    {
+      "n": 2,
+      "id": "59bc5ccb3b6105fb",
+      "source": "iihmr_hr_policy_manual.txt",
+      "question_type": "procedural",
+      "verdict": "pass",
+      "note": "Right to amend/modify/terminate plans, notification via notifications and office orders, superseded policies null, employee responsibility: all present."
+    },
+    {
+      "n": 3,
+      "id": "31d1cbf9408c5a5e",
+      "source": "aubank_whistle_blower_policy.txt",
+      "question_type": "factual",
+      "verdict": "pass",
+      "note": "Protection for employees and others who report to management is stated; 'rather than dismissing a concern because it seems minor' paraphrases 'howsoever insignificant ... serious concern'."
+    },
+    {
+      "n": 4,
+      "id": "cf5fafd051461c63",
+      "source": "mygov_laptop_policy.txt",
+      "question_type": "comparative",
+      "verdict": "pass",
+      "note": "BYOD fixed monthly charges vs organisation-owned laptops for advanced technical roles, category-dependent provisions: matches clauses (a)/(b)."
+    },
+    {
+      "n": 5,
+      "id": "336b18f84b2aced2",
+      "source": "aurobindo_human_rights_policy.txt",
+      "question_type": "procedural",
+      "verdict": "pass",
+      "note": "Email and hotline 77666, confidential preliminary enquiry within 3 days, prima facie purpose: all preserved. Overlaps in content with pair #1 (same excerpt)."
+    },
+    {
+      "n": 6,
+      "id": "c96f0884a46a68a1",
+      "source": "mygov_laptop_policy.txt",
+      "question_type": "procedural",
+      "verdict": "pass",
+      "note": "Role/job/technical-needs criteria decided by department head or immediate supervisor: correct. Second sentence repeats pair #4's content."
+    },
+    {
+      "n": 7,
+      "id": "ca066d218f26a9a5",
+      "source": "homefirst_human_rights_policy.txt",
+      "question_type": "procedural",
+      "verdict": "pass",
+      "note": "Four channels (whistleblower, POSH, HR team, grievance policy) and secure 24x7 confidential access without retaliation: correct."
+    },
+    {
+      "n": 8,
+      "id": "54a8d90522d0576d",
+      "source": "homefirst_human_rights_policy.txt",
+      "question_type": "factual",
+      "verdict": "pass",
+      "note": "Merit in qualification, performance and capability as sole criteria; fair, open, transparent competition; no discrimination: correct."
+    },
+    {
+      "n": 9,
+      "id": "610b22fab0f1c1e7",
+      "source": "ghl_vigil_mechanism_policy.txt",
+      "question_type": "factual",
+      "verdict": "pass",
+      "note": "'Howsoever insignificant' violations are a serious concern; directors' and employees' role in pointing them out: correct."
+    },
+    {
+      "n": 10,
+      "id": "46c2466981612da0",
+      "source": "dav_university_hr_employee_manual.txt",
+      "question_type": "procedural",
+      "verdict": "pass",
+      "note": "Hard-copy application in DAVIS format to the HOD, HOD recommendation with reasons to Registrar/Dean, decision copied to HR: correct and complete for the normal route."
+    },
+    {
+      "n": 11,
+      "id": "38520044ba6a1cdb",
+      "source": "mafatlal_posh_policy.txt",
+      "question_type": "factual",
+      "verdict": "pass",
+      "note": "Quorum of three incl. Chairperson and at least two members, one a woman; at least one awareness meeting per financial year: correct."
+    },
+    {
+      "n": 12,
+      "id": "2df7c017a958f4a5",
+      "source": "growxcd_vigil_mechanism_policy.txt",
+      "question_type": "procedural",
+      "verdict": "pass",
+      "note": "Protection of whistle-blower and the person processing the disclosure; victimisation treated seriously with disciplinary action: correct."
+    },
+    {
+      "n": 13,
+      "id": "d28d954cc83933d3",
+      "source": "niramai_code_of_conduct.txt",
+      "question_type": "factual",
+      "verdict": "pass (minor ungrounded padding)",
+      "note": "Payroll employees, guidance for official duties and conduct during employment: correct. The closing clause about 'outside stakeholders' is padding not stated in the source (harmless but not grounded)."
+    },
+    {
+      "n": 14,
+      "id": "d351651868766ffd",
+      "source": "jiostar_posh_policy.txt",
+      "question_type": "comparative",
+      "verdict": "pass",
+      "note": "Verbal vs visual examples match items (a) and (b) of the policy: correct."
+    },
+    {
+      "n": 15,
+      "id": "3cb7eed4f118f64f",
+      "source": "khannapaper_vigil_mechanism_policy.txt",
+      "question_type": "factual",
+      "verdict": "pass",
+      "note": "Safeguards against victimisation for directors and employees and direct access to the chairman in exceptional cases: correct."
+    }
+  ]
+}

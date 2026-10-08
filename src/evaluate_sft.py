@@ -38,6 +38,14 @@ def load_adapter_model(adapter_name=config.ADAPTER_NAME, quantize=True):
 
 
 def evaluate_adapter(adapter_name=config.ADAPTER_NAME, n_eval_pairs: int = 30, quantize=True):
+    from src.instruction_quality import verify_published
+    quality = verify_published()
+    training_record = config.EVAL_DIR / f"sft_adapter_{adapter_name}_summary.json"
+    if not training_record.exists():
+        raise ValueError("Train the adapter on the revised dataset before evaluation.")
+    training = json.loads(training_record.read_text())
+    if training.get("instruction_dataset_fingerprint") != quality["dataset_fingerprint"]:
+        raise ValueError("Adapter training record does not match this dataset; rerun SFT.")
     tokenizer = load_chat_tokenizer(config.CPT_MODEL_DIR)
     tokenizer.padding_side = "left"
     with (config.INSTRUCTION_DIR / "instruction_eval.jsonl").open(encoding="utf-8") as handle:
@@ -89,6 +97,7 @@ def evaluate_adapter(adapter_name=config.ADAPTER_NAME, n_eval_pairs: int = 30, q
                            for r, c, s in zip(eval_rows, cpt_eval, sft_eval)])
     scores.to_csv(config.EVAL_DIR / f"sft_adapter_{adapter_name}_heldout_scores.csv", index=False)
     summary = {
+        "instruction_dataset_fingerprint": quality["dataset_fingerprint"],
         "adapter": adapter_name, "heldout_pairs_scored": len(scores),
         "rougeL_cpt_no_adapter": round(scores["rougeL_cpt"].mean(), 4),
         "rougeL_sft_adapter": round(scores["rougeL_sft"].mean(), 4),

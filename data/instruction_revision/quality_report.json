@@ -198,20 +198,6 @@
     "structure": 1
   },
   "templates_over_20_percent": {},
-  "automated_checks_only": false,
-  "manual_review_required": true,
-  "method": "reviewed_paraphrases",
-  "total_pairs": 66,
-  "train_pairs": 54,
-  "eval_pairs": 12,
-  "pages_in_retained_corpus": 897,
-  "audit_reviewer": "Codex assistant \u2014 source-based review in this conversation",
-  "audit_review_kind": "assistant self-review; not independent human review",
-  "human_review_completed": false,
-  "split_unit": "section group; exact normalized response duplicates removed",
-  "files": {
-    "instruction_dataset.jsonl": "67326c3384d68a1c9004ddb0b23dccdb742dfabe8257481b535935f35e21e00e",
-    "instruction_train.jsonl": "84d1a60cc9a1745e89dcae843a636183b1a05f164b0bb3506cd035cc35f9e45c",
-    "instruction_eval.jsonl": "4982622603700da1a7984217a431cf20a5840e56643912b7c4afa2f01ec8fe62"
-  }
+  "automated_checks_only": true,
+  "manual_review_required": true
 }

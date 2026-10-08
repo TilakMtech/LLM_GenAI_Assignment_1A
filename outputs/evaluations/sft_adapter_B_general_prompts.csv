@@ -1,4 +1,4 @@
 prompt,sft_output,correct
-The capital of France is,Paris (France) The capital of France is Paris (France).,True
-Water boils at,100°C at 100 mmHg.,True
-The speed of light is approximately,108934.25 km/s (92674.44 mph) 108934.25 km/s (92,False
+The capital of France is,"It is located in Paris, on the banks of the Seine River. The city has a population of 2.7 million people, making it one of the largest cities in Europe.",True
+Water boils at,The temperature is measured in degrees Celsius. The unit of measurement for both temperatures and degrees is centigrade.,False
+The speed of light is approximately,"It is measured in kilometres per second (km/s). The International Telecommunication Union defines it as 186,000 km/s for a vacuum tube or",True

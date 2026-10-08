@@ -1,5 +1,4 @@
 {
-  "instruction_dataset_fingerprint": "90d6353c33461aac7fb9b2ce7a000b62ca0105bb0ef8a77eb136b7dbd882975e",
   "adapter": "B",
   "r": 16,
   "lora_alpha": 32,
@@ -9,26 +8,26 @@
   ],
   "lora_dropout": 0.05,
   "quantization": "4-bit NF4 + double quant",
-  "train_pairs": 54,
-  "eval_pairs": 12,
+  "train_pairs": 1484,
+  "eval_pairs": 368,
   "trainable_params": 2252800,
   "total_params": 617859072,
   "trainable_percent": 0.3646,
-  "optimizer_steps": 70,
-  "mean_train_loss": 2.4096,
-  "final_eval_loss": 2.3436,
-  "train_minutes": 0.31,
-  "peak_gpu_memory_gb": 1.45,
+  "optimizer_steps": 186,
+  "mean_train_loss": 1.4326,
+  "final_eval_loss": 1.3332,
+  "train_minutes": 2.3,
+  "peak_gpu_memory_gb": 2.74,
   "hyperparameters": {
     "learning_rate": 0.0002,
-    "num_train_epochs": 5,
+    "num_train_epochs": 2,
     "max_steps": -1,
     "per_device_train_batch_size": 4,
-    "gradient_accumulation_steps": 1,
+    "gradient_accumulation_steps": 4,
     "max_length": 512,
     "lora_dropout": 0.05,
     "warmup_ratio": 0.05,
-    "logging_steps": 2
+    "logging_steps": 5
   },
   "adapter_dir": "/home/jovyan/datavol-1/CorpPolicyLM/models/adapters/adapter_B"
 }

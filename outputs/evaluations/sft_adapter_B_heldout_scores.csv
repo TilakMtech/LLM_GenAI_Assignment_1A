@@ -1,491 +1,170 @@
 instruction,reference,cpt_no_adapter,sft_adapter,rougeL_cpt,rougeL_sft
-What does the MSRLS HR Manual require regarding S/he?,S/he should be a Post Graduate Diploma or Degree in Rural Development / Management / Business Management / Business Administration / Social Work from a premier institute.,"Name:
-Designation:
-Email Id:
-Mobile No.:
-Address:
-City: PIN:
-State: District: Block:
-Pincode:
-Phone No.:
-Date of Birth:
-Nationality: Gender:
-Marital Status:
-Caste:
-Ethnicity:
-Religion:
-
-<|manager|>
-Name:
-Designation:
-Email Id:
-Mobile No.:
-Address:
-City: PIN:
-State: District: Block:
-Pincode:
-Phone No.:",S/he shall be responsible for preparing all the reports required by the Society as per the guidelines of the Government of Meghalaya. 10.2.3.,0.0,0.12000000000000001
-"Complete this rule from the MSRLS HR Manual (section 'Spm -'): ""Reporting to COO 41000-45000 Child education allowance Rs. 300*2 Child (max), Insurance ...""","Reporting to COO 41000-45000 Child education allowance Rs. 300*2 Child (max), Insurance Cover (Mediclaim and Group Accident) and Annual Performance Pay 015% of basic.","Name:
-Designation:
-Email Id:
-Mobile No.:
-Office No.:
-Address:
-City: PIN:
-State/ District:
-Pincode:
-Phone No.:
-Fax No.:
-Email ID:
-Mobile No.:
-Office No.:
-Address:
-City: PIN:
-State/ District:
-Pincode:
-Phone No.:
-Fax No.:
-Email ID:
-Mobile No.:
-Office No.:
-Address:
-City: PIN:
-State/ District:
-Pincode:
-Phone","Reporting to COO 41000-45000 Child education allowance Rs. 300*2 Child (max), Insurance premium of Rs. 6000/- per child for each year of stay in the institution.",0.0,0.5555555555555555
-"Complete this rule from the MSRLS HR Manual (section 'Spm -'): ""Government officials from Meghalaya Finance Service with minimum 10 year ...""",Government officials from Meghalaya Finance Service with minimum 10 year of relevant experience will also be eligible for the position.,"Name:
-Designation:
-Email Id:
-Mobile No.:
-Address:
-City: PIN:
-State/ District:
-Pincode:
-Date of Birth:
-Nationality:
-Marital Status:
-No. of Children:
-Number of Spouse / Partner:
-
-Phone No.:
-Fax No.:
-Office Address:
-Mailing Address:
-
-Signature of the Assistant
-(For all cases)
-
-Date : Signature of the Employee
-
-Assistant
-(For all cases)
-
-Date :",Government officials from Meghalaya Finance Service with minimum 10 years of experience in the field of administration or accounting may be considered for the position of Accountant / Office Assistant.,0.08571428571428572,0.6122448979591838
-What does the 3M India POSH Policy say about protection against victimisation?,"In the event complainant being an employee and the accused/respondent being her manager/peer/ team member, during the pendency of investigation and even after such investigation if the accused is found to be guilty, then 3M reserves the right to take appropriate action such as change of reporting structure to the benefit of the complainant. During the pendency of investigation, the Internal Committee may also require 3M to – transfer the aggrieved person or respondent to another workplace or grant the aggrieved person leaves up to a period of three (3) months. The leave granted will be in addition to the leave that the aggrieved person is otherwise entitled to, or such other relief as may be prescribed under law or required in the interest of equity and natural justice. Further relief to the aggrieved person could be that the Internal Committee at the written request of the aggrieved woman may recommend 3M to restrain the respondent from reporting on the work performance of the aggrieved person or writing her confidential report, and assign the same to another officer.","1. Introduction
+Who is covered by Niramai's Code of Conduct?,"The code applies to employees appointed on Niramai Health Analytix's payroll. It guides their behavior and attitudes during employment and provides ethical guidance for carrying out official responsibilities, rather than describing a separate policy for outside stakeholders.","1. Introduction
 2. Definitions & Interpretations
-3. Compensation
-4. Benefits
-5. Leave Travel Concession (LTC)
-6. Medical facilities
-7. Transport Facilities
-8. Telephone Facilities
-9. Internet/Electronic mail Facilities
-10. Computer facilities
-11. Visiting relatives
-12. Other Facilities
-13. Gratuity
-14. Retirement benefits
-15. Insurance
-16. Provident Fund
-1",The Company will take all necessary steps to prevent any kind of victimization of a Whistle Blower or retaliation against him/her in consequence of making a Protected Disclosure under this Policy.,0.02643171806167401,0.08530805687203792
-Summarise the 'Protection Against Victimisation' provisions of the 3M India POSH Policy.,"In the event complainant being an employee and the accused/respondent being her manager/peer/ team member, during the pendency of investigation and even after such investigation if the accused is found to be guilty, then 3M reserves the right to take appropriate action such as change of reporting structure to the benefit of the complainant. During the pendency of investigation, the Internal Committee may also require 3M to – transfer the aggrieved person or respondent to another workplace or grant the aggrieved person leaves up to a period of three (3) months.","Design a system to monitor the progress of the project in terms of time, budget and quality.
-
-The system should be able to track all activities related to the project. The system should also
-be able to generate reports on a regular basis for the management to review and take
-necessary action as required.
-
-The system should have the following features:
-• Monitoring of Project Progress
-• Monitoring of Budget & Financial Planning
-• Monitoring of Quality Assurance
-• Monitoring of Training Needs Analysis
-• Monitor","The Company will not tolerate any kind of victimization of its employees/workers in terms of discrimination or harassment on account of their gender, sexuality, race, religion, disability, age, marital status, national origin, citizenship, socioeconomic status, or any other basis protected by law. The Company is committed to providing a workplace free from violence, intimidation, threats, harassment, hostility, humiliating treatment, and any other form of discrimination based on gender, sexuality, race,",0.18604651162790697,0.12269938650306747
-"Complete this rule from the 3M India POSH Policy (section 'Protection Against Victimisation'): ""In the event complainant being an employee and the accused/respondent being her manager/peer/ team member, during the pendency of investigation and even after such investigation if the ...""","In the event complainant being an employee and the accused/respondent being her manager/peer/ team member, during the pendency of investigation and even after such investigation if the accused is found to be guilty, then 3M reserves the right to take appropriate action such as change of reporting structure to the benefit of the complainant.","1. Introduction
+3. Disciplinary Action
+4. Confidentiality Policy
+5. Reporting Relationship
+6. Whistle Blower Policy
+7. Complaint Procedure
+8. Investigation Process
+9. Retaliation
+10. Grievance Redressal
+11. Dispute Resolution Mechanism
+12. Exit Interview
+13. Termination
+14. Non-Compete Agreement
+15. Data Privacy
+1","The code applies to all employees, consultants, trainees, interns, contractors, suppliers, customers, vendors, business partners, and visitors. It also covers directors and managers who have a role in its implementation.",0.02380952380952381,0.23529411764705882
+What is the intended role of Niramai's Code of Conduct in everyday work?,"The code is intended to guide and regulate employees' conduct and attitudes throughout their employment. It provides an ethical framework for official duties, helping payroll employees understand how the company expects them to behave at work.","1. Introduction
+2. Definitions & Interpretations
+3. Guiding Principles
+4. Confidentiality Policy
+5. Reporting Relationship
+6. Disciplinary Action
+7. Complaints
+8. Whistle Blower Policy
+9. Procedure
+10. Non-Faculty
+11. Faculty
+12. Staff
+13. Vacation Scheme
+14. Leave Rules
+15. Gratuity
+16. Pension Fund
+17. In","The code provides a framework for employees to use when considering how to behave in situations that may be unethical or illegal. It also encourages adherence by providing examples of acceptable conduct and penalties for misconduct. The code applies to all staff members, including those working on contract, temporary or part-time assignments, and those employed at any level.",0.0,0.21052631578947367
+Why did Astral establish a vigil mechanism and whistle-blower policy?,"Astral describes the mechanism as a means for directors and employees to raise concerns about unethical conduct, suspected or actual fraud, and code violations. It also supports corporate governance by helping detect and deter fraudulent activity.","1. Introduction
+2. Definitions & Interpretations
+3. Compensation & Benefits
+4. Disciplinary Action
+5. Confidentiality Policy
+6. Whistle Blower Policy
+7. Reporting Opportunities
+8. Procedure
+9. Investigation
+10. Retaliation
+11. Protection Against Sexual Harassment
+12. Grievance Redressal
+13. Exit Interview
+14. Termination
+15. Non-Compete Agre","The company believes in providing a safe environment for employees to raise concerns about unethical behavior, fraud or violation of its policies. The mechanism is intended to provide protection from victimization while also encouraging people to report genuine concerns without fear of retaliation.",0.0,0.27848101265822783
+"In Astral's policy, how does fraud detection differ from the mechanism's preventive role?","Detection concerns bringing possible wrongdoing to attention after concerns arise, while the policy also presents the mechanism as discouraging fraudulent activity. Together, these functions support the company's stated commitment to transparent business conduct and ethical behavior.","1. Introduction
 2. Definitions & Interpretations
 3. Resignation / Retirement
 4. Termination
 5. Leave
-6. Duty to report violation of law or code of conduct
-7. Confidentiality
-8. Disciplinary action
+6. Duty of Honesty & Integrity
+7. Confidential Information
+8. Disciplinary Action
 9. Compensation
-10. Gratuity
-11. Benefits
-12. Transfer
-13. Employees on leave
-14. Commuting of leave
-15. Leaves not due
-16. Leave not taken","In the event complainant being an employee and the accused/respondent being her manager/peer/team member, during the pendency of investigation and even after such investigation if the complainant is not satisfied with the outcome or the respondent continues to be implicated in any wrongdoing, she may make a written request for further action under this policy.",0.05555555555555556,0.5789473684210527
-"Complete this rule from the 3M India POSH Policy (section 'Protection Against Victimisation'): ""During the pendency of investigation, the Internal Committee may also require 3M to – transfer the aggrieved person ...""","During the pendency of investigation, the Internal Committee may also require 3M to – transfer the aggrieved person or respondent to another workplace or grant the aggrieved person leaves up to a period of three (3) months.","1. Introduction
+10. Benefits
+11. Employees’ Rights
+12. Grievance Redressal
+13. Whistle Blower Policy
+14. Code of Conduct for Directors & Senior Management Personnel
+15.","The prevention of fraud is a means to detect it; its purpose is to protect the company against fraudulent activity. The mechanism also has a deterrent function by providing employees with information about unethical behaviour, while not pre-empting or penalising wrongdoers.",0.047619047619047616,0.12658227848101267
+How do the two laptop-support arrangements in MyGov's policy differ?,"One arrangement provides a fixed monthly payment for employees using their own laptops under the BYOD model. The other supplies an organization-owned laptop for roles needing advanced technical capabilities, with applicable provisions depending on the device category allocated.","1. Introduction
 2. Definitions & Interpretations
 3. Resignation / Retirement
 4. Termination
 5. Leave
-6. Duty on leave
-7. Absence without Leave
-8. Disciplinary Actions
-9. Grievance Redressal
-10. Confidentiality
-11. Whistle Blower Policy
-12. Compensation
-13. Employees’ Growth Opportunities
-14. Non-Faculty
-15. Faculty","During the pendency of investigation, the Internal Committee may also require 3M to transfer the aggrieved person or their family members to a safer place outside the workplace.",0.025316455696202528,0.6250000000000001
-What does the 3M India POSH Policy require regarding leave granted?,"The leave granted will be in addition to the leave that the aggrieved person is otherwise entitled to, or such other relief as may be prescribed under law or required in the interest of equity and natural justice.","1. Assist in planning, organizing, leading, directing, monitoring, evaluating,
-implementing, and/or supporting all activities related to the following:
-2. Coordinate with other departments for smooth functioning of department.
-3. Perform any other duties as assigned by the Director / Head of Department.
-4. Provide support to the faculty members in their teaching, research, and extension
-activities.
-5. Support the Dean (Academics) in his functions including but not limited to the
-following:
-6. Develop",Leave granted shall not be used for any other purpose than that prescribed by this policy.,0.14414414414414414,0.18518518518518517
-"Complete this rule from the 3M India POSH Policy (section 'Protection Against Victimisation'): ""Further relief to the aggrieved person could be that the Internal Committee at the written request of the aggrieved woman may recommend 3M to ...""","Further relief to the aggrieved person could be that the Internal Committee at the written request of the aggrieved woman may recommend 3M to restrain the respondent from reporting on the work performance of the aggrieved person or writing her confidential report, and assign the same to another officer.","1. Introduction
-2. Definitions & Interpretations
-3. Resignation / Retirement
-4. Termination
-5. Leave
-6. Duty on leave
-7. Absence without Leave
-8. Disciplinary Actions
-9. Grievance Redressal
-10. Confidentiality
-11. Whistle Blower Policy
-12. Compensation
-13. Employees’ Growth Opportunities
-14. Non-Disclosure Agreement
-15.",Further relief to the aggrieved person could be that the Internal Committee at the written request of the aggrieved woman may recommend 3M to take up the matter with the immediate superior or any other senior management person in the company for redressal.,0.021739130434782608,0.6086956521739131
-What does the MyGov Laptop Policy say about termination of benefits?,Eligibility for Laptop Charges shall cease upon termination of employment. Any dues shall be settled in accordance with final settlement processes.,"1. Definitions:
-2. Scope:
-3. Eligibility Criteria for Assistant Professor / Associate Professor / Professors
-4. Classification of Assistant Professor / Associate Professor / Professors
-5. Tenure track Assistant Professor / Associate Professor / Professor
-6. Terms & Conditions of Appointment to the Post of Assistant Professor /
-Associate Professor / Professor
-7. Resignation/Termination from service
-8. Leave Rules
-9. Discipline
-10. Confidentiality",Termination of benefits will be treated as termination of services.,0.07894736842105263,0.19354838709677416
-"Complete this rule from the CCS (Leave) Rules, 1972 (section 'Leave not due'): ""that the Government servant has put ...""",that the Government servant has put in a minimum of one year‘s service;,"Assistant Professor / Associate Professor / Professors in any discipline with a minimum of 5 years’ experience in relevant field as per the following guidelines:
-
-Grade Pay (GP)
-Category I Above
-Level 10 & Level 11
-Level 12 & above
-Minimum Experience
-(years)
-Category II Below
-Level 6 & below
-Level 7 & level 8
-No Minimum Experience
-(years)
-Category III Above
-Level 10 & Level 11","that the Government servant has put in at least three years’ continuous service before availing of such leave.""",0.10810810810810811,0.5
-"Complete this rule from the CCS (Leave) Rules, 1972 (section 'Leave not due'): ""(a) Where a Government servant who has been granted Leave Not Due resigns form service or at his request permitted to retire voluntarily without returning to duty, the ...""","(a) Where a Government servant who has been granted Leave Not Due resigns form service or at his request permitted to retire voluntarily without returning to duty, the Leave Not Due shall be cancelled, his resignation or retirement taking effect from the date on which such leave had commenced, and the leave salary shall be recovered.","(1) The Assistant Registrar shall be the principal administrative head of the University. He will be responsible for:
-
-• To assist the Registrar in planning, organizing and conducting academic activities of the university.
-• To plan, organize and conduct examinations as per UGC/AICTE norms.
-• To ensure that all the offices of the University function smoothly and efficiently.
-• To oversee the implementation of the University’s vision, mission and objectives.
-• To develop and maintain close working relationship with faculty",(b) The leave so granted shall be treated as earned leave and the period of such leave shall be credited against the leave account in the manner provided in sub -rule (3). (c) A Government servant who is re-employed after retirement shall be entitled to credit for earned leave under sub -rule (3) the number of days he would have earned had he not been re -employed.,0.09022556390977444,0.17741935483870966
-"What does the CCS (Leave) Rules, 1972 say about leave not due?","(1) Save in the case of leave preparatory to retirement, Leave Not Due may be granted to a Government servant in permanent employ or quasi- permanent employ (other than a military officer) limited to a maximum of 360 days during the entire service on medical certificate subject to the following conditions:- (a) The authority competent to grant leave is satisfied that there is reasonable prospect of the Government servant returning to duty on its expiry; (b) Leave Not Due shall be limited to the half pay leave he is likely to earn thereafter; (c) Leave Not Due shall be debited against the half pay leave the Government servant may earn subsequently. (1-A) Leave Not Due may also be granted to such of the temporary Government servants as are suffering from TB, Leprosy, Cancer or Mental Illness, for a period not exceeding 360 days during entire service, subject to fulfillment of conditions in Clauses (a) to (c) of sub-rule (1) and subject to the following conditions, namely:- (DOPT Notification No.","Name:
-Designation:
-Email Id:
-Mobile No.:
-Address:
-City: PIN:
-State/ District:
-Pincode:
-Date of Birth:
-Nationality:
-Gender:
-Marital Status:
-Caste:
-Ethnicity:
-Religion:
-Phone No.:
-Whether you have any disability or special needs: Yes / No
-If yes, please specify:
-
-<|leave_application|>
-Application Form
-(Please write your own comments if any)
-Applicant","(DOPT Notification No. 14016/1/85-Estt.(L), dated 01.11.1986) The leave not due shall be credited to the account of the Government servant on the date on which he becomes eligible for such leave.",0.02727272727272727,0.15384615384615385
-"What does the CCS (Leave) Rules, 1972 require regarding leave Not Due?",Leave Not Due shall be limited to the half pay leave he is likely to earn thereafter;,"Name:
-Designation:
-Email Id:
-Mobile No.:
-Address:
-City: PIN:
-State/ District:
-Pincode:
-Date of Birth:
-Nationality:
-Gender:
-Marital Status:
-Caste:
-Ethnicity:
-Religion:
-Phone No.:
-Whether you have any disability or not: Yes / No
-If yes, please specify:
-
-<|leave_application|>
-Application Form
-(Please write your own comments if any)
-Applicant’",The leave not due shall be credited to the leave account of the Government servant at the rate of one day for every completed calendar month in which he is required to serve on a day beyond his normal working days or half pay leave.,0.03076923076923077,0.3548387096774193
-"Complete this rule from the CCS (Leave) Rules, 1972 (section 'Leave not due'): ""that the request for grant of such leave is supported by a medical certificate as envisaged in ...""","that the request for grant of such leave is supported by a medical certificate as envisaged in Clauses (c) and (d) of sub- rule (2) of Rule 32. (GSR No. 1422, F.No. 11012/1/77-E.IV(A) dated 21.11.1979)","Name:
-Designation:
-Email Id:
-Mobile No.:
-Address:
-City: PIN:
-State/ District:
-Pincode:
-Phone No.:
-Date of Birth:
-Nationality:
-Gender:
-Marital Status:
-Caste:
-Ethnicity:
-Religion:
-Category:
-Sexual Orientation:
-Disability:
-
-(If any)
-
-Provident Fund Account No.:
-HRA Account No.:
-PF Deposit Amount:
-HRA Depos",that the request for grant of such leave is supported by a medical certificate as envisaged in Rule 30(4)(b).,0.07058823529411765,0.5625000000000001
-"Complete this rule from the Indus University HR Manual (section 'for each'): ""RESEARCH GUIDANCE (D- i) M.Phil. Degree awarded Degree awarded 5 per candidate (D- ii) ...""",RESEARCH GUIDANCE (D- i) M.Phil. Degree awarded Degree awarded 5 per candidate (D- ii) Ph.D. Degree awarded / Thesis submitted Degree awarded / Thesis Submitted 15/10 per candidate,"1. Introduction
-2. Definitions & Interpretations
-3. Resignation / Retirement
-4. Termination
-5. Leave
-6. Salary & Benefits
+6. Duty of Honesty & Integrity
 7. Confidential Information
 8. Discipline
-9. Grievance Redressal
-10. Whistle Blower Policy
-11. Code of Conduct for Directors & Senior Management Personnel
-12. Anti Sexual Harassment Policy
-13. Whistle Blower Policy
-14. Guidelines on Prevention",RESEARCH GUIDANCE (D- i) M.Phil. Degree awarded Degree awarded 5 per candidate (D- ii) Ph.D. Degree awarded Degree awarded 10 per candidate (E) Consultancy/Project Management Experience: 3 years or more 2 years or more 1 year or less 1 year or less,0.05128205128205128,0.6486486486486487
-What does the Oil India Human Rights Policy say about commitment?,"5.1 Equal Opportunity : OIL is an equal opportunity organization and does not tolerate discrimination in any form based on origin, race, color, sex, language, religion, disability, political or other opinions, national or social origin, property, birth, or status. 5.2 Diversity and Inclusion : OIL is committed to upholding human rights by fostering a workplace that ensures social and economic dignity, freedom, and equality, regardless of nationality, gender, economic status, or religion. 5.3 Prohibition of child labour / forced labour / human trafficking : OIL strictly prohibits child labour, forced or compulsory labour, and human trafficking across all operations. No person below the age of 18 is employed, and all units comply with this principle. Vendors, contractors, and suppliers are also required to adhere to these standards. 5.4. Employee welfare and engagement: OIL upholds and respects the labour rights of its workforce and all workers across its operations, ensuring safe working conditions, non -discrimination, fair wages, working hours, and the right to freedom of association and collective bargaining.","Name:
-Designation:
-Email Id:
-Mobile No.:
-Address:
-City: PIN:
-State/ District:
-Pincode:
-Date of Birth:
-Nationality: Gender:
-Marital Status:
-Caste:
-Ethnicity:
-Religion:
-Phone No.:
-Whether you have any disability or not: Yes / No
-If yes, please specify:
-
-<|leave_applicant|>
-Name:
-Designation:
-Email Id:
-Mobile No.:
-Address","OIL INDIA LIMITED (“OIL”) is committed to respecting human rights in all its operations and activities. We believe that our business should be conducted with due regard for human dignity, equality of opportunity, and protection of the environment. Our values include integrity, accountability, transparency, ethical behavior, cooperation, teamwork, and continuous improvement. 2. SCOPE The OIL Human Rights Policy applies to all employees, directors, consultants, suppliers, customers, vendors, and other stakeholders who work or have",0.0660377358490566,0.14937759336099585
-Summarise the 'Commitment' provisions of the Oil India Human Rights Policy.,"5.1 Equal Opportunity : OIL is an equal opportunity organization and does not tolerate discrimination in any form based on origin, race, color, sex, language, religion, disability, political or other opinions, national or social origin, property, birth, or status. 5.2 Diversity and Inclusion : OIL is committed to upholding human rights by fostering a workplace that ensures social and economic dignity, freedom, and equality, regardless of nationality, gender, economic status, or religion. 5.3 Prohibition of child labour / forced labour / human trafficking : OIL strictly prohibits child labour, forced or compulsory labour, and human trafficking across all operations. No person below the age of 18 is employed, and all units comply with this principle.","Design & Develop a website for the department/office as per given guidelines.
-
-1. Design:
-a) The design should be simple, clean and professional in nature. It should have a minimalistic look with no distractions on the page.
-b) The color palette should be limited to 3 colors (orange, green, blue).
-c) All the text should be centered and should not be too large or too small.
-d) Use of images is discouraged unless they are used as part of a graphic illustration.",The Company will respect human rights in all its operations and activities by adhering to applicable laws and international conventions on human rights. The Company will not engage in any activity that is unlawful or which may result in a criminal investigation or prosecution. The Company will comply with all applicable laws and regulations relating to human rights.,0.11282051282051282,0.12865497076023394
-"Complete this rule from the Oil India Human Rights Policy (section 'Commitment'): ""No person below the age of 18 is ...""","No person below the age of 18 is employed, and all units comply with this principle.","Assistant Professor / Associate Professor / Professors in any discipline with a minimum
-of 5 years’ experience in relevant field.
-
-The following criteria shall be considered while selecting candidates for the posts:
-• Experience in industry/institutional setting or research/academic environment;
-• Relevant academic qualifications;
-• A high degree of integrity;
-• A good record of scholarly publications;
-• A demonstrated ability to motivate and inspire students;
-• A proven capacity to work as part of a team;
-• A willingness",No person below the age of 18 is permitted to work in any of the Company’s offices or sites.,0.06741573033707865,0.4444444444444445
-"Complete this rule from the Oil India Human Rights Policy (section 'Commitment'): ""Vendors, contractors, and suppliers are also ...""","Vendors, contractors, and suppliers are also required to adhere to these standards. 5.4.","1. Introduction
+9. Gratuity
+10. Compensation
+11. Benefits
+12. Employees’ Growth Opportunities
+13. Non-Disclosure Agreement
+14. Data Privacy
+15. Whistle Blower Policy",The first is for employees who use their own devices to access the network; the second applies to those who use a company laptop or tablet. The latter requires users to register with IT support before accessing the network.,0.024390243902439025,0.23076923076923078
+How is eligibility for a laptop or laptop charges determined at MyGov?,"Eligibility depends on the employee's role, job requirements and technical needs, and is decided by the department head or immediate supervisor. The policy covers both payments for personal-laptop use and organization-owned devices, with provisions depending on the assigned category.","1. Introduction
+2. Definitions & Interpretations
+3. Guidelines for Assessment of Experience
+4. Classification of Experience
+5. Methodology for Calculating Pay Scale/Basic/HoD’s Allowance
+6. Methodology for calculating DA/DA&P/Earned Leave
+7. Methodology for calculation of LTC/Medical Claim
+8. Methodology for calculation of EPF Contribution
+9. Methodology for calculation of Gratuity
+10. Methodology for calculation of",The decision to grant laptops or not depends on the employee's role and responsibilities in the organization. The eligibility criteria also include the number of days worked during the financial year.,0.0392156862745098,0.27027027027027023
+How is a verbal sexual-harassment complaint converted for formal handling at Bajaj Broking?,"When formal intervention is warranted, the complaint must be put in writing. If the complaint was initially verbal, the person receiving it writes it down and obtains the complainant's consent before it enters the formal redressal process.","1. Introduction
+2. Definitions & Interpretations
+3. Complaints of Sexual Harassment
+4. Procedure
+5. Disposal of the Complaint
+6. Protection from victimization
+7. Confidentiality
+8. Reporting Obligation
+9. Retaliation
+10. Grievance Redressal
+11. Appeal
+12. Amendments to Rules
+13. Composition of Committee
+14. Power to modify rules
+15. Ann","The employee must submit the written complaint to the reporting manager or human resources department in writing, along with supporting documentation if any, within 30 days of becoming aware of the incident. The company will investigate the allegation and take appropriate action based on its findings.",0.06976744186046512,0.1904761904761905
+How do Bajaj Broking managers' harassment-prevention duties differ from individual employees' duties?,"Individual employees should refuse participation in harassment, support someone rejecting unwelcome behavior, and act as witnesses when a complaint is lodged. Managers additionally must ensure their teams understand zero tolerance and prevent victimization of complainants, respondents and witnesses.","1. Introduction
 2. Definitions & Interpretations
 3. Resignation / Retirement
 4. Termination
 5. Compensation
 6. Benefits
-7. Leave Travel Concession
-8. Earned Leave
-9. Commuted Leave
-10. Casual Leave
-11. Sabbatical Leave
-12. Vacation Leave
-13. Extraordinary Leave
-14. Maternity Leave
-15. Paternity Leave
-1","Vendors, contractors, and suppliers are also required to adhere to these standards. 10.2.3.",0.03508771929824561,0.8275862068965518
-"Complete this rule from the Oil India Human Rights Policy (section 'Commitment'): ""OIL fosters a dynamic and inclusive workplace culture by prioritizing open dialogue and continuous feedback by actively engaging with its employees. ...""",OIL fosters a dynamic and inclusive workplace culture by prioritizing open dialogue and continuous feedback by actively engaging with its employees. 5.5 Prevention of harassment : We are strongly committed to fostering a workplace where every employee is treated with dignity and respect.,"1. Introduction
+7. Leave
+8. Discipline
+9. Confidential Information
+10. Non-compete Agreement
+11. Gifts/Tobacco
+12. Sexual Harassment Policy
+13. Whistle Blower Policy
+14. Code of Conduct for Directors
+15. Code of Conduct for Employ","The company's human resources manual defines the manager's responsibility as ""to ensure that no employee is subjected to any unwelcome conduct."" The manual also states that each person has a duty of confidentiality in relation to colleagues and clients.",0.04651162790697675,0.10126582278481013
+How does JioStar's listed harassment scope distinguish verbal from visual conduct?,"Verbal examples include derogatory jokes, sexual comments and unwanted advances, whereas visual examples include offensive pictures, posters, drawings and gestures. The policy therefore covers both spoken behavior and material displayed or shown in the workplace.","1. Introduction
 2. Definitions & Interpretations
-3. Resignation / Retirement
-4. Termination
-5. Leave
-6. Duty to report violation of law or code of conduct
+3. Guidelines for Prevention of Sexually Based Harassment at Workplace
+4. Prohibition of Sexually Coloured Relationships (SSCR)
+5. Reporting Obligation
+6. Disciplinary Action
 7. Confidentiality
-8. Disciplinary action
-9. Compensation
-10. Gratuity
-11. Benefits
-12. Employer’s liability for negligence
-13. Protection against unfair treatment
-14. Prohibition of discrimination
-1",OIL fosters a dynamic and inclusive workplace culture by prioritizing open dialogue and continuous feedback by actively engaging with its employees. 10.,0.04301075268817204,0.6461538461538462
-"Complete this rule from the Oil India Human Rights Policy (section 'Commitment'): ""To reinforce a culture of mutual respect and awareness, all employees are required to undergo regular sensitization training on workplace behavior and gender ...""","To reinforce a culture of mutual respect and awareness, all employees are required to undergo regular sensitization training on workplace behavior and gender equality. 5.6 Empowering Local Communities and stakeholder engagement : OIL values the diverse cultures, languages, traditions, and customs of the communities where it operates.","1. Introduction
+8. Compensatory Arrangement
+9. Protection Against Retaliation
+10. Grievance Redressal
+11. Appeal
+12. Amendments to Rules","The list includes both physical and verbal conduct that is intended to intimidate or cause fear in a person's workplace. It also covers unwelcome sexual advances or propositions, as well as other forms of harassment such as name-calling, derogatory remarks about appearance, gender stereotyping, and threats against safety.",0.024691358024691357,0.1411764705882353
+Does JioStar's harassment scope include retaliation for taking part in an investigation?,"Yes, the listed scope includes retaliation for reporting or threatening to report harassment, opposing unlawful harassment, or participating in an investigation. It therefore covers adverse responses to raising concerns as well as the underlying unwelcome conduct.","1. Introduction
 2. Definitions & Interpretations
 3. Resignation / Retirement
 4. Termination
-5. Leave
-6. Duty Holidays
-7. Earned Leave
-8. Commuted Leave
-9. Casual Leave
-10. Vacation
-11. Sabbatical Leave
-12. Extraordinary Leave
-13. Gratuity
-14. Disciplinary Action
-15. Confidential Information
-16. Whistle B","To reinforce a culture of mutual respect and awareness, all employees are required to undergo regular sensitization training on workplace behavior and gender equality in the organization.",0.04444444444444444,0.6756756756756757
-"Complete this rule from the Oil India Human Rights Policy (section 'Commitment'): ""OIL also upholds the rights of affected communities to clean drinking water, sanitation, land, natural resources, and a healthy ...""","OIL also upholds the rights of affected communities to clean drinking water, sanitation, land, natural resources, and a healthy environment. 5.7 Environment stewardship : OIL is dedicated to minimizing environmental impact, protecting natural resources, and promoting sustainable practices.","1. Introduction
+5. Compensation
+6. Benefits
+7. Leave Travel Concession (LTC)
+8. Earned Leave (EL)
+9. Casual Leave (CL)
+10. Sabbatical Leave (SL)
+11. Maternity Leave
+12. Paternity Leave
+13. Half Pay Leave
+14. Commuted Le",The company prohibits retaliation against anyone who reports a violation of its policies or practices. It also protects employees from victimization as they investigate alleged wrongdoing.,0.0,0.16129032258064516
+What initial action does Aurobindo describe after receiving a human-rights complaint?,Complaints can arrive through humanrights@aurobindo.com or the Corporate HR hotline numbered 77666. A confidential preliminary inquiry involving the complainant is to occur within three days to establish whether there is an initial case for further examination.,"1. Introduction
 2. Definitions & Interpretations
-3. Resignation / Retirement
-4. Termination
-5. Leave
-6. Duties on leave
-7. Commuting of Leaves
-8. Leave Not Due
-9. Leave Without Pay
-10. Leave Encashment
-11. Leave Travel Concession
-12. Leave Sanctioning Authority
-13. Leave Not Taken
-14. Leave Not Converted
-15. Leave Not Granted","OIL also upholds the rights of affected communities to clean drinking water, sanitation, land, natural resources, and a healthy environment. 10.2.3.",0.0449438202247191,0.6557377049180327
-What does the Niramai Code of Conduct say about company’s properties and equipment?,"Every employee is required to use and handle the Company’s properties, goods, products, equipment, tools and machineries with due diligence and care and the said properties, goods, products, equipment etc. shall only be used for official work. The employee shall return all such properties, goods, products, equipment, tools and machineries in good condition at the time of separation of his employment or as and when directed to do so by the management.","1. Introduction
+3. Procedure for Reporting Concerns of Sexual Harassment at Workplace
+4. Action to be Taken by the Employer in Case of Sexual Harassment
+5. Disciplinary Action
+6. Confidentiality
+7. Protection from victimization
+8. Compensation
+9. Remedial Measures
+10. Recovery of Fines/Damages
+11. Appeal
+12. Amendments
+An",The company responds to the allegation by referring it to its internal committee for further investigation. The employee is then informed of the outcome and given the option to appeal if they disagree with the decision.,0.044444444444444446,0.13513513513513511
+How does Aurobindo distinguish the preliminary inquiry from its detailed grievance inquiry?,"The preliminary stage confidentially involves the complainant and checks whether an initial case exists within three days. The detailed inquiry brings together Corporate HR, Unit HR and the concerned department head with the affected party, followed by discussions aimed at an amicable resolution.","1. Introduction
 2. Definitions & Interpretations
-3. Guidelines for use of Company’s premises/equipment
-4. Discipline
-5. Reporting Structure
-6. Procedure
-7. Confidentiality
-8. Complaints
-9. Action taken by the Management
-10. Disposal of complaint
+3. Procedure for Preliminary Inquiry
+4. Guidelines for conducting a preliminary inquiry
+5. Report of preliminary inquiry
+6. Action taken on report of preliminary inquiry
+7. Disposal of complaint
+8. Confidentiality
+9. Complaints against the Director/CAO
+10. Disciplinary action
 11. Retaliation
-12. Protection from victimization
-13. Grievance Redressal
-14. Non-compliance
-15. Exit",Company’s properties and equipment shall be used for Company’s business only. The employee shall not use any property or equipment for personal gain or benefit.,0.11475409836065574,0.28
-"Complete this rule from the MSRLS HR Manual (section 'Category IV 750 500 250 200'): ""DA for day of departure from place of duty-full DA if time of departure is 12.00 noon or before and half DA if time ...""","DA for day of departure from place of duty-full DA if time of departure is 12.00 noon or before and half DA if time of departure is after 12.00 noon, at the rate of applicable to the place where the employee spent the first night (with reference to midnight).","Name:
-Designation:
-Email Id:
-Mobile No.:
-Address:
-City: PIN:
-State/ District:
-Pincode:
-Date of Birth:
-Nationality:
-Gender:
-Marital Status:
-Caste:
-Ethnicity:
-Religion:
-Phone No.:
-Office No.:
-
-(a) Whether you have been a victim of any kind of discrimination in employment because of your race, color, religion, sex, sexual orientation, national origin, age, marital status,",DA for day of departure from place of duty-full DA if time of departure is 12.00 noon or before and half DA if time of departure is after 12.00 noon; DA for journey by air/rail/bus: Full DA for journeys by air/rail/bus.,0.07547169811320754,0.6599999999999999
-What does the MSRLS HR Manual require regarding daily allowance?,"The daily allowance will be admissible for journey periods, all halts on tour and holidays occurring during the period of halt subject to the provision in sub-rule 7.2.4.13 but the same will not be admissible for the period of leave of any kind availed while on tour.","Name:
-Designation:
-Email Id:
-Mobile No.:
-Address:
-City: PIN:
-State/ District:
-Pincode:
-Date of Birth:
-Nationality:
-Gender:
-Marital Status:
-Educational Qualification:
-Exam Year:
-Years of Experience:
-No. of years with MSRLS:
-No. of years in the industry:
-No. of days worked per month:
-Salary (per month):
-Total salary proposed:
-Total amount to be drawn as",Daily Allowance will be admissible as per the following rates for the period of stay in the camp: 1. Daily Allowance (DA) Rs. 200/- per day. 2. Daily Allowance (DA) Rs. 300/- per day. 3. Daily Allowance (DA) Rs. 450/- per day. 4. Daily Allowance (DA) Rs. 600/- per day. 5. Daily Allowance (DA) Rs. 750/-,0.07547169811320754,0.22429906542056074
-Summarise the 'Category IV 750 500 250 200' provisions of the MSRLS HR Manual.,"Notes: A. COO/Dy.COO will, from time to time, issue circulars indicating the admissible rates based on details from the ITDC St Hotels which revise the tariffs w.e.f. 1 October of every year.","Assistants are appointed to assist the faculty in teaching, research and administration. The main objective is to provide a
-helping hand to the faculty members for smooth functioning of the department/institute. Assistants will be provided with
-encashable leave as per the rules of IIM Raipur.
-
-The following categories of Assistants may be considered:
-(i) Category I (Group B & C Level 6 & above):
-• Support Staff (Group ‘B’ Level 4 & above)
-• Administrative Support Staff (Group",The following categories will be considered for grant of leave: Category I : Ordinary Leave (OL) Category II : Extraordinary Leave (EoL) Category III : Special Casual Leave (SCL) Category IV : Half Pay Leave (HPL),0.1090909090909091,0.058823529411764705
-"Complete this rule from the MSRLS HR Manual (section 'Category IV 750 500 250 200'): ""For food and other incidental expenses, an employee will be paid as per column (5) ...""","For food and other incidental expenses, an employee will be paid as per column (5) and column (6) in case of stay at Capital cities and other places respectively. 7.2.4.4.","1. Introduction
-
-The University of Calcutta is a premier institution of higher education in India. It was established by an Act of the UGC
-(University Grants Commission) in 1964. The University has been granted Autonomous status by the UGC/AICTE/AIU/DST/DAE/DBT/DAE-CSIR/ DST-NASO/DST-SERB/DST-IIM/DST-IISc Bangalore/DST-IISc Delhi","For food and other incidental expenses, an employee will be paid as per column (5) of the table given in para 13.4.6.",0.04395604395604396,0.5964912280701754
-What does the BPTP POSH Policy say about committee members?,"Internal Complaint Committees (“ICC”) have been formulated for all locations / Sites as follows: A. Ms. Chitra Menon, Non -Executive Director designated as Presiding officer, B. Ms. Jyoti Sangwan, Senior General Manager, Human Resources designated as Internal Member C. Mr. Manik Malik, Chief Financial Officer designated as Internal Member D. Mr. Ramanand Yadav, Advocate designated as External Member. While the ICC at corporate level will handle all complaints received in New Delhi, representatives from following locations are co -opted into the ICC to cover the various locations/Sites of BPTP: A. Faridabad B. Noida C. Gurugram For ICC constitution at the following subsidiaries, members will be coopted from the respective companies to participate in the investigations/POSH related initiatives that are required to be conducted: A. BPTP International Trade Centre Limited B. BPTP Parklands Pride Limited C. Anjali Promoters & Developers Private Limited D. Ridgecraft Homes Private Limited E.","Name:
-Designation:
-Email Id:
-Mobile No.:
-Address:
-City:
-State/ District:
-Pin:
-Phone No.:
-Date of Birth:
-Nationality:
-Gender:
-Marital Status:
-Caste:
-Ethnicity:
-Religion:
-Place of Birth:
-
-<|manager|>
-Name:
-Designation:
-Email Id:
-Mobile No.:
-Address:
-City:
-State/ District:
-Pin:
-Phone No.:
-Date of Birth:",The Committee shall consist of the following: Chairperson Member 1 Member 2 Member 3 Member 4 Member 5 Member 6 Member 7 Member 8 Member 9 Member 10 Member 11 Member 12 Member 13 Member 14 Member 15 Member 16 Member 17 Member 18 Member 19 Member 20 Member 21 Member 22 Member 23 Member 24 Member 25 Member 26 Member 27 Member 28 Member 29 Member 3,0.021052631578947368,0.037209302325581395
-Summarise the 'COMMITTEE MEMBERS' provisions of the BPTP POSH Policy.,Internal Complaint Committees (“ICC”) have been formulated for all locations / Sites as follows: A. Ms.,"Assist in planning, organizing, coordinating, leading, directing, training, counselling, mentoring, advising, counselling, monitoring, evaluating,
-supervising, reviewing, and/or implementing any activities or events as may be assigned by the Director / Head of the Department /
-Principal Investigator / Dean / Executive President / Chairperson / Board of Governors / Committee of the Institute.
-
-The duties and responsibilities of the Assistant will vary from time to time depending on the needs of the institute. The following are",The Committee shall consist of the following members: 1. Chairperson of the Committee 2. One woman member from among employees of the Company 3. At least one external expert in the field of gender equality or sexual harassment law to be nominated by the Government of India.,0.023529411764705882,0.0
+12. Protection Against Sexual Harassment","The preliminary inquiry is a first step in investigating a complaint of sexual harassment; it provides an opportunity to gather information about the alleged incident and identify potential witnesses or respondents. The detailed inquiry requires more time and resources, but it allows for further investigation into the facts of the case and determination of responsibility.",0.06315789473684211,0.2040816326530612

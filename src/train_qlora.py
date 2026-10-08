@@ -66,6 +66,8 @@ def load_quantized(path=config.CPT_MODEL_DIR, quantize: bool = True):
 
 def train_qlora(adapter_name: str = config.ADAPTER_NAME, base_path=config.CPT_MODEL_DIR,
                 hparams: dict | None = None, quantize: bool = True):
+    from src.instruction_quality import verify_published
+    quality = verify_published()
     hp = {**config.SFT, **(hparams or {})}
     adapter_cfg = config.ADAPTERS[adapter_name]
     tokenizer = load_chat_tokenizer(base_path)
@@ -124,6 +126,7 @@ def train_qlora(adapter_name: str = config.ADAPTER_NAME, base_path=config.CPT_MO
     trainer.model.save_pretrained(out_dir)
     tokenizer.save_pretrained(out_dir)
     summary = {
+        "instruction_dataset_fingerprint": quality["dataset_fingerprint"],
         "adapter": adapter_name, **adapter_cfg, "lora_dropout": hp["lora_dropout"],
         "quantization": "4-bit NF4 + double quant" if quantize and on_gpu else "none (CPU dry-run)",
         "train_pairs": len(train_ds), "eval_pairs": len(eval_ds),
