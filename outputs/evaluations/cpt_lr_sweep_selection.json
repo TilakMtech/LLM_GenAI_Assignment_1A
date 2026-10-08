@@ -1,0 +1,8 @@
+{
+  "selected": "A: lr 5e-5, 16K tok/update",
+  "hyperparameters": {
+    "learning_rate": 5e-05,
+    "gradient_accumulation_steps": 8
+  },
+  "rule": "most general facts kept (forgetting guard), then lowest held-out PPL"
+}

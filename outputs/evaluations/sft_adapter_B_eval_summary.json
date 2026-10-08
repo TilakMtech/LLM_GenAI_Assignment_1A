@@ -1,0 +1,11 @@
+{
+  "adapter": "B",
+  "heldout_pairs_scored": 30,
+  "rougeL_cpt_no_adapter": 0.0626,
+  "rougeL_sft_adapter": 0.3823,
+  "domain_prompts_with_reference_fact": {
+    "cpt_no_adapter": 0,
+    "sft_adapter": 1
+  },
+  "general_prompts_correct_after_sft": 2
+}

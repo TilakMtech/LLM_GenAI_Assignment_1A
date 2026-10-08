@@ -1,0 +1,11 @@
+{
+  "eval_tokens": 41563,
+  "base_ppl": 7.0511,
+  "cpt_ppl": 6.6551,
+  "ppl_reduction_percent": 5.62,
+  "unseen_eval_tokens": 26495,
+  "unseen_base_ppl": 6.5277,
+  "unseen_cpt_ppl": 5.9203,
+  "unseen_ppl_reduction_percent": 9.31,
+  "within_expected_10_40_percent": false
+}

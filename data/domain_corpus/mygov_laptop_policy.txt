@@ -1,0 +1,195 @@
+Laptop Provision/Charges Policy
+
+1. Objective
+The objective of this Policy is to support employees in maintaining the essential work-related devices
+required to perform their job responsibilities effectively. This provision ensures that employees have
+access to necessary technological equipment, specifically laptops, to effectively perform their workrelated functions, either through a fixed allowance for personal laptops or through organization -
+provided devices, as applicable.
+2. Scope and Eligibility
+This policy applies to all employees who are eligible to receive the Laptop Charges or Laptop, based
+on their role, job requirements, and technical needs. Eligibility will be determined by the department
+head or immediate supervisor.
+This Policy governs:
+(a) provision of a fixed monthly disbursement (“Laptop Charges”) for use of personal laptops
+(Bring Your Own Device / BYOD model); and
+(b) provision of organization -owned laptops for specific roles requiring advanced technical
+capabilities.
+Applicability of specific provisions shall be determined based on the category of device allocated to
+the employee.
+3. Laptop Charges
+“Laptop Charges” means a fixed monthly allowance paid to eligible employees to support costs
+associated with procurement, maintenance, and use of a personal laptop for official purposes.
+4. Disbursement of Laptop Charges
+(a) Monthly Laptop Charges: Eligible employees will receive a fixed monthly Laptop Charges of
+INR 5,000/- (Indian Rupees Five Thousand Only) . This is intended to support employees in
+covering the costs associated with the purchase, maintenance, and periodic upgrade of
+personal laptops necessary for performing work duties.
+(b) Payment Schedule: The Laptop Charges shall be disbursed on a monthly basis, within the first
+week of each month. The payment shall be subject to applicable statutory deductions,
+including income tax, as per prevailing laws.
+(c) Non-refundable: The Laptop Charges are a fixed monthly payment and are not reimbursable
+or adjustable against any actual costs, purchases, or expenses incurred by the employee. Any
+
+costs incurred in excess of the prescribed monthly amount shall not be compensated by the
+organisation.
+(d) Duration of Benefit: The Laptop Charges shall be payable for a period of 24 months from the
+employee’s date of joining or until the employee’s last working day, whichever is earlier.
+(e) Post-Completion Use: Upon completion of the 24-month period, the employee shall continue
+to use and maintain the same laptop for official purposes, provided that the device remains
+functional and meets the technical and security requirements prescribed by the organization.
+Cessation of Laptop Charges shall not entitle the employee to claim any additional allowance,
+reimbursement, replacement, or upgrade, unless otherwise a pproved by the competent
+authority.
+(f) Data Handover and Removal upon Separation: Upon resignation, termination of
+employment, or any other separation from the organization, employees must transfer, return,
+or otherwise provide access to all official data, fi les, records, and work -related information
+stored on their personal devices to the organization. Employees must also permanently
+remove any company data from their personal devices upon confirmation from the IT
+Department or their reporting manager and comply with all applicable data security and exit
+clearance requirements.
+(g) Suspension or Discontinuation
+Laptop Charges may be suspended or discontinued in the following circumstances:
+i. change in role or eligibility;
+ii. provision of an organization-owned laptop;
+iii. extended leave, absence, or suspension (as per applicable HR policies); or
+iv. non-compliance with this Policy or IT guidelines.
+
+5. Organization-Provided Laptops (High-End Laptops)
+For employees whose roles require high-performance laptops (e.g., Information Technology, Software
+Development, Data Analysis, Video Editing, Graphic Design), the organization will provide these
+laptops directly as per business and role requirements. The distinction between standard and high -
+end laptops will be made by the department head, based on the specific needs of the employee’s job.
+(a) Eligibility for High-End Laptops: Employees whose roles require advanced processing power,
+higher memory capacity, or specialized hardware/software requirements shall be eligible for
+a high-end laptop. Such devices will be procured and provided directly by the organization.
+(b) Approval Process: The department head will assess the employee’s role, responsibilities, and
+technical requirements to determine the necessity of a high -performance laptop. Final
+approval shall be subject to organizational guidelines and budgetary considerations.
+(c) Ownership, Care, and Maintenance: All high -end laptops provided under this policy shall
+remain the property of the organization. The organization shall bear the cost of procurement,
+maintenance and repairs, unless damage is caused due to negligence or misuse of the
+employees. Employees are responsible for the proper care and safe usage of the device.
+
+(d) Incident Reporting: In the event of malfunction, loss, damage, or technical issues, the
+employee must promptly notify the IT Department for necessary support and resolution.
+(e) Use and Return: Employees shall use organization -provided laptops primarily for official
+purposes and shall return the device in good condition upon separation or when required.
+6. Technical and Security Requirements for Personal Laptops – Annexure-1
+Employees using personal laptops under this Policy must ensure compliance with the requirements
+specified in Annexure-1.
+The employee's personal laptop will be subject to review, verification and compliance checks by the
+IT/Admin Department or any authorized personnel. Failure to meet or maintain the prescribed
+requirements will result in necessary action.
+7. Employee Responsibilities
+(a) Device Maintenance and Security of Personal Laptops : Employees are responsible for the
+upkeep, maintenance, and repair of their personal laptops.
+(b) Work-Related Use of the organization-provided Laptop: The primary purpose of the laptop
+given by the organization is for performing work-related tasks. While limited personal use is
+permitted, it should not interfere with work performance or violate company policies.
+(c) Confidentiality and Data Protection: Employees must ensure that their devices safeguard
+sensitive company information, using secure storage practices, and reporting any security
+incidents such as device theft or unauthorized access.
+(d) Security Compliance: Every Employees shall comply with all IT policies, including installation
+of security tools, system updates, and access controls as required by the organization.
+(e) Incident Reporting: Employees must promptly report any loss, theft, malfunction, or security
+breach involving their device.
+8. Limitation of Liability
+The organization shall not be liable for:
+(a) loss, theft, or damage to personal laptops;
+(b) any personal data stored on employee-owned devices; or
+(c) any costs incurred beyond the prescribed Laptop Charges.
+
+9. Termination of Benefits
+Eligibility for Laptop Charges shall cease upon termination of employment. Any dues shall be settled
+in accordance with final settlement processes.
+10. Exception/ Modification
+Any exception to this policy would require the prior approval of the CEO of MyGov. The policy may be
+revised/ modified from time to time.
+
+Annexure-1
+1. Hardware Requirements
+Component Minimum Specification
+Processor Intel Core i5/i7 (13th or 14th Gen) or AMD Ryzen 5/7 7000 Series
+RAM 16 GB DDR4
+Storage 512 GB NVMe SSD or upto 1 TB
+Display 14" Full HD (1920×1080)
+Graphics Integrated Graphics
+Battery 6 hours
+Webcam 720p HD
+Microphone Dual microphone
+Speakers Standard
+Wi-Fi Wi-Fi 5
+Bluetooth Bluetooth 5.0
+USB Ports 2 × USB-A, 1 × USB-C
+Operating System Windows 11 Pro
+
+2. Technical Requirements
+
+(a) Operating System
+Licensed operating system (e.g., Windows 11 Pro, macOS, or approved Linux distribution)
+Automatic security updates enabled
+Latest supported OS version
+(b) Software
+Only authorized software may be installed and Unlicensed or pirated software is
+prohibited
+Software installation requires IT approval
+Unsupported or end-of-life software should not be used
+
+3. Security Requirements
+
+(a) Authentication
+Strong password (minimum 12–14 characters)
+Multi-Factor Authentication (MFA) enabled wherever supported
+Automatic screen lock after 10–15 minutes of inactivity
+Password-protected BIOS/UEFI (where applicable)
+(b) Antivirus / Endpoint Protection
+Enterprise antivirus/EDR installed
+Real-time protection enabled
+Regular malware scans
+(c) Patch Management
+Security patches installed promptly. (where applicable)
+Critical vulnerabilities addressed as soon as feasible
+Use of latest web browsers version
+Automatic updates enabled where appropriate
+
+4. Data Protection
+Sensitive data should be encrypted
+Regular backups to approved storage
+The use of USB storage devices shall be restricted. Where their use is authorized,
+the devices must be password-protected and encrypted
+Do not copy official data to personal cloud storage or personal email or USB
+
+5. Network Security
+(a) Mandatory Guidelines for Using the NIC Network:
+i. Installation of any software on organizational systems shall be undertaken only with
+prior approval and authorization from the IT Support Team.
+ii. All users, including permanent and contractual personnel working within NIC
+premises, shall register their Wi -Fi-enabled devices through the eForms portal
+(eforms.nic.in). Official work shall be conducted exclusively through the authorized
+and registered Wi-Fi SSIDs, namely ANANT, SARAS, or VAYU.
+iii. All newly deployed systems (Windows, Linux, or macOS) and any systems connected
+to the NIC network that do not have endpoint protection shall be equipped with the
+antivirus/endpoint security solutions (UEM/EDR) prescribed by NIC.
+iv. Only genuine and duly licensed software and operating systems shall be used on
+organizational devices. The installation or use of pirated, unauthorized, or unlicensed
+software is strictly prohibited.
+v. Certain network ports may be blocked by the SentinelOne endpoint security solution,
+potentially impacting applications that utilize such ports. In such cases, the concerned
+application owner shall coordinate with the IT Team to obtain the necessary port and
+IP address whitelisting after due review and approval.
+
+(b) Prohibited Practices on the NIC Network
+i. Users shall not connect or operate any unmanaged network device within the
+organization's network infrastructure i.e., wireless access points, switch, routers etc. in
+NIC network.
+ii. Users shall avoid the installation and use of potentially unwanted software (PUS) on
+organizational systems like Anydesk, Teamviewer etc.
+iii. Do not click on unknown or suspicious links received via email.
+iv. Do not make personal Wi-Fi hotspot from your devices in LAN to get internet connectivity
+on other devices.
+v. Do not allow personal smart devices (e.g., smartwatches, fitness trackers) to connect to
+the MeitY (NIC) network unless on a dedicated guest network with restricted access.
+vi. Employee shall not save passwords in browsers or use default passwords on devices and
+systems.
+vii. Do not disable security features (e.g., firewalls, encryption, MFA) without documented
+risk assessments and approvals.

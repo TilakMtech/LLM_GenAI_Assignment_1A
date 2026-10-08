@@ -1,6 +1,7 @@
 """Step 4 (loss curve) and Step 5 (perplexity + catastrophic forgetting)."""
 import gc
 import math
+import re
 
 import matplotlib.pyplot as plt  # noqa: E402  (no backend override: notebook keeps inline plots)
 import pandas as pd  # noqa: E402
@@ -59,15 +60,13 @@ def plot_loss_curve(log_csv=config.EVAL_DIR / "cpt_loss_log.csv",
     if len(evals):
         ax.plot(evals["step"], evals["eval_loss"], "o-", color="#c0504d", lw=1.5,
                 label="held-out eval loss")
-    if plateau_step is not None:
-        ax.axvline(plateau_step, ls="--", color="grey")
-        ax.annotate(f"train plateau ≈ step {plateau_step}", (plateau_step, train["loss"].max()),
-                    xytext=(5, -5), textcoords="offset points", color="grey")
-    if eval_plateau_step is not None:
-        ax.axvline(eval_plateau_step, ls=":", color="#c0504d")
-        ax.annotate(f"held-out plateau ≈ step {eval_plateau_step}",
-                    (eval_plateau_step, train["loss"].min()), xytext=(5, 5),
-                    textcoords="offset points", color="#c0504d")
+    if len(evals):
+        # Mark the held-out minimum: the point after which further training overfits.
+        best = evals.loc[evals["eval_loss"].idxmin()]
+        ax.axvline(best["step"], ls=":", color="#c0504d")
+        ax.annotate(f"held-out minimum {best['eval_loss']:.4f} (step {int(best['step'])})",
+                    (best["step"], best["eval_loss"]), xytext=(10, -30), textcoords="offset points",
+                    arrowprops=dict(arrowstyle="->", color="#c0504d"), color="#c0504d")
     ax.set_xlabel("optimiser step")
     ax.set_ylabel("cross-entropy loss")
     ax.set_title("Continual pre-training loss — TinyLlama-1.1B on HR policy corpus")
@@ -81,15 +80,23 @@ def plot_loss_curve(log_csv=config.EVAL_DIR / "cpt_loss_log.csv",
         "first_logged_loss": float(train["loss"].iloc[0]),
         "last_logged_loss": float(train["loss"].iloc[-1]),
         "min_loss": float(train["loss"].min()),
-        "loss_drop_percent": float(round(100 * (1 - train["loss"].iloc[-window:].mean()
-                                          / train["loss"].iloc[:window].mean()), 2)),
+        # Two different definitions - report both, clearly labelled.
+        "endpoint_loss_drop_percent": float(round(100 * (1 - train["loss"].iloc[-1]
+                                                   / train["loss"].iloc[0]), 2)),
+        "window_mean_loss_drop_percent": float(round(100 * (1 - train["loss"].iloc[-window:].mean()
+                                                      / train["loss"].iloc[:window].mean()), 2)),
+        "window": window,
+        "loss_drop_percent": None,  # kept for older notebook cells; = window-mean drop (filled below)
         "plateau_step": plateau_step,
         "eval_plateau_step": eval_plateau_step,
         "final_train_eval_gap": (round(float(train["loss"].iloc[-window:].mean())
                                        - float(evals["eval_loss"].iloc[-1]), 4) if len(evals) else None),
         "first_eval_loss": float(evals["eval_loss"].iloc[0]) if len(evals) else None,
         "last_eval_loss": float(evals["eval_loss"].iloc[-1]) if len(evals) else None,
+        "min_eval_loss": float(evals["eval_loss"].min()) if len(evals) else None,
+        "min_eval_loss_step": int(evals.loc[evals["eval_loss"].idxmin(), "step"]) if len(evals) else None,
     }
+    stats["loss_drop_percent"] = stats["window_mean_loss_drop_percent"]
     save_json(stats, config.EVAL_DIR / "cpt_loss_stats.json")
     return stats, out_png
 
@@ -113,26 +120,43 @@ def perplexity(model, dataset):
 
 
 def domain_perplexity(base_id=config.MODEL_ID, cpt_dir=config.CPT_MODEL_DIR):
-    eval_ds = PackedDataset(config.PROCESSED_DIR / "eval_packed.parquet")
-    results = {}
+    """PPL of base vs CPT model on both held-out sets (no gradients, no training)."""
+    sets = {"eval": "held-out last 10% of every document",
+            "eval_unseen": "whole documents never seen in CPT"}
+    data = {k: PackedDataset(config.PROCESSED_DIR / f"{k}_packed.parquet") for k in sets
+            if (config.PROCESSED_DIR / f"{k}_packed.parquet").exists()}
+    results = {k: {} for k in data}
     for name, path in [("base", base_id), ("cpt", str(cpt_dir))]:
         model = load_model(path, dtype=inference_dtype())
-        ppl, n = perplexity(model, eval_ds)
-        results[name] = ppl
-        print(f"{name} model domain PPL: {ppl:.3f} over {n:,} held-out tokens")
+        for key, ds in data.items():
+            ppl, n = perplexity(model, ds)
+            results[key][name], results[key]["tokens"] = ppl, n
+            print(f"{name:>4} model PPL on {key:<11} ({sets[key]}): {ppl:.3f} over {n:,} tokens")
         free(model)
-    reduction = 100 * (results["base"] - results["cpt"]) / results["base"]
-    out = {"eval_tokens": n, "base_ppl": round(results["base"], 4),
-           "cpt_ppl": round(results["cpt"], 4), "ppl_reduction_percent": round(reduction, 2),
-           "within_expected_10_40_percent": 10 <= reduction <= 40}
+    out = {}
+    for key, r in results.items():
+        reduction = 100 * (r["base"] - r["cpt"]) / r["base"]
+        prefix = "" if key == "eval" else "unseen_"
+        out.update({f"{prefix}eval_tokens": r["tokens"], f"{prefix}base_ppl": round(r["base"], 4),
+                    f"{prefix}cpt_ppl": round(r["cpt"], 4),
+                    f"{prefix}ppl_reduction_percent": round(reduction, 2)})
+    out["within_expected_10_40_percent"] = 10 <= out["ppl_reduction_percent"] <= 40
     save_json(out, config.EVAL_DIR / "perplexity.json")
     return out
 
 
 # ------------------------------------------------------------------ Step 5B
 def keyword_verdict(text: str, keywords) -> bool:
+    """True if any keyword occurs; a keyword ending in a digit must not be followed by
+    another digit ("Rs. 10" must not match "Rs. 1000", "100" must not match "1000")."""
     text = text.lower().replace("°", " ")
-    return any(k.lower() in text for k in keywords)
+    for keyword in keywords:
+        pattern = re.escape(keyword.lower())
+        if keyword[-1].isdigit():
+            pattern += r"(?![\d,])"
+        if re.search(pattern, text):
+            return True
+    return False
 
 
 def forgetting_check(base_id=config.MODEL_ID, cpt_dir=config.CPT_MODEL_DIR):

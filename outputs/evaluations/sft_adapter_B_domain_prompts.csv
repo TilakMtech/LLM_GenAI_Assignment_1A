@@ -1,0 +1,57 @@
+question,reference_fact,base_completion (Step 3),cpt_completion (Step 5),cpt_chat_no_adapter,sft_adapter_B,cpt_has_fact,sft_has_fact
+"Under the MyGov Leave Policy, what leave can a resource avail during probation?",casual / sick,".
+The employees who have been on leave for more than 15 days will be paid a pro-rata salary for that period of time. The employee is also entitled to receive a pro-rata salary for any leave taken in excess of 30 days.
+If",".
+
+10.3.2.4. The leave will be credited in the account of the employee on a monthly basis and can be availed at any time as per the calendar year.
+
+10.3.2.5. Apart from the above","1. Assistant Professor (Academic)
+2. Assistant Professor (Non-Academic)
+3. Associate Professor (Academic)
+4. Associate Professor (Non-Academic)
+5. Professors (Academic)
+6. Professors (Non-Academic)
+7. Dean / Chairperson / Director / Head of the Department / Chief Academic Officer /
+Chief Operating Officer / Executive President / Provost / Registrar /
+Executive Education & Research
+8. Dy. Dean","Apart from the leave that is normally admissible to him/her, the following leaves may be granted by the management: • Extraordinary Leave (EoL) for up to 30 days at a time in case of medical emergencies or death in the family; • Casual Leave (CL) for up to 15 days at a time; • Sick Leave (SL) for up to 90 days at a time; • Maternity Leave (ML) for up to 2 months after delivery; • Paternity",False,True
+"Under the MyGov Domestic Travel Policy, how much can a resource claim for driving his own vehicle?",rs.10 / rs. 10,"100% of actual costs.
+Airline tickets and hotel bookings are not eligible for reimbursement under this policy.
+The policy does not cover:
+• Expenditure on meals or refreshments (including alcoholic beverages)","10% of the eligible
+travel amount.
+
+3.2.4.5 The following rules will apply for travel by air:
+
+• A maximum of two bags per person are allowed in economy class and one bag in premium class.
+• For","1. Introduction
+2. Definitions & Interpretations
+3. Authority of the Assistant
+4. Resignation / Retirement
+5. Leave Rules
+6. Duties & Responsibilities
+7. Discipline
+8. Grievance Redressal
+9. Confidentiality
+10. Whistle Blower Policy
+11. Anti Sexual Harassment Policy
+12. Code of Conduct
+13. Guidelines on Prevention of Sexual Harassment at Workplace",The maximum allowance that can be claimed by any one employee while traveling on official duty is Rs. 1000/- per day (exclusive of local conveyance) including daily allowance as admissible under this policy.,False,False
+"Under the MyGov Exit Policy, how many days of written notice are needed to terminate the Agreement?",60 days / sixty,"termination to the other party. The parties shall be bound by this clause only if they have entered into an agreement in writing and signed by both parties.
+10.2 Termination for breach: Either party may terminate the Agreement immediately upon written notice to the other party if the","30 days to
+the other. In case of termination, all the rights and obligations under this agreement will cease from the date of such termination.
+12.4 Termination for Convenience: Either party may terminate this agreement at any time with or without cause","1. Introduction
+2. Definitions & Interpretations
+3. Resignation / Retirement
+4. Termination by Employee
+5. Termination by Management
+6. Separation from Service
+7. Disciplinary Actions
+8. Confidential Information
+9. Non-Compete Obligation
+10. Compensation
+11. Benefits
+12. Leave Travel Concession
+13. Gratuity
+14. Transfer
+15. Employer’s Liability for Wages","The minimum notice period for termination is 30 days. However, in case of early termination, the employee will be entitled to get his/her salary for the entire month of December.",False,False

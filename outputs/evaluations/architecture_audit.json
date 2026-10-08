@@ -1,0 +1,25 @@
+{
+  "model_type": "llama",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "total_parameters": 1100048384,
+  "trainable_parameters": 1100048384,
+  "trainable_percent": 100.0,
+  "num_decoder_layers": 22,
+  "num_attention_heads": 32,
+  "num_key_value_heads": 4,
+  "hidden_size": 2048,
+  "head_dim": 64,
+  "intermediate_size": 5632,
+  "max_position_embeddings": 2048,
+  "config_vocab_size": 32000,
+  "tokenizer_vocab_size": 32000,
+  "lm_head_shape": [
+    32000,
+    2048
+  ],
+  "lm_head_out_equals_vocab": true,
+  "tied_embeddings": false,
+  "dtype": "torch.bfloat16"
+}

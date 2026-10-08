@@ -31,13 +31,6 @@ CITY B:
 All other cities other than A -class
 cities
 
-Ref No: E-3079290/MG/19/2021-MyGov
-Version: 1.0
-Date of Issue: 21-Mar-2023
-Effective Date: 21-Mar-2023
-Document Owner: Director, MyGov
-Approved by: CEO, MyGov
-
 4. Authorization
 The prior approval of the authorising manager in line with the approval
 matrix is a pre-requisite for Business Travel

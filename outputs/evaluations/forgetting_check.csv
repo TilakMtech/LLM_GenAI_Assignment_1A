@@ -1,0 +1,28 @@
+prompt,base_output,cpt_output,expected_fact,base_correct,cpt_correct,verdict
+The capital of France is,"Paris.
+The capital of the United States is Washington, D.C.
+The capital of Canada is Ottawa.
+The capital of Australia is Canberra.
+The capital of New Zealand is Wellington.
+The capital of South Africa is Pretoria.
+The capital of","Paris.
+
+10.2.3.4. The capital of India is New Delhi.
+
+10.2.3.5. The capital of the United Kingdom is London.
+
+10.2.3.6. The capital of the United States is",paris,True,True,Retained
+Water boils at,"212 degrees Fahrenheit.
+The temperature of water is a measure of the amount of energy in the molecules that make up the water. The higher the temperature, the more energy is available to do work on the molecules. This means that as the temperature increases, the mole","100 degrees Celsius.
+
+2.3.4. The following are the minimum qualifications for various posts in the Institute:
+
+Sl. No Qualification Minimum Age (years)
+Posts Grade Pay (Rs.)
+Level 9 &",100 / 212,True,True,Retained
+The speed of light is approximately,"300,000 km/s.
+The speed of sound in air is about 1,250 m/s.
+The speed of sound in water is about 940 m/s.
+The speed of sound in a gas is about 7","300,000 km/s.
+
+12.4.5.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1","300,000 / 300000",True,True,Retained

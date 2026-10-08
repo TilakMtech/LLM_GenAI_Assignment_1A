@@ -1,0 +1,45 @@
+{
+  "model_id": "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+  "tokenizer_class": "LlamaTokenizer",
+  "vocab_size": 32000,
+  "bos_token": "<s>",
+  "eos_token": "</s>",
+  "block_size": 2048,
+  "splits": {
+    "train": {
+      "documents": 25,
+      "total_tokens": 349469,
+      "avg_tokens_per_document": 13978.8,
+      "min_tokens_per_document": 544,
+      "max_tokens_per_document": 90212,
+      "packed_sequences": 170,
+      "tokens_in_packed_sequences": 348160,
+      "tokens_dropped_remainder": 1309,
+      "bos_eos_pairs": 25
+    },
+    "eval": {
+      "documents": 25,
+      "total_tokens": 41584,
+      "avg_tokens_per_document": 1663.4,
+      "min_tokens_per_document": 95,
+      "max_tokens_per_document": 11289,
+      "packed_sequences": 21,
+      "tokens_in_packed_sequences": 41584,
+      "tokens_dropped_remainder": 0,
+      "bos_eos_pairs": 25
+    },
+    "eval_unseen": {
+      "documents": 8,
+      "total_tokens": 26508,
+      "avg_tokens_per_document": 3313.5,
+      "min_tokens_per_document": 1181,
+      "max_tokens_per_document": 9083,
+      "packed_sequences": 13,
+      "tokens_in_packed_sequences": 26508,
+      "tokens_dropped_remainder": 0,
+      "bos_eos_pairs": 8
+    }
+  },
+  "bos_in_train_stream": 25,
+  "eos_in_train_stream": 24
+}

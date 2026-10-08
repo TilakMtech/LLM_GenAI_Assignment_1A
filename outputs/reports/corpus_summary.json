@@ -1,57 +1,68 @@
 {
-  "documents_before": 4,
-  "documents_after": 4,
+  "documents_before": 34,
+  "documents_after": 33,
   "stages": [
     {
       "stage": "basic_cleaning",
-      "documents_before": 4,
-      "documents_after": 4,
+      "documents_before": 34,
+      "documents_after": 34,
       "documents_removed": 0,
-      "characters_before": 28380,
-      "characters_after": 26324,
-      "characters_removed": 2056
+      "characters_before": 1667578,
+      "characters_after": 1527848,
+      "characters_removed": 139730
     },
     {
       "stage": "length_filter",
-      "documents_before": 4,
-      "documents_after": 4,
+      "documents_before": 34,
+      "documents_after": 34,
       "documents_removed": 0,
-      "characters_before": 26324,
-      "characters_after": 26324,
+      "characters_before": 1527848,
+      "characters_after": 1527848,
       "characters_removed": 0
     },
     {
       "stage": "deduplication",
-      "documents_before": 4,
-      "documents_after": 4,
+      "documents_before": 34,
+      "documents_after": 33,
+      "documents_removed": 1,
+      "characters_before": 1527848,
+      "characters_after": 1521426,
+      "characters_removed": 6422
+    },
+    {
+      "stage": "near_dedup",
+      "documents_before": 33,
+      "documents_after": 33,
       "documents_removed": 0,
-      "characters_before": 26324,
-      "characters_after": 26324,
+      "characters_before": 1521426,
+      "characters_after": 1521426,
       "characters_removed": 0
     },
     {
       "stage": "english_filter",
-      "documents_before": 4,
-      "documents_after": 4,
+      "documents_before": 33,
+      "documents_after": 33,
       "documents_removed": 0,
-      "characters_before": 26324,
-      "characters_after": 26324,
+      "characters_before": 1521426,
+      "characters_after": 1521426,
       "characters_removed": 0
     }
   ],
-  "largest_document_removal_stages": [],
+  "largest_document_removal_stages": [
+    "deduplication"
+  ],
   "largest_character_removal_stages": [
     "basic_cleaning"
   ],
   "retained_document_words": {
-    "total": 4328,
-    "minimum": 634,
-    "maximum": 1426,
-    "mean": 1082,
-    "median": 1134.0
+    "total": 241533,
+    "minimum": 326,
+    "maximum": 58531,
+    "mean": 7319.2,
+    "median": 2047
   },
-  "characters_before": 28380,
-  "characters_after": 26324,
-  "character_reduction_percent": 7.24,
+  "characters_before": 1667578,
+  "characters_after": 1521426,
+  "character_reduction_percent": 8.76,
   "language_detection_failures": 0
 }

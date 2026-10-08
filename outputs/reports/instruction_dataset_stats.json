@@ -1,0 +1,16 @@
+{
+  "method": "heuristic",
+  "total_pairs": 1852,
+  "train_pairs": 1484,
+  "eval_pairs": 368,
+  "train_fraction": 0.801,
+  "documents": 33,
+  "pairs_by_type": {
+    "clause_cloze": 769,
+    "clause_rule": 475,
+    "section_qa": 381,
+    "section_sum": 227
+  },
+  "split_unit": "section group (no clause appears in both splits)",
+  "llm_prompt_template": null
+}

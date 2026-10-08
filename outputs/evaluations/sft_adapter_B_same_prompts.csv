@@ -1,0 +1,26 @@
+"prompt (Steps 3/5, identical text)",base,CPT,adapter (raw),adapter (chat template),strict: base,strict: CPT,strict: adapter raw,strict: adapter chat,adapter run on
+"Under the MyGov Leave Policy, resources are eligible to avail during the probation only",".
+The employees who have been on leave for more than 15 days will be paid a pro-rata salary for that period of time. The employee is also entitled to receive a pro-rata salary for any leave taken in excess of 30 days.
+If",".
+
+10.3.2.4. The leave will be credited in the account of the employee on a monthly basis and can be availed at any time as per the calendar year.
+
+10.3.2.5. Apart from the above",".
+3.10.2.4.5. The resource will be required to submit a medical fitness certificate in case of any disability or illness that may affect his/her ability to perform the job.
+3.10.2.4.6. A resource",Resources are eligible to avail during the probation only.,False,False,False,False,"GPU, 4-bit NF4 base (as in training)"
+"According to the MyGov Domestic Travel Policy, a resource who drives his own vehicle can claim expenses @","100% of actual costs.
+Airline tickets and hotel bookings are not eligible for reimbursement under this policy.
+The policy does not cover:
+• Expenditure on meals or refreshments (including alcoholic beverages)","10% of the eligible
+travel amount.
+
+3.2.4.5 The following rules will apply for travel by air:
+
+• A maximum of two bags per person are allowed in economy class and one bag in premium class.
+• For","10% of the eligible travel amount.
+5.2.3.4.6. The employee will be responsible for all taxes and other charges that may arise as a consequence of his/her use of the vehicle.","The maximum amount of reimbursement for traveling by road will be limited to Rs. 10,000 per year. The limit may be increased or decreased from time to time as deemed fit.",False,False,False,False,"GPU, 4-bit NF4 base (as in training)"
+"As per the MyGov Exit Policy, either party may terminate the Agreement by giving a written notice of","termination to the other party. The parties shall be bound by this clause only if they have entered into an agreement in writing and signed by both parties.
+10.2 Termination for breach: Either party may terminate the Agreement immediately upon written notice to the other party if the","30 days to
+the other. In case of termination, all the rights and obligations under this agreement will cease from the date of such termination.
+12.4 Termination for Convenience: Either party may terminate this agreement at any time with or without cause","30 days to the other party.
+4.12.5. The Company will not be liable for any loss or damage caused to the User's business as a result of termination of this agreement except in case of termination due to breach of contract by the User",not less than 30 days prior to the date on which such termination is expected to take place.,False,False,False,False,"GPU, 4-bit NF4 base (as in training)"

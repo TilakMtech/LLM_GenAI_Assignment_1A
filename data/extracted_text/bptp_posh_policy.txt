@@ -1,0 +1,835 @@
+--- PAGE 1 ---
+Prevention of Sexual 
+Harassment (POSH) at the 
+Workplace Policy
+
+--- PAGE 2 ---
+2 
+ 
+ 
+CONTENTS  
+ 
+1. OBJECTIVE  5 
+2. INTRODUCTION  6 
+3. SCOPE/APPLICABILITY  7 
+4. DEFINITIONS  7 
+5. ROLES AND RESPONSIBILITIES  10 
+6. REDRESSAL MECHANISM – FORMAL INTERVENTION  10 
+7. INTERNAL COMPLAINTS COMMITTEE (HENCEFORTH KNOWN AS ‘ICC)”  11 
+8. COMMITTEE MEMBERS  12 
+9. LODGING A COMPLAINT  13 
+10. RECEIVING A COMPLAINT (GUIDELINES)  14 
+11. RESOLUTION PROCEDURE THROUGH CONCILIATION  15 
+12. RESOLUTION PROCEDURE THROUGH FORMAL INQUIRY  15 
+13. MANNER AND PROCEDURE OF INQUIRY INTO COMPLAINT  16 
+14. AWARENESS  19 
+15. LEGAL COMPLIANCE  20 
+16. NON-RETALIATION POLICY  20 
+17. ANNEXURE A  1 
+18. ANNEXURE B  2 
+19. APPENDIX C  3
+
+--- PAGE 3 ---
+3 
+ 
+ 
+20. APPENDIX  4 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Document Change Log 
+Version Review on  Effective from Purpose of change 
+v1.1 15th January 2025 1st April 2024  Policy revision
+
+--- PAGE 4 ---
+4 
+ 
+ 
+Sexual harassment at the workplace results in violation of the fundamental rights of a 
+woman 
+• To equality under Articles 14 and 15 of the Constitution of India 
+• To life and to live with dignity under article 21 of the Constitution 
+• To practice any profession or to carry on any occupation, trade or business 
+which includes a right to a safe environment free from sexual harassment. 
+ 
+Protection against sexual harassment and the right to work with dignity are universally 
+recognized human rights by international conventions and instruments such as 
+Convention on the Elimination of all  Forms of Discrimination against Women, which has 
+been ratified on 25 June 1993 by the Government of India. 
+ 
+BPTP LIMITED is an equal employment opportunity company and is committed to creating 
+a healthy working environment that enables employees to work without fear of prejudice, 
+gender bias and in a harassment free workplace to all employees without regard to race, 
+caste, religion,     color, ancestry, marital status, gender, age, nationality, ethnic origin or 
+disability. The Company also  believes that all employees of the Company have the right to 
+be treated with dignity. Sexual harassment at the workplace or other than workplace if 
+involving an employee or employees is a grave offence and is therefore, punishable. 
+This Policy extends to all employees/consultants of BPTP Limited and its subsidiaries and any 
+other company which may be incorporated in future  with applicability of BPTP HR 
+policies - hereinafter referred to as 'Company' / ‘Group’ / 'Organization' in this policy. It 
+is deemed to be incorporated in the service conditions of all 
+employees/consultants/retainers of the Company in India. Local country laws will take 
+precedence over this policy, in other geographies, if applicable. 
+ 
+This version of the policy is effective from September 01, 2023  and this Policy shall 
+supersede all prior policies and communication on this matter in the Group.
+
+--- PAGE 5 ---
+5 
+ 
+ 
+1. OBJECTIVE  
+To depose duties as an Employer as follows: 
+ 
+(i) Formulate, issue and widely disseminate a Policy statement for defining, 
+prohibiting, prevention and redressal of Sexual Harassment at all BPTP 
+Offices 
+(ii)  Nurture and promote gender sensitive and safe working environment at all 
+BPTP Offices and all BPTP Locations/Projects/Sites and ensure safety from 
+persons coming into contact at such places and remove underlying factors 
+that contribute towards a hostile work environment against women. 
+(iii)  Promptly, confidentially and sensitively address issues related to Sexual 
+Harassment and laying down the procedures for the resolution, settlement 
+or prosecution of acts of Sexual Harassment. 
+(iv) Provide mechanisms for assistance and support for victims of Sexual 
+Harassment 
+(v)  Display at a prominent place in all BPTP Offices and all BPTP Locations/ 
+Projects/ Sites, the penal consequences of Sexual Harassments, and 
+constitution of the Internal Complaints Committee (defined below), and, 
+names and details of Members of the Internal Committee. 
+(vi) Organize workshops and awareness programmes at regular intervals for 
+sensitizing Employees with the Applicable Laws, as per Applicable Laws 
+prescribed by the Appropriate Government. 
+(vii)  Provide all necessary facilities for the Internal Committee or the Local 
+Committee for dealing with the Complaints. 
+(viii) Assist in securing attendance of Respondent and witnesses before the 
+Internal Committee. 
+(ix)  Make available to the Internal Committee such information as it may 
+require in respect of all Complaints
+
+--- PAGE 6 ---
+6 
+ 
+ 
+(x)  Provide assistance to the Aggrieved Woman for filing a Complaint under the 
+IPC or any other Applicable Laws (defined below). 
+(xi)  Cause to initiate action, under the IPC, or other Applicable Laws, against 
+the Respondent or if the Aggrieved Woman or the Aggrieved Person desires, 
+where the perpetrator is not an Employee, at any of the BPTP Office(s) 
+where the incident of Sexual Harassment took place. 
+(xii)  Treat all Sexual Harassment cases against Aggrieved Women as 
+misconduct and deal accordingly. 
+(xiii)  Monitor timely submission of Statutory Reports by the Internal Committee 
+and compliance with disclosure requirements in the Annual Report. 
+(xiv)  Carry out orientation programs and conduct capacity and skill building 
+programs for all Members as per Applicable Laws prescribed by the 
+Appropriate Government. 
+(xv)  Carry out Employees awareness programmes and create forum for 
+dialogues which may involve panchayati raj institutions, gram sabha, 
+women’s groups, mother’s committee, adolescent groups, urban local 
+bodies as exist or may be formed in future and any other bodies as may be 
+considered necessary. 
+Use modules developed by the Appropriate Government to conduct 
+workshops and awareness programmes for sensitizing the Employees with 
+the provisions of the Prevention of Sexual Harassment Laws. 
+2. INTRODUCTION  
+At BPTP, we have zero tolerance for Sexual Harassment, all employees are 
+expected to uphold the highest standards of ethical conduct at the workplace and 
+in all their interactions with business stakeholders. This means that employees 
+have a responsibility to: 
+• Treat each other with dignity and respect; 
+• Follow the letter and spirit of law; 
+• Refrain from any unwelcome behaviour that has sexual 
+connotation (of sexual nature);
+
+--- PAGE 7 ---
+7 
+ 
+ 
+• Refrain from creating hostile atmosphere at workplace via sexual harassment; 
+and 
+• Report sexual harassment experienced and/or witnessed to appropriate 
+authorities and  abide by the complaint handling procedure of the Company. 
+This policy has been framed in accordance with the provisions of “The Sexual 
+Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 
+2013” and rules framed thereunder (hereinafter  “the Act”). This Act is to provide 
+protection against Sexual Harassment of Women at Workplace and for the prevention 
+and redressal of complaints of sexual harassment and for the matters connected 
+herewith or incidental thereto. 
+Accordingly, while the policy covers all the key aspects of the Act, for any further 
+clarification reference shall always be made to the Act and the provisions of the 
+Act shall prevail. If any aspect relating to sexual harassment not explicitly covered 
+in this policy is provided for by the law, then the law will be applicable. In case of 
+any conflict between the policy and the law, the law will prevail. 
+ 
+3. SCOPE/APPLICABILITY  
+This Policy extends to all employees/consultants/retainers of the Company and is 
+deemed to be incorporated in the service  conditions of all 
+employees/consultants/retainers of the Company in India. Local country laws will 
+take precedence over this policy, in other geographies, if applicable. 
+4. DEFINITIONS  
+• Sexual harassment may occur not only where a person uses sexual behavior 
+to control, influence or  affect the career, salary or job of another person, but 
+also between co -workers. It may also occur  between an employee and 
+someone that employee deals with the course of his/her work who is not  
+employed by the Company. 
+ 
+“Sexual Harassment” includes any one or more of the following unwelcome 
+acts or behavior (whether directly or by implication), but not limited to: 
+ 
+A. Any unwelcome sexually determined behavior, or pattern of conduct, that would
+
+--- PAGE 8 ---
+8 
+ 
+ 
+cause discomfort   and/or humiliate a person at whom the behavior or conduct was 
+directed namely: 
+a. Unwelcome sexual advances involving verbal, non-verbal, or physical 
+conduct, implicit or explicit 
+b. Physical contact and advances including (but not limited to) touching, 
+stalking, sounds which have explicit and /or implicit sexual 
+connotation/overtones, molestation 
+c. Teasing, Voyeurism, innuendos and taunts with implicit sexual connotation, 
+physical confinement and /or touching against one’s will 
+d. Demand or request for sexual favors 
+e. Sexually colored remarks or remarks of a sexual nature about a person's 
+clothing or body 
+f. Display of pictures, signs etc. with sexual nature/ connotation/ overtones 
+in the work area and work-related areas 
+g. Showing pornography, making or posting vulgar / indecent / sexual pranks, 
+teasing, jokes,  demeaning or offensive pictures, cartoons or other 
+materials through email, SMS, MMS, gestures  etc. 
+h. Repeatedly asking to socialize during off-duty hours or continued 
+expressions of sexual interest   against a person’s wish 
+i. Giving gifts or leaving objects that are sexually suggestive 
+j. Eve teasing, innuendos and taunts, physical confinement against one’s will 
+or any such act likely to intrude upon one’s privacy; Persistent watching, 
+following, contacting of a person; and 
+k. Any other unwelcome physical, verbal or non-verbal conduct of sexual 
+nature. 
+ 
+B. The following circumstances if it occurs or is present in relation to any sexually 
+determined act or behavior amount to sexual harassment: 
+a. Implied or explicit promise of preferential treatment in employment; 
+b. Implied or explicit threat of detrimental treatment in employment; 
+c. Implied or explicit threat about the present or future employment status; 
+d. Interference with the person’s work or creating an intimidating or 
+offensive or hostile work          environment; or 
+e. Humiliating treatment likely to affect health or safety.
+
+--- PAGE 9 ---
+9 
+ 
+ 
+ 
+An alleged act of sexual harassment committed during or outside of office hours 
+falls under the purview of this policy. Further, it is important to note that whether 
+harassment has occurred or not does not  depend on the intention of the people 
+but on the experience of the aggrieved woman. 
+ 
+• Aggrieved woman: In relation to a workplace, a woman, of any age, whether 
+employed or not, who  alleges to have been subjected to any act of sexual 
+harassment by the respondent. 
+ 
+• Complainant: Any aggrieved woman who makes a complaint alleging sexual 
+harassment under this policy 
+ 
+• Respondent: A person against whom a complaint of sexual harassment has been 
+made by the aggrieved  woman under this policy 
+ 
+• Employee: A person employed at the workplace, for any work on regular, 
+temporary, ad-hoc or daily  wage basis, either directly or through an agent, 
+including a contractor, with or without the knowledge  of the principal employer, 
+whether for remuneration or not, or working on a voluntary basis or otherwise,   
+whether the terms of employment are express or implied and includes a coworker, 
+a contract worker,  probationer, trainee, apprentice or called by any other such 
+name. 
+ 
+• Board: shall mean the relevant board of directors of the relevant Entity of the 
+Group. 
+ 
+• Appropriate Government:  shall mean the Central Government or the State 
+Government as applicable in relation to a BPTP Office. 
+ 
+• Applicable Laws:  shall mean all applicable laws in respect of prevention of 
+Sexual Harassment including without limitation the Prevention of Sexual 
+Harassment Laws, the IPC and rules there under, and applicable judicial
+
+--- PAGE 10 ---
+10 
+ 
+ 
+precedents. 
+ 
+• Special Educator: A Special Educator means a person trained in communication 
+with people with special needs in a way that addresses their individual differences 
+and needs. 
+ 
+• Workplace: 
+• Premises, locations, establishments, enterprises, institutions, offices, branches 
+or units established, subsidiaries which are controlled by the Company. 
+ 
+• Places visited by the Employee arising out of or during the course of 
+employment including official  events, accommodation and transportation 
+provided by the employer for undertaking a journey. 
+ 
+• Employer: A person responsible for management, supervision and control of the 
+workplace. 
+• Member: refers to a member of the Internal Committee appointed as per this 
+Policy for handling the case of Sexual Harassment. 
+5. ROLES AND RESPONSIBILITIES  
+It is the responsibility of all to respect the rights of others and to never encourage 
+harassment. It can be   done by: 
+A. Refusing to participate in any activity which constitutes harassment 
+B. Supporting the person to reject unwelcome behavior 
+C. Acting as a witness if the person being harassed decides to lodge a complaint 
+ 
+6. REDRESSAL MECHANISM – FORMAL INTERVENTION  
+In compliance with the Act, any complaint under this policy shall be followed by 
+a formal redressal          mechanism as described in this Policy.
+
+--- PAGE 11 ---
+11 
+ 
+ 
+7. INTERNAL COMPLAINTS COMMITTEE (HENCEFORTH 
+KNOWN AS ‘ICC)”  
+To prevent instances of sexual harassment and to receive and effectively deal with 
+complaints pertaining to the same, Internal Complaints Committees (ICC) have 
+been appointed for all administrative units / offices of the Company. The detail of 
+the committee is notified to all covered persons at the location  (workplace). The 
+committee at each location comprises of: 
+A. Presiding Officer: A woman employed at a senior level in the organization or 
+workplace 
+B. At least 2 members from amongst employees, committed to the cause of 
+women or who have had  experience of social work or have legal knowledge. 
+C. One external member from amongst  non-governmental organizations or 
+associations committed to the cause of women or a person familiar with the 
+issues relating to sexual harassment. 
+ 
+At least one half of the total members nominated being women.  
+ The committee will be responsible for: 
+• Appoint representative(s) at all the projects/sites of the Company and these 
+representatives shall participate in meetings of ICC, submit all 
+investigations, complaints to the ICC and maintain records of all complaints 
+and actions taken in a secure manner, for the  compliances of this Act at 
+various projects/sites, 
+• Receive and address complaints of sexual harassment from the Aggrieved 
+Person within the organization and ensure the complaint to be received in 
+writing and, 
+• Conduct investigations into complaints, ensuring confidentiality and 
+sensitivity, 
+• Maintain records of all complaints and actions taken in a secure manner, 
+• Provide assistance and support to the Aggrieved Person to take action for 
+redressal during the complaint process, 
+• Ensure a timely and impartial inquiry, respecting the principles of natural 
+justice, 
+• Recommend appropriate actions or remedies to the management upon 
+completion of the inquiry,
+
+--- PAGE 12 ---
+12 
+ 
+ 
+• Conduct awareness and training programs on preventing sexual 
+harassment, 
+• Monitor the implementation of preventive measures and policy compliance, 
+• Submit an annual report to the management and District Officer regarding 
+the activities and cases handled 
+8. COMMITTEE MEMBERS  
+Internal Complaint Committees (“ICC”) have been formulated for all locations / Sites 
+as follows: 
+ 
+A. Ms. Chitra Menon, Non -Executive Director designated as Presiding 
+officer, 
+B. Ms. Jyoti Sangwan, Senior General Manager, Human Resources 
+designated as Internal Member 
+C. Mr. Manik Malik, Chief Financial Officer designated as Internal Member 
+D. Mr. Ramanand Yadav, Advocate designated as External Member. 
+ 
+While the ICC at corporate level will handle all complaints received in New Delhi, 
+representatives from following locations are co -opted into the ICC to cover the 
+various locations/Sites of BPTP: 
+ 
+A. Faridabad 
+B. Noida 
+C. Gurugram 
+ 
+For ICC constitution at the following subsidiaries, members will be coopted from 
+the respective companies to participate in the investigations/POSH related 
+initiatives that are required to be conducted: 
+ 
+A. BPTP International Trade Centre Limited 
+B. BPTP Parklands Pride Limited 
+C. Anjali Promoters & Developers Private Limited 
+D. Ridgecraft Homes Private Limited 
+E. Business Park Maintenance Services Private Limited
+
+--- PAGE 13 ---
+13 
+ 
+ 
+ 
+The Sites representatives would participate in quarterly meetings of ICC and any 
+investigations / POSH related initiatives that are required to be conducted in their 
+respective Sites/ areas. 
+ 
+The details about the current members of the ICC and nominations from various 
+Locations/Sites and major BPTP Limited  subsidiaries & its Group Companies are 
+enclosed in Annexure A. 
+9. LODGING A COMPLAINT  
+An aggrieved woman may make, in writing, a complaint of sexual harassment at 
+workplace to the Internal  Committee within a period of 3 months from the date of 
+incident/ last incident. The Internal Committee  can extend the timeline by another 
+3 months for reasons recorded in writing, if satisfied that these reasons prevented 
+the lodging of the complaint within the period. 
+ 
+Provided that where such a complaint cannot be made in writing, the Presiding 
+Officer or any Member  of the Internal Complaint Committee shall render all 
+reasonable assistance to the women for making the complaint in writing. 
+ 
+1. If the Aggrieved Woman is unable to make a complaint on account of 
+her physical incapacity, a complaint may be filed by: 
+A. her relative or friend; or 
+B. her co-worker; or 
+C. an officer of the National Commission for Women or State Women’s 
+Commission; or 
+D. any person who has knowledge of the incident, with the written consent 
+of the Aggrieved Woman. 
+ 
+2. If the Aggrieved Woman is unable to make a complaint on account of 
+her mental incapacity, a complaint may be filed by: 
+A. her relative or friend; or 
+B. a special educator; or
+
+--- PAGE 14 ---
+14 
+ 
+ 
+C. a qualified psychiatrist or psychologist; or 
+D. the guardian or authority under whose care she is receiving treatment 
+or care; or 
+E. any person who has knowledge of the incident jointly with the 
+Aggrieved Woman’s relative or  friend or a special educator or 
+qualified psychiatrist or psychologist, or guardian or authority under 
+whose care she is receiving treatment or care. 
+ 
+3. If the Aggrieved Woman for any other reason is unable to make a complaint, 
+a complaint may be filed by any person who has knowledge of the incident, 
+with her written consent. 
+ 
+4. If the Aggrieved Woman is deceased, a complaint may be filed by any person 
+who has knowledge of the incident, with the written consent of her legal heir. 
+ 
+The complaint shall be submitted by the complainant to the IC in writing or shall 
+be submitted to the IC electronically at POSH@tatapower.com. The complaint can 
+also be physically submitted to any IC member. 
+10. RECEIVING A COMPLAINT (GUIDELINES)  
+Dealing with incidents of harassment is not like any other type of dispute. 
+Complainants may be  embarrassed and distressed and it requires tact and 
+discretion while receiving the complaint. 
+ 
+The following points are to be kept in mind by the receiver of the complaint: 
+• Complaints are listened to and the complainant informed that the Company 
+takes the concerns seriously. Complainant is informed that these concerns 
+will be reported to the appropriate committee  and follow up will be done 
+speedily. 
+• Situations are not be pre -judged. Written notes are to be taken while 
+listening to the person. When taking notes, complainants own words, where 
+possible, are to be used accurately. Clear description of  the incident in 
+simple and direct terms is prepared and details are confirmed with the
+
+--- PAGE 15 ---
+15 
+ 
+ 
+complainant. 
+• All notes are kept strictly confidential. Complainant’s agreement is taken to 
+allow proceeding with the matter, which involves a formal investigation. 
+• The complainant is advised that although the process is confidential, the 
+respondent needs to be  informed and any witnesses and persons directly 
+involved in the complaint process will also learn of the complainant’s identity 
+Care is taken to prevent any disadvantage to or victimization of either the 
+complainant or the respondent. 
+ 
+11. RESOLUTION PROCEDURE THROUGH CONCILIATION  
+• Once the complaint is received, before initiating the inquiry, the committee 
+may take steps to conciliate the complaint between the complainant and the 
+respondent. This is only if requested by the aggrieved woman. 
+• No monetary settlement can be made as a basis of conciliation. 
+• In case a settlement is arrived at, the committee records & reports the same 
+to the employer for taking appropriate action. Resolution through conciliation 
+is to happen within 2 weeks of receipt of complaint. 
+• The committee shall provide copies of the settlement to complainant & 
+respondent. Where a settlement is arrived at, no further inquiry is to be 
+conducted by the committee. 
+ 
+12. RESOLUTION PROCEDURE THROUGH FORMAL INQUIRY  
+The committee will initiate inquiry in the following cases: 
+• No conciliation is requested by aggrieved woman 
+• Conciliation has not resulted in any settlement 
+• Complainant informs the committee that any term or condition of the 
+settlement that arrived through conciliation, has not been complied with by 
+respondent
+
+--- PAGE 16 ---
+16 
+ 
+ 
+13. MANNER AND PROCEDURE OF INQUIRY INTO COMPLAINT  
+• Complainant should submit the complaint along with supporting documents 
+and the names of the witnesses, if any. 
+• The Committee will hold a meeting with the Complainant within seven days 
+of receipt of the complaint, but no later than a week in any case. 
+• At the first meeting, the Committee members shall hear the Complainant and 
+record her allegations. The Complainant can also submit any corroborative 
+material with a documentary proof, oral or written material, etc., to 
+substantiate her complaint. 
+• The Committee shall proceed with the enquiry and communicate the same to 
+the Complainant and Respondent. 
+• Upon receipt of the complaint, the committee will send 1 copy of the 
+complaint to Respondent within 7 working days of receiving the complaint. 
+• Respondent shall reply with all supporting documents within 10 working days 
+of receiving the copy of the complaint. 
+• Thereafter, the Respondent may be called for a deposition before the 
+Committee and an opportunity will be given to him to give an explanation, 
+where after, an inquiry shall be conducted and concluded. 
+• The Complainant shall be provided with a copy of the written explanation 
+submitted by the Respondent. 
+• If the Complainant or the respondent desires any witness/es to be called, they 
+shall communicate in writing to the Committee the names of witness/es that 
+they propose to call. 
+• The Committee shall call upon all witnesses mentioned by both the parties. 
+• The Committee shall provide every reasonable opportunity to the 
+Complainant and the Respondent for putting forward and defending their 
+respective case. 
+• If either party desires to tender any documents by way of evidence before the 
+Committee, the same is to be supplied as original copies of such documents. 
+Signatures should be affixed on the respective documents to certify these to 
+be original copies. 
+• No legal practitioner can represent any party at any stage of the inquiry 
+procedure 
+• The Complaints Committee is to make inquiry into the complaint in 
+accordance with the principles of natural justice
+
+--- PAGE 17 ---
+17 
+ 
+ 
+• In conducting the inquiry, a minimum of three committee members including 
+the Presiding Officer are to be present 
+• The employer shall provide all necessary assistance for the purpose of 
+ensuring full, effective and speedy implementation of this policy. 
+• Where sexual harassment occurs as a result of an act or omission by any third 
+party or outsider,  the Company shall take all steps necessary and reasonable 
+to assist the affected person in terms of support and preventive action. 
+• In the event, the complaint does not fall under the purview of Sexual 
+Harassment or the complaint does not mean an offence of Sexual 
+Harassment, the same would be dropped after recording the reasons thereof. 
+ 
+If the complainant or respondent desires to cross examine any witnesses, the 
+Committee facilitates the same and records the statements. In case complainant 
+or respondent seeks to ask questions to  the other party, they may give them to 
+the Committee which asks them and records the statement of the other party. 
+Any such inquiry is completed, including the submission of the Inquiry Report, 
+within 90 days from  the date on which the inquiry is commenced. The inquiry 
+procedure should ensure absolute fairness to all parties. 
+Interim relief 
+During pendency of the inquiry, on a written request made by the complainant, 
+the committee may recommend to the employer to: 
+• Transfer the complainant or the respondent to any other 
+workplace 
+• Grant leave to the aggrieved woman of maximum 3 
+months, in addition to the leave she would  be otherwise 
+entitled 
+• Prevent the respondent from assessing complainant’s work 
+performance 
+• Grant such other relief as may be appropriate 
+Once the recommendations of interim relief are implemented, the same is 
+informed to the committee. 
+Termination of Inquiry 
+The committee  may terminate the inquiry or give ex -parte decision, if 
+complainant or respondent  respectively is absent for 3 consecutive hearings,
+
+--- PAGE 18 ---
+18 
+ 
+ 
+without sufficient reason. 15 day written notice is to be given to the party, before 
+termination of enquiry or ex-parte order. 
+Action to be taken after inquiry 
+Post the inquiry, the committee submits its report containing the findings and 
+recommendations to the employer, within 10 days of completion of the inquiry. 
+ 
+Complaint unsubstantiated 
+Where the committee arrives at the conclusion that the allegation against the 
+respondent has not been proved, it recommends to the employer that no action is 
+required to be taken in this matter. Further, the committee ensures that both parties 
+understand that the matter has been fully investigated, that the matter is now 
+concluded, and neither will be disadvantaged within the  Company. 
+Complaint substantiated 
+Where the committee arrives at the conclusion that the allegation against the 
+respondent has been  proved, it recommends to the employer to take necessary 
+action for sexual harassment as misconduct, in accordance with the applicable 
+service rules and policies, and this may include: 
+A. Counseling 
+B. Censure or reprimand 
+C. Apology to be tendered by respondent 
+D. Written warning 
+E. Withholding promotion and/or increments 
+F. Suspension 
+G. Termination 
+H. Or any other action that the employer may deem fit. 
+The Company is required to act upon the recommendations within 60 days and 
+confirm to the committee. Post implementation of the actions, follow up with the 
+complainant should also occur to ascertain whether the behavior has in fact 
+stopped, the solution is working satisfactorily and if no  victimization of either 
+party is occurring. 
+Penal Consequences of Sexual Harassment 
+In case the Committee finds the degree of offence coverable under the Indian 
+Penal Code, then this fact shall be mentioned in its report and appropriate action 
+shall be initiated by the employer, for  making a Police Complaint. Under the
+
+--- PAGE 19 ---
+19 
+ 
+ 
+Indian Penal Code, (IPC), the newly introduced Section (S. 354A) which deals with 
+Sexual Harassment has made this a ‘cognizable offense’ i.e. a person charged with 
+Sexual Harassment may be arrested without a warrant. 
+Malicious Allegations 
+Where the committee arrives at the conclusion that the allegation against the 
+respondent is malicious or the aggrieved woman or any other person making the 
+complaint has made the complaint knowing it to be false or the aggrieved woman 
+or any other person making the complaint has produced any forged or misleading 
+document, it may recommend to the employer to take action against the woman or 
+the person making the complaint. 
+While deciding malicious intent, the committee should consider that mere 
+inability to substantiate a complaint need not mean malicious intent. Malicious 
+intent must be clearly established through a separate inquiry. 
+ 
+Confidentiality 
+The identity of the complainant, respondent, witnesses, statements and other 
+evidence obtained in the course of inquiry process, recommendations of the 
+committees, action taken by the employer is considered as confidential materials, 
+and not published or made known to public or media. 
+Any person contravening the confidentiality clauses is subject to disciplinary action 
+as prescribed in the act. 
+Appeal 
+Any party not satisfied or further aggrieved by the implementation or non -
+implementation of recommendations made, may appeal to the appellate authority 
+in accordance with the Act, within 90 days of the recommendations being 
+communicated. 
+14. AWARENESS  
+Awareness sessions are to be organized to: 
+• Formulate and widely disseminate an internal policy or charter or resolution 
+or declaration for  prohibition, prevention and redressal of sexual harassment 
+at the workplace intended to promote gender sensitive safe spaces and
+
+--- PAGE 20 ---
+20 
+ 
+ 
+remove underlying factors that contribute towards a hostile work environment 
+against women. 
+• Carry out orientation programs and seminars for the Members of the IC. 
+• Conduct capacity building and skill building programs for the Members of the 
+IC. 
+• Declare the names and contact details of all the Members of the IC. 
+• Use modules developed by the State Governments to conduct workshops and 
+awareness programs for sensitizing the employees with the provisions of the 
+Act. 
+ 
+15. LEGAL COMPLIANCE  
+The IC shall in each calendar year prepare, is such format as may be prescribed, 
+an annual report and submit the same to the employer and the District Officer (as 
+defined in the Act). The report shall have the following details: 
+• Number of complaints of Sexual harassment received in the year 
+• Number of complaints disposed of during the year 
+• Number of cases pending for more than 90 days 
+• Number of workshops or awareness program against Sexual Harassment 
+carried out 
+• Nature of action taken by the employer or District Officer 
+ 
+16. NON-RETALIATION POLICY  
+A. Non-Retaliation: The Internal Committee/ Senior Management must be 
+sensitive to the possibility of the Respondent displaying Retaliation 
+behaviour. At all times, the Internal Committee/ Senior Management shall 
+take all necessary steps to prevent Retaliation/ Victimization against the 
+Aggrieved Person/Complainant. 
+B. Privilege to Aggrieved Woman during Enquiry Proceedings . If the 
+Aggrieved Woman requests in writing, the Internal Committee may 
+recommend the Senior Management to do any of the following, during a 
+pending Enquiry Proceeding: 
+a. Transfer the Aggrieved Woman or the Respondent to any other BPTP 
+Location;
+
+--- PAGE 21 ---
+21 
+ 
+ 
+b. Grant leave to the Aggrieved Woman for up to three (3) months. This 
+leave shall be in addition to the leave she is otherwise entitled to; 
+or 
+c. Grant other remedy as shall be prescribed by the Appropriate 
+Government from time to time in this regard 
+d. Restrain the Respondent from reporting on the work performance of 
+the Aggrieved Woman or writing her confidential report, and assign 
+the same to any other employee as the Senior Management may 
+deem fit and necessary
+
+--- PAGE 22 ---
+POSH POLICY 
+1 | P a g e 
+ 
+17. ANNEXURE A  
+ 
+A. The following representatives co-opted into the ICC to cover the various locations of  
+BPTP:  
+o Next Door, Faridabad             - Mr. Sumit 
+o BPTP Capital City, Noida        - Mr. Pawan Pandey 
+o Centra One, Gurugram           - Ms. Archana  
+B. Additionally, ICCs have been constituted for BPTP Limited and Its following 
+subsidiaries and group companies, as follows: 
+o BPTP International Trade Centre Limited 
+o BPTP Parklands Pride Limited 
+o Anjali Promoters & Developers Private Limited 
+o Ridgecraft Homes Private Limited 
+o Business Park Maintenance Services Private Limited 
+o Designer Realtors Private Limited
+
+--- PAGE 23 ---
+POSH POLICY 
+2 | P a g e 
+ 
+18.          ANNEXURE B  
+ 
+Incident Reporting Format 
+(The Format below are indicative guidelines for filing Complaints and not mandatory. A 
+Complainant may make a Complaint in any other Form) 
+ 
+Incident reporting Format 
+Name of the Complainant/ Victim:  
+Incident Reported against (Name of the 
+Respondent): 
+ 
+Date of Reporting  
+Incident details:  
+What happened?  
+Who was involved?  
+When did the incident take place?  
+How did you get to know this?  
+Was it the first time this has occurred, or 
+has it happened previously? 
+ 
+Any witnesses? If yes, please share their 
+names? 
+ 
+Is there any other physical evidence or 
+documents of the incident? 
+ 
+If yes, please attach the document or 
+evidence 
+ 
+Anything else that you would want to 
+mention? 
+ 
+ 
+ 
+(Signature of the Complainant/ Victim)
+
+--- PAGE 24 ---
+POSH POLICY 
+3 | P a g e 
+ 
+19. APPENDIX C 
+Definitions 
+Term Definition 
+Accessibility The design of products, devices, services, or environments for people 
+with disabilities. 
+Bystander Any person who witnesses harassment and is encouraged to intervene 
+or report. 
+Complainant Person who reports sexual harassment. 
+Confidential 
+Information 
+Any non-public information, proprietary data, trade secrets, and 
+business operations details. 
+Diversity The presence of differences in identity, perspective, experience, and 
+background among people. 
+Designated 
+Persons 
+Employees and insiders identified under SEBI regulations for 
+compliance with insider trading norms. 
+ESG Environmental, Social, and Governance, a set of standards measuring 
+a company’s impact and ethical behaviour. 
+External Member An independent third-party expert in women’s rights, nominated to 
+the ICC. 
+GRESB A global ESG benchmark assessing environmental, social, and 
+governance performance of real estate assets, including standing and 
+development projects. 
+ICC Internal Complaints Committee formed under the POSH Act to address 
+sexual harassment complaints. 
+LGBTQ+ A community of people who identify as lesbian, gay, bisexual, 
+transgender, queer, and other gender identities. 
+MoU Memorandum of Understanding – a formal agreement executed 
+between BPTP and its CSR implementation partners. 
+Net Profits Profits calculated in accordance with Section 198 of the Companies 
+Act, 2013. 
+POSH Act The Sexual Harassment of Women at Workplace (Prevention, 
+Prohibition, and Redressal) Act, 2013. 
+Respondent Person against whom the complaint is made. 
+Sensitive 
+Personal Data 
+Includes financial data, health information, biometric data, etc., as 
+defined by Indian law.
+
+--- PAGE 25 ---
+POSH POLICY 
+4 | P a g e 
+ 
+Term Definition 
+Sexual 
+Harassment 
+Any unwelcome act of sexual nature, as defined under the POSH Act, 
+2013. 
+Unconscious Bias Social stereotypes about certain groups of people that individuals 
+form outside their conscious awareness. 
+UPSI Unpublished Price Sensitive Information, information that could 
+materially affect the stock price of the Company if made public. 
+Victimization Punitive actions or threats against someone for filing a complaint or 
+supporting an inquiry. 
+ 
+20. APPENDIX  
+Complaint Filing Form  
+(The given format provides indicative guidelines for filing complaints and is not mandatory. 
+The complainants can use any other medium or structure of form to report complaints) 
+INCIDENT REPORTING FORMAT 
+Complaint Against  
+Date of Reporting   
+Date of Incident   
+Incident Description  
+People Involved   
+Any related incidents   
+Witness Information  
+Evidence

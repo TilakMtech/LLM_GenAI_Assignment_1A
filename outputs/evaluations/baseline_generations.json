@@ -1,0 +1,14 @@
+[
+  {
+    "prompt": "Under the MyGov Leave Policy, resources are eligible to avail during the probation only",
+    "base_output": ".\nThe employees who have been on leave for more than 15 days will be paid a pro-rata salary for that period of time. The employee is also entitled to receive a pro-rata salary for any leave taken in excess of 30 days.\nIf"
+  },
+  {
+    "prompt": "According to the MyGov Domestic Travel Policy, a resource who drives his own vehicle can claim expenses @",
+    "base_output": "100% of actual costs.\nAirline tickets and hotel bookings are not eligible for reimbursement under this policy.\nThe policy does not cover:\n• Expenditure on meals or refreshments (including alcoholic beverages)"
+  },
+  {
+    "prompt": "As per the MyGov Exit Policy, either party may terminate the Agreement by giving a written notice of",
+    "base_output": "termination to the other party. The parties shall be bound by this clause only if they have entered into an agreement in writing and signed by both parties.\n10.2 Termination for breach: Either party may terminate the Agreement immediately upon written notice to the other party if the"
+  }
+]

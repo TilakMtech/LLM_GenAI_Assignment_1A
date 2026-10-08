@@ -1,0 +1,48 @@
+file_name,category,publisher,title,url,status,bytes
+mygov_laptop_policy.pdf,it_asset,MyGov (GoI),MyGov Laptop Policy,https://static.mygov.in/static/resources/s3fs-public/2026-07/mygov_1783663029_9c2ac812.pdf,already_present,564812
+mygov_talent_development_policy.pdf,learning,MyGov (GoI),MyGov Talent Development Policy,https://static.mygov.in/static/resources/s3fs-public/2026-07/mygov_1783662649_7d990daa.pdf,already_present,123141
+mygov_internship_program.pdf,internship,MyGov (GoI),MyGov Internship Programme,https://static.mygov.in/static/resources/s3fs-public/2026-07/mygov_1783662613_074f7c59.pdf,already_present,325514
+mygov_travel_policy_dup.pdf,travel,MyGov (GoI),MyGov Domestic Travel Policy,https://static.mygov.in/static/resources/s3fs-public/2026-07/mygov_1783662758_b16d4934.pdf,already_present,134384
+ccs_leave_rules_1972.pdf,leave_rules,GoI CCS (Leave) Rules,"CCS (Leave) Rules, 1972",https://mail.lgbrimh.gov.in/ActsAndRules/content/ccsleaverule.pdf,already_present,1943246
+ccs_conduct_rules_1964.pdf,conduct_rules,GoI CCS (Conduct) Rules,"CCS (Conduct) Rules, 1964",https://ntiprit.gov.in/pdf/vigilancematters/CCS_Conduct_Rules.pdf,already_present,587947
+msrls_hr_manual.pdf,hr_manual,MSRLS,MSRLS HR Manual,https://msrls.nic.in/sites/default/files/hr-manual-doc.pdf,already_present,2853571
+indus_university_hr_manual.pdf,hr_manual,Indus University,Indus University HR Manual,https://indusuni.ac.in/pdf/IU_HR_MANUAL.pdf,already_present,2360506
+iilm_university_hr_policy_manual.pdf,hr_manual,IILM University,IILM University HR Policy Manual,https://iilm.edu.in/download/IILM-University-HR-Policy-Manual.pdf,failed: HTTPError: HTTP Error 404: Not Found,0
+dav_university_hr_employee_manual.pdf,hr_manual,DAV University,DAV University HR Employee Manual,https://davuniversity.org/src/library/2025/HR_EMPLOYEE_MANUAL.pdf,already_present,533199
+inoxcva_hr_manual_2025.pdf,hr_manual,INOXCVA,INOXCVA HR Manual (2025),https://inoxcva.com/HR%20MANUAL_Revised_August'25.pdf,failed: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unabl,0
+inoxcva_hr_manual.pdf,hr_manual,INOXCVA,INOXCVA HR Manual,https://inoxcva.com/INOXCVA_HR-Manual.pdf,failed: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unabl,0
+iimu_hr_manual_permanent.pdf,hr_manual,IIM Udaipur,IIM Udaipur HR Manual (Permanent Non-Teaching Staff),https://www.iimu.ac.in/upload_data/main_containts/Members/hr-manual-for-non-teaching-permanent-employees-2023-01.pdf,failed: HTTPError: HTTP Error 404: Not Found,0
+iimu_hr_manual_contractual.pdf,hr_manual,IIM Udaipur,IIM Udaipur HR Manual (Contractual Staff),https://www.iimu.ac.in/upload_data/main_containts/Members/hr-manual-for-non-teaching-contractual-employees-2023-01.pdf,failed: HTTPError: HTTP Error 404: Not Found,0
+basf_posh_policy.pdf,posh,BASF India,BASF India POSH Policy,https://www.basf.com/in/documents/en/investor-relations/code-of-conduct-and-other-policies/2023/POSH%20Policy%20BIL_Aug%202023.pdf.assetdownload.pdf,failed: HTTPError: HTTP Error 404: Not Found,0
+3m_posh_policy.pdf,posh,3M India,3M India POSH Policy,https://multimedia.3m.com/mws/media/2062045O/posh-policy-3m-2021.pdf,already_present,3124173
+sony_spni_posh_policy.pdf,posh,Sony Pictures Networks India,Sony Pictures Networks India POSH Policy,https://www.sonypicturesnetworks.com/pdf/posh/SPNI_PREVENTION_OF_SEXUAL_HARASSMENT_POLICY_21_04_2026.pdf,failed: HTTPError: HTTP Error 403: Forbidden,0
+bajaj_broking_posh_policy.pdf,posh,Bajaj Broking,Bajaj Broking POSH Policy,https://www.bajajbroking.in/content/dam/bfsl/regulatory-update/new1/POSH_Policy.pdf,already_present,3930097
+jiostar_posh_policy.pdf,posh,JioStar,JioStar POSH Policy,https://cdn.jiostar.com/jiostar/wp-content/uploads/2025/07/Jiostar-Prevention-of-Sexual-Harassment-at-Work-Place-Policy-July-1-2025.pdf,already_present,460425
+tataelxsi_policy.pdf,posh,Tata Elxsi,Tata Elxsi POSH Policy,https://tataelxsi.com/storage/quick-links/February2024/GJA4z9PfOMk1dksEIa3F.pdf,failed: HTTPError: HTTP Error 404: Not Found,0
+bptp_posh_policy.pdf,posh,BPTP,BPTP POSH Policy,https://cms.bptp.com/wp-content/uploads/2026/01/Prevention-of-Sexual-Harassment-Policy.pdf,already_present,496776
+bharatforge_code_of_conduct.pdf,code_of_conduct,Bharat Forge,Bharat Forge Code of Conduct,https://bharatforge.com/assets/pdf/HR_Policies/BFL-19_Code_of_Conduct_&_Ethics_for_Employees_Policy.pdf,failed: HTTPError: HTTP Error 404: Not Found,0
+accelya_code_of_conduct.pdf,code_of_conduct,Accelya,Accelya Code of Conduct,https://w3.accelya.com/wp-content/uploads/2021/07/Code-of-Conduct.pdf,already_present,321870
+niramai_code_of_conduct.pdf,code_of_conduct,Niramai,Niramai Code of Conduct,https://niramai.com/wp-content/uploads/2017/12/Company-Code-of-Conduct-Policy.pdf,already_present,150155
+bharatforge_human_rights_policy.pdf,human_rights,Bharat Forge,Bharat Forge Human Rights Policy,https://bharatforge.com/assets/pdf/HR_Policies/BFL_Human_Right_Policy.pdf,failed: HTTPError: HTTP Error 404: Not Found,0
+homefirst_human_rights_policy.pdf,human_rights,Home First Finance,Home First Human Rights Policy,https://homefirstindia.com/files/Human%20Rights%20Policy.pdf,already_present,296277
+eidparry_human_rights_policy.pdf,human_rights,EID Parry,EID Parry Human Rights Policy,https://www.eidparry.com/wp-content/assets/2023/02/Human-Rights-Policy.pdf,already_present,803827
+aurobindo_human_rights_policy.pdf,human_rights,Aurobindo Pharma,Aurobindo Pharma Human Rights Policy,https://www.aurobindo.com/images/sustainablity/Human-Rights-Policy-Latest.pdf,already_present,202261
+oilindia_human_rights_policy.pdf,human_rights,Oil India,Oil India Human Rights Policy,https://www.oil-india.com/files/2026-08/Human_Rights_Policy.pdf,already_present,153910
+infosys_human_rights_statement.pdf,human_rights,Infosys,Infosys Human Rights Statement,https://www.infosys.com/sustainability/resources/documents/human-rights-statement.pdf,failed: HTTPError: HTTP Error 403: Forbidden,0
+aubank_whistle_blower_policy.pdf,whistle_blower,AU Small Finance Bank,AU Bank Whistle Blower Policy,https://www.au.bank.in/content-fragmnets/disclosure/2014-2015/whistle-blower-policy-and-vigil-mechanism.pdf,already_present,234322
+beml_whistle_blower_policy.pdf,whistle_blower,BEML,BEML Whistle Blower Policy,https://www.bemlindia.in/wp-content/uploads/2024/04/Whistle_Blower_Policy.pdf,already_present,205846
+iks_whistle_blower_policy.pdf,whistle_blower,IKS Health,IKS Health Whistle Blower Policy,https://www.ikshealth.com/wp-content/uploads/2023/12/Whistle-Blower-Mechanism-Policy.pdf,failed: HTTPError: HTTP Error 404: Not Found,0
+astral_whistle_blower_policy.pdf,whistle_blower,Astral,Astral Whistle Blower Policy,https://www.astralltd.com/wp-content/uploads/2025/08/Whistle-Blower-Policy-1.pdf,already_present,166039
+ghl_vigil_mechanism_policy.pdf,whistle_blower,GHL / ILS Hospitals,GHL Vigil Mechanism Policy,https://ilshospitals.com/wp-content/uploads/2023/12/ghl-vigil_mechanism_policy.pdf,already_present,553579
+khannapaper_vigil_mechanism_policy.pdf,whistle_blower,Khanna Paper,Khanna Paper Vigil Mechanism Policy,https://www.khannapaper.com/wp-content/uploads/2025/08/Vigil-Mechanism-Policy.pdf,already_present,993092
+dreamfolks_vigil_mechanism_policy.pdf,whistle_blower,DreamFolks,DreamFolks Vigil Mechanism Policy,https://dreamfolks.com/files/policy/Policy-on-Vigil-Mechanism_Dreamfolks-Services-Limited_v1.10.pdf,already_present,866645
+growxcd_vigil_mechanism_policy.pdf,whistle_blower,GrowXCD,GrowXCD Vigil Mechanism Policy,https://www.growxcd.com/assets/Pdf/Vigil-Mechanism-Whistle-Blower-Policy.pdf,already_present,284323
+iim_raipur_hr_policy_service_rules.pdf,hr_manual,IIM Raipur,IIM Raipur HR Policy & Service Rules,https://iimraipur.ac.in/wp-content/uploads/2023/03/HR-Policy.pdf,already_present,2499582
+iimu_hr_manual_faculty.pdf,hr_manual,IIM Udaipur,IIM Udaipur HR Manual (Faculty),https://www.iimu.ac.in/upload_data/main_containts/Members/hr-manual-for-faculty-members-2023-01.pdf,failed: HTTPError: HTTP Error 404: Not Found,0
+iihmr_hr_policy_manual.pdf,hr_manual,IIHMR,IIHMR HR Policy Manual,https://iihmrbangalore.edu.in/wp-content/uploads/2024/05/HR-mannual-for-IIHMR.pdf,already_present,859622
+aicb_hr_manual.pdf,hr_manual,All India Confederation of the Blind,AICB HR Manual,https://www.aicb.org.in/images/AICBpoliciesAndRules/AICB_HR_manual.pdf,already_present,623345
+snu_leave_policy.pdf,leave_rules,Shiv Nadar University,Shiv Nadar University Leave Policy,https://snulinks.snu.edu.in/snuPolicies/uploads/SNU%20Policies%20and%20Procedures/4.%20Human%20Resources/402%20Leave%20Policy/HR402%20Leave%20Policy%20V1.3.pdf,failed: HTTPError: HTTP Error 404: Not Found,0
+nitt_leave_rules.pdf,leave_rules,NIT Tiruchirappalli,NIT Tiruchirappalli Leave Rules,https://www.nitt.edu/www/uploads/391_leave211.pdf,failed: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unabl,0
+sudarshan_posh_policy_2025.pdf,posh,Sudarshan Chemical,Sudarshan Chemical POSH Policy,https://www.sudarshan.com/wp-content/uploads/2025/09/POSH-Policy-2025.pdf,failed: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unabl,0
+mafatlal_posh_policy.pdf,posh,Mafatlal Industries,Mafatlal Industries POSH Policy,https://www.mafatlals.com/wp-content/uploads/MILPOLHR6.0-POSH-POLICY-eff-from-1-Aug-24.pdf,already_present,625719
+bharatforge_anti_bribery_policy.pdf,code_of_conduct,Bharat Forge,Bharat Forge Anti-Bribery Policy,https://bharatforge.com/assets/pdf/HR_Policies/Anti-Corruption_and_Bribery_PolicyV2.pdf,failed: HTTPError: HTTP Error 404: Not Found,0

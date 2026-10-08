@@ -24,14 +24,8 @@ date of the resource to the department in consultation with the employee.
 e) A Resignation Acceptance Communication is sent to the resource post approval
 from the department and the resignation is processed in line with this Policy. The
 resignation acceptance communication has to be by e-mail only.
-f) If the decision is to retain the resource the HR along with the departmen t will
+f) If the decision is to retain the resource the HR along with the department will
 initiate and conclude the discussion on the possible options with the resource.
-Ref No: E-3079290/MG/19/2021-MyGov
-Version: 1.5
-Date of Issue: 03-Dec-24
-Effective Date: 03-Dec-24
-Document Owner: Director, MyGov
-Approved by: CEO, MyGov
 
 g) Subject to the outcome of this discussion, the resource may opt for a
 “Withdrawal of resignation request” or continue with the resignation process.
@@ -113,7 +107,6 @@ Date of Joining:
 Date of Resignation:
 Date of Relieving:
 
-This is to confirm that ___________________ has completed the following tasks/ handed
 over the following items: (NA – Not Applicable)
 
 Immediate Manager
@@ -184,7 +177,7 @@ Date of leaving the organization:
 
 The exit interview feedback will be maintained strictly confidential and will be shared only
 with the Senior Management. The information so gathered will help us change or improve
-the organization as relevant and necessary. In your feedba ck, please also include areas /
+the organization as relevant and necessary. In your feedback, please also include areas /
 items that may not have been covered in the questionnaire.
 Reason for resignation:
 [ ] Better or higher role [ ] Better compensation/
@@ -194,7 +187,6 @@ benefits
 [ ] Relationship with Manager/ Peers [ ] Retirement
 [ ] Return to Academic Career
 [ ] Others
-_________________________
 Kindly assign ranks to the following aspects of your experience in working with
 us:
 Use ranks from 1 to 10; where 10 indicates “The Best” and 1 indicates “The Worst”

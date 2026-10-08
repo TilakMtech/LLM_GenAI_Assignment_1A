@@ -1,0 +1,1751 @@
+--- PAGE 1 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 1 
+X 
+ 
+ 
+ 
+ 
+ 
+ 
+PREVENTION OF SEXUAL 
+HARASSMENT(POSH)  
+POLICY  
+Bajaj  
+Financial Securities Limited 
+ – 
+FY 2
+ 7
+
+--- PAGE 2 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 2 
+Approval
+ s/Sign
+ -
+ off Sheet:  
+Approved By  
+ Designation  
+Manish Jain  
+ Managing Director  
+Reviewed By  
+ Designation  
+Vikrant Birajdar  
+ Head  
+– 
+HR  
+Prepared By  
+ Designation  
+Rahul Dsilva  
+ AVP 
+ – 
+HR COE  
+Pranav Patankar  
+ Manager 
+ – 
+HR COE  
+ 
+Document  
+Control  
+Log  
+ 
+ 
+ Author  
+ Approved  
+By  
+ Effective  
+Date  
+ Key  
+Updates  
+Version 1.1  
+ Kiran Nikam  
+ Rajeev Jain  
+ 01st August 2019  
+ Creation of  
+policy  
+Version 1.2  
+ Neelanjana Saji  
+ Rajeev Jain  
+ 01st September 2021  
+ IC members  
+updated  
+Version 1.3  
+ Dimple Arora  
+ Manish Jain  
+ 01st April 2023  
+ Policy made  
+gender neutral  
+IC members  
+updated  
+Version 1.4  
+ Dimple Arora  
+ Manish Jain  
+ 09th July 2023  
+ IC members  
+Updated  
+Version 1.5  
+ Nidhi Singh  
+ Manish Jain  
+ 01st July 2025  
+ Domain  
+updated  
+IC members  
+updated  
+Version  
+1.6 
+ Pranav Patankar  
+ Manish  
+Jain  
+ 13
+th 
+Nov
+ ember  
+2025  
+ IC members 
+updated                
+Branding changes  
+Version  
+1.7 
+ Pranav Patankar  
+ Manish  
+Jain  
+ 12th 
+Feb
+ ruary  
+202
+ 6 
+ IC members 
+updated                
+Version  
+1.
+8 
+ Pranav Patankar  
+ Manish  
+Jain  
+ 1
+5
+th 
+April  
+202
+ 6 
+ IC members 
+updated                
+Th
+ is  
+Document  
+o 
+ Is 
+the  
+copyright  
+of 
+Bajaj  
+Financial  
+Securities  
+Limited  
+(BFSL)  
+herein  
+referred  
+to 
+as  
+Bajaj  
+Broking.  
+o 
+ Shall  
+not  
+be  
+reproduced  
+either  
+partly or  
+wholly.  
+o 
+ Shall  
+not  
+be  
+subjected  
+to  
+manual  
+correction  
+or 
+amendments.  
+AMENDMENTS  
+to 
+the  
+STANDARD,  
+if 
+any: 
+o 
+ Shall  
+be made,  
+only  
+by  
+the  
+policy  
+owner  
+as  
+approved  
+by  
+the  
+Management.  
+o 
+ Shall  
+be 
+incorporated  
+in 
+all 
+the  
+controlled  
+copies  
+and  
+entered  
+in 
+the  
+Document  
+Control  
+Log 
+ enclosed in the template.
+
+--- PAGE 3 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 3 
+Table of Contents  
+ 
+1. 
+ Purpose & Background  
+................................
+................................
+................................
+................................
+.. 
+4  
+2. 
+ Scope & Applicability
+ ................................
+................................
+................................
+................................
+...... 
+4  
+3. 
+ Definitions  
+................................
+................................
+................................
+................................
+......................... 
+5 
+4. 
+ Policy Guidelines  
+................................
+................................
+................................
+................................
+............. 
+6 
+5. 
+ Redressal Mechanism 
+ – 
+Formal Intervention  
+................................
+................................
+............................. 
+7 
+6. 
+ Complaint Of Sexual Harassment  
+................................
+................................
+................................
+................ 
+8  
+7. 
+ Receiving A Complaint (Guidelines)  
+................................
+................................
+................................
+............ 
+9 
+8.  
+ Resolution Process Through Conciliation  
+................................
+................................
+................................
+.. 
+9 
+9. 
+ Resolution Procedure Through Formal Inquiry  
+................................
+................................
+....................... 
+10 
+10. 
+ Appeal  
+................................
+................................
+................................
+................................
+...............................
+13 
+11. 
+ Prohibition Of Retaliation  
+................................
+................................
+................................
+.............................
+13 
+12. 
+ Confidentiality (Non
+ -
+ Disclosure Of The Complaint)  
+................................
+................................
+............... 
+14 
+13. 
+ Miscellaneous  
+................................
+................................
+................................
+................................
+................ 
+14 
+14. 
+ MIS & Reporting Guidelines  
+................................
+................................
+................................
+........................ 
+14 
+15. 
+ Preparation Of Annual Report  
+................................
+................................
+................................
+.................... 
+14 
+Annexure  
+................................
+................................
+................................
+................................
+................................
+... 
+15 
+Annexure 
+ – 
+A (Internal Committee Details)  
+................................
+............................... 
+15 
+Annexure 
+ – 
+B (Contact Details)  
+................................
+................................
+.................... 
+16 
+Annexure 
+ – 
+C (Acts of sexual harassment are covered by the following 
+provisions of law)  
+................................
+................................
+................................
+.............. 
+17 
+Annexure  
+D 
+-  
+The  
+monthly  
+reporting  
+grid:  
+................................
+................................ 
+18
+
+--- PAGE 4 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 4  
+1. 
+ Purpose & Background  
+Bajaj Financial Securities Limited (“BFSL”, “Bajaj Broking”, “Company”) is committed to creating a 
+healthy working environment that enables employees to work without fear of prejudice, gender 
+discrimination and harassment. We believe that all employees hav
+ e the right to be treated with 
+fairness and dignity. We recruit competent and motivated people who respect our values. We provide 
+equal opportunities for their development and advancement; protect their privacy and do not 
+tolerate any form of harassment or  
+discrimination. Sexual harassment at the workplace or any other 
+place than workplace
+ , is a grave offence and is punishable under law.  
+This policy has been framed in accordance with the provisions of ‘The Sexual Harassment of Women 
+at Workplace (Prevention, Prohibition and Redressal) Act, 2013, and rules framed thereunder 
+(hereafter referred to as ‘the Act’). Accordingly, while the policy  
+covers all the key aspects of the Act, 
+for any further clarification, reference shall always be made to the Act. In case of any inconsistency, 
+the provisions of the Act shall prevail. Also, considering the fact that sexual harassment is a serious 
+offence 
+ under Law, for your reference, the provisions of law dealing with offences involving sexual 
+harassment and the punishment applicable for such offences are detailed as part of ‘Annexure C’ 
+annexed to this policy.  
+The law in India is aimed to protect women at the workplace, however as an equal opportunity 
+employer, the company's policy extends to all employees, Staff and third
+ -
+ party employees, 
+irrespective of gender. The IC while conducting inquiries from all partie
+ s not envisaged under the 
+2013 Act and Rules shall rely on the Firm’s code of conduct policy (MISCONDUCT) in recommending 
+action to Management.  
+The policy does not limit its scope to the definition of aggrieved women as per the statute, our policy 
+extends to aggrieved person and extends to all employees, third party, vendors, visitors, customers, 
+consultants, irrespective of gender of complainant 
+ and 
+ r
+espondent.  
+Accordingly, this policy is deemed to be incorporated in the employment rules or terms of 
+employment/agreement of all Staff. Sexual harassment is to be considered a MISCONDUCT and 
+attracts penal consequences as envisaged in the Act and code of conduct poli
+ cy.  
+2. 
+ Scope & Applicability  
+All employees of Bajaj Financial Securities Limited, are governed under this policy, including trainees, 
+management trainees, apprentices, interns, staff, full time employees both permanent and on 
+probation and temporary employees who are appointed at any 
+ office of the company in India and/or 
+offshore offices and for whom any of the abovementioned company discharge its role as a ‘Principal 
+Employer’.  
+In addition to the above, this policy shall also cover any and all situations where any of the 
+aforementioned employees/person(s) may be subject to any kind of sexual harassment or be 
+perpetrators of sexually inappropriate behavior as a result of an act by
+ : 
+i. 
+ A third party  
+ii. 
+ Independent contractor and/ or outsider while on official duty  
+iii. 
+ It shall also cover any kind of sexual harassment that any third party, independent contractor 
+and/or outsider may suffer as a result of any act by any of the aforementioned person(s) 
+during the course of or in connection with the conduct of his/her employ
+ ment duties and 
+obligations.  
+iv. 
+ This 
+ p
+olicy comes into force with immediate effect
+ .
+
+--- PAGE 5 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 5 
+3. 
+ Definitions  
+Sexual harassment may occur not only where a person uses sexual behavior to control, influence or 
+affect the career, salary or job of another person, but also between co
+ -
+ workers. In course of their 
+work, it may also occur between a BFSL employee and a thir
+ d
+-
+ party person who is not employed by 
+the Company but engaged by the company in any manner.  
+3.1 
+ The definition of “Sexual Harassment” under the Act would be the guiding principle
+ , 
+to 
+include any one or more of the following unwelcome acts or behavior (whether directly or 
+by implication but is not limited to)
+ .  
+3.2  
+ Any unwelcome sexually determined behavior, or pattern of conduct, that would cause 
+discomfort and/or humiliate a person at whom the behavior or conduct was directed as 
+prescribed by the ‘Act’, namely:  
+i. 
+ Physical contact, gestures and advances.  
+ii. 
+ Demand or request for sexual favors.  
+iii. 
+ Making unwelcome sexual advances, gestures or requests for sexual favors in person, through 
+suggestions including using any electronic media and/or communication method such as E
+ -
+mail, SMS, WhatsApp, etc.  
+iv. 
+ Making sexually colored remarks and offensive visual conduct; or  
+v. 
+ Showing pornography; or  
+vi. 
+ Any other unwelcome physical, verbal or non
+ -
+ verbal conduct of sexual nature  
+vii. 
+ Using any communication method or social networking sites viz. E
+ -
+ mail, SMS, WhatsApp, etc. for 
+transmitting messages or pictures that are sexually explicit or implied in nature.  
+3.3  
+ Creating an intimidating, hostile or offensive working environment or atmosphere either by:  
+i. 
+ Verbal conduct such as epithets, derogatory comments or remarks of a sexual nature about 
+person's clothing or body, taunts, slurs, offers of employment or promotion benefits or monetary 
+benefits in exchange for sexual favors, graphic commentary about a per
+ son’s physical attributes, 
+use of profane, threatening or intimidating language; including calling employees by terms of 
+endearment; using vulgar, kidding or demeaning language.  
+ii. 
+ Any unwanted physical contact of a sexual nature including sexually suggestive or offensive 
+touching or deliberate brushing against another’s body. Also, conduct against any person, which 
+tantamount to physical assault with intent to disrobe, hitting, kick
+ ing pushing, blocking normal 
+movement or intentional physical interference with work.  
+iii. 
+ Visual conduct such as leering or the display of derogatory or sexually suggestive or explicit 
+posters, photography, graffiti, drawings, gestures, inappropriate text messages with sexual 
+contour or objects, sexually suggestive or obscene notes, letters, em
+ ail, internet information, 
+voyeurism  
+iv. 
+ Making, publishing, transmitting or posting obscene or sexual pranks, sexual teasing, sexual 
+jokes, sexually demeaning or offensive pictures, cartoons or other materials through email, SMS, 
+MMS, WhatsApp, etc.  
+v. 
+ Threats and insinuation that a person’s employment, wages, promotional opportunities, job or 
+shift assignments, or other conditions of employment may be adversely affected by not 
+submitting to sexual advances or demands for sexual favors and /or enhanced i
+ f submitting to 
+sexual advances or demands for sexual favors  
+vi. 
+ Repeatedly asking to socialize during off
+ -
+ duty hours or continued expressions of sexual interest 
+against a person’s wishes  
+vii. 
+ Without any nexus to official work, the act of persistent watching, stalking, repeated contacting 
+of a person despite objecting to such conduct  
+viii.  
+ Offering and/or giving gifts or leaving objects that are sexually suggestive  
+ix. 
+ Any other act, behaviour (physical or otherwise) or conduct which in the opinion of judicial 
+authorities is adjudicated as covered by the act as sexual harassment.
+
+--- PAGE 6 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 6 
+3.4  
+ The following circumstances, among other circumstances, if it occurs or is present in 
+relation to or connected with any act or behavior of sexual harassment may amount to 
+sexual harassment:  
+i. 
+ Implied or explicit promise of preferential treatment in employment; or  
+ii. 
+ Implied or explicit threat of detrimental treatment in employment; or  
+iii. 
+ Implied or explicit threat about present or future employment status; or  
+iv. 
+ Interference with work or creating an intimidating or offensive or hostile work environment; or  
+v. 
+ Humiliating treatment likely to affect health or safety  
+3.5  
+ Aggrieved person/Complainant:  
+In relation to a workplace, a person of any age, whether 
+employed or not, who alleges to have been subjected to any act of sexual harassment by 
+the respondent and includes contractual, temporary, visitors.  
+3.6  
+ Respondent: A person against whom a complaint of sexual harassment has been made by 
+the aggrieved person
+ . 
+3.7 
+ Employee: A person employed at the workplace, for any work on regular, temporary, ad
+ -  
+hoc 
+or daily wage basis, either directly or through an agent, including a contractor, with or 
+without the knowledge of the principal employer, whether for remuneration or  
+not, or 
+working on a voluntary basis or otherwise, whether the terms of employment are express or 
+implied and includes a co
+ -
+ worker, a contract worker, probationer, trainee, apprentice or by 
+any other such name
+ . 
+3.8  
+ Workplace: In addition to the place of work [
+ Head  
+office / Branch offices / any other office / 
+place of business] it shall also include any place where the aggrieved person or the 
+respondent visits in connection with their work, during the course of and/or arising out of 
+employment/ contract/ engagement 
+ with BFSL, including transportation provided for 
+undertaking such a journey
+ . 
+3.9  
+ Any allegations of sexual harassment arising from ‘out of office hours conduct’ of the 
+aggrieved person or the respondent will also be tested on the touchstone of such 
+harassment being a consequence of/out of/from the relationship of the concerned parties 
+as co
+ -
+ workers and the alleged complaint shall be treated as per this policy.  
+3.10  
+ Employer: A person responsible for management, supervision and control of the workplace. 
+It also covers person discharging contractual obligations with respect to their employment.  
+4. 
+ Policy Guidelines  
+Roles &  Responsibilities 
+Responsibilities of Individual: It is the responsibility of all employees to respect the rights of all 
+employees and to never encourage harassment against employees. It can be done by:  
+i. 
+ R
+efusing to participate in any activity which constitutes harassment against any person
+ ; 
+ii. 
+ Supporting the person to reject unwelcome behavior
+ ; 
+iii. 
+ Acting as a witness if any person, being harassed, decides to lodge a complaint with the 
+internal committee  
+iv. 
+ I
+f you see 
+ something,  
+say something  
+v. 
+ If any employee notices inappropriate or unwelcome behavior in the work environment, they 
+are encouraged to advise the person to modify or stop the same. Often, some behaviors are 
+not intentional. While this does not make it acceptable, it does give the pe
+ rson behaving 
+inappropriately, the opportunity to modify or stop their offensive behavior.  
+vi. 
+ Report 
+ t
+o D
+ AC  
+vii. 
+ If an employee notices inappropriate or unwelcome behavior in the work environment, they 
+are encouraged to report the same to the ethics and compliance team by following reporting 
+mechanism mentioned in clause 6.3.
+
+--- PAGE 7 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 7 
+4.1.1 
+ Responsibilities of Managers: All managers at BFSL must ensure that no employee is 
+subject to harassment. They must also ensure that their reportees are appraised that BFSL 
+has zero tolerance against sexual harassment at the workplace and that the complain
+ ant, 
+respondent/s, or witnesses are not victimized in any manner.  
+4.1.2 
+ Third Party Harassment  
+Where sexual harassment occurs as a result of an act or omission by any contractor 
+employee/third party or outsider at their premises, the employer and person in charge of 
+such contractor employee/third party or outsider shall have to take all steps necess
+ ary and 
+reasonable to assist the aggrieved person in terms of support and preventive action. 
+However, in the event if a contractor employee/third party or outsider commits harassment 
+in BFSL premises and/or during transit in connection with work, during th
+ e course of and/or 
+arising out of work, BFSL shall take necessary steps and provide the reasonable assistance 
+to the aggrieved person in accordance with the Act.  
+5. 
+ Redressal Mechanism 
+ – 
+Formal Intervention  
+In compliance with the Act, if the complaint warrants formal intervention, the complainant needs to 
+lodge a written complaint, which shall be followed by a formal redressal mechanism as described in 
+this Policy. In case of a verbal complaint, the complaint  
+will be converted to a written complaint by 
+the receiver of the complaint and consent of the complainant will be obtained.  
+Composition of Internal Committee (Henceforth known as “IC”)
+ : To prevent instances of sexual 
+harassment and to receive and effectively deal with complaints pertaining to the same, an "Internal 
+Committee" (“IC”) is constituted at the workplace.  
+5.1 
+ The organization has published the list of members of the Internal Committee (IC), which 
+will receive complaints and manage the redressal process for complaints of sexual 
+harassment at workplace in terms of the provisions of the law. Details of the members
+ , 
+including their names and contact information are displayed 
+ on  
+the office notice board and 
+will be updated on a periodic basis.  
+5.2  
+ The IC shall consist of the following members nominated by the management: i) the 
+Presiding Officer, ii) the External Member and iii) at least two members from the list of 
+nominated IC members, who will address the complaint in the manner prescribed by law
+ . 
+5.3  
+ At least one
+ -
+ half of the members of the IC shall be women, including the Presiding Officer.  
+5.4  
+ A minimum quorum of 3 members is required for investigating complaints, including the 
+External Member.  
+5.5  
+ Meeting frequency of the 
+ Internal committee
+ : The Internal Committee shall meet within 
+seven (7) days of receiving the complaint. A minimum quorum of 3 members, comprising of 
+at least two women representatives with one of them being the external woman 
+representative, are required to be present for t
+ he meeting of the Internal Committee to take 
+place.  
+5.6  
+ Action against Internal Committee:  
+Where the Chairperson or any Member of the Internal Committee acts in any manner as set 
+out below:  
+i. 
+ contravenes the provisions of this Policy; or  
+ii. 
+ has been convicted for an offense or an inquiry into an offence is pending against them, 
+under any law for the time being in force; or  
+iii. 
+ they have been found guilty in any disciplinary proceedings or a disciplinary proceeding is 
+pending against them; or
+
+--- PAGE 8 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 8  
+iv. 
+ have abused their position as to render their continuance in office prejudicial to the public 
+interest. Such Chairperson or Member, as may be the case, may be removed from the Internal 
+Committee and the vacancy so created or any casual vacancy shall be fil
+ led by fresh 
+nomination in accordance with the selection process set out in this Policy.  
+6. 
+ Complaint Of Sexual Harassment  
+Following procedure will be adhered to for resolution of grievances related to sexual harassment:  
+6.1 
+ Any aggrieved person who has sufficient reason to believe that they are being sexually 
+harassed, directly or indirectly, may submit a written complaint of the alleged incident to 
+any representative of the Internal Committee, along with any documentary evid
+ ence 
+available or names of witnesses, to initiate the inquiry.  
+6.2  
+ An aggrieved person can also address the complaint to their Reporting Manager/ Business 
+Unit 
+ Head
+ / Human Resources Team representative through various mediums including 
+Email, Call or in
+ -
+ person.  
+6.3  
+ Any incident of nature as explained in clause 3.1 above, could be reported via e
+ -
+ mail to: 
+posh@bajajbroking.in  
+or 
+in urgent cases call your HR partner
+ . 
+6.4  
+ The complaint must be made within 3 months from the date of the incident/last incident.  
+6.5  
+ The Internal Committee can extend the timeline by another 3 months for reasons recorded 
+in writing, if it is satisfied that there are bona fide reasons that prevented the aggrieved 
+person from lodging of the complaint.  
+6.6  
+ In case of a complaint filed by another person on behalf of the complainant (where the 
+complainant is in confidence) the facts of the complaint will be assessed in order to 
+determine whether a prima facie case of sexual harassment exists and whether 
+interv
+ ention or some other assistance is required.  
+6.7 
+ Any employee who has knowledge of sexual harassment, or retaliation against a person 
+who has reported sexual harassment, is required to report it to the 
+ Head  
+– 
+Human 
+Resources. Failure to report will result in appropriate disciplinary action.  
+6.8  
+ Where the aggrieved employee is unable to make a complaint in writing, the Chairperson or 
+any Member of the Internal Committee shall render all reasonable assistance to the 
+employee for making the complaint in writing  
+6.8.1  
+ On account of their physical incapacity, a Complaint may be filed by:  
+i. 
+ Their relative or friend or  
+ii. 
+ Their co
+ -
+ worker; or  
+iii. 
+ Any officer of the National Commission for Women or the State Women’s commission (in case the 
+aggrieved employee is a woman); or  
+iv. 
+ Any person who has knowledge of the incident with the written consent of the aggrieved person.  
+6.8.2  
+ On account of their mental incapacity, a complaint may be filed by:  
+i. 
+ Any person who has knowledge of the incident jointly with:  
+ii. 
+ Their relative or friend; or  
+iii. 
+ A special educator; or  
+iv. 
+ A qualified psychiatrist or psychologist; or  
+v. 
+ The guardian or authority under whose care they are receiving treatment or care  
+6.8.3  
+ Where the aggrieved person is for any other reason unable to make a complaint, a 
+complaint may be filed by any person who has knowledge of the incident with their written 
+consent.  
+6.8.4  
+ Where the aggrieved person is dead, a complaint may be filed by any person who has 
+knowledge of the incident, with the written consent of their legal heir.
+
+--- PAGE 9 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 9 
+6.9  
+ Indiscipline conduct:  
+Care should be taken NOT to file malicious complaints with false allegations or use the IC as a 
+platform for harassing any person, else, upon being reasonably satisfied about a wrong/baseless 
+complaint by the complainant, the same shall be construed as ind
+ iscipline conduct. Accordingly, the 
+IC shall refer the case to the Employer for being referred to Disciplinary Action Committee (DAC) for 
+appropriate action in accordance with Disciplinary Action Policy of the employer.  
+7. 
+ Receiving A Complaint (Guidelines)  
+The incidents of harassment would have to be dealt with utmost sensitivity. Complainants may be 
+embarrassed and distressed, and it requires empathy while receiving the complaint.  
+The following points are to be kept in mind by the receiver of the complaint:  
+7.1 
+ The concerns stated by the Complainant are listened to and the complainant is informed 
+that the IC handles them with utmost seriousness. Complainant is informed that the 
+concerns will be reported to the IC and follow up will be done expeditiously. Situatio
+ ns are 
+not to be pre
+ -
+ judged by the recipient of the complaint.  
+7.2 
+ Written notes are taken while listening to the person. Complainant is allowed to bring 
+another person to the meeting if they wish. When taking accurate notes, care should be 
+taken to note the complainant’s own words, wherever possible. Clear description of  
+the 
+incident to be recorded in simple and direct terms, and thereafter, the said recorded details 
+are confirmed with the complainant. Where possible, the understanding of the complaint 
+reflected in the notes written should be re
+ -
+ confirmed by the complaina
+ nt  
+7.3 
+ All notes are to be kept strictly confidential. As pre
+ -
+ requisite, complainant’s acceptance 
+shall be obtained before taking up the matter with IC  
+7.4 
+ The complainant should be advised that:  
+i. 
+ Although the investigation process is confidential, the respondent needs to be informed and 
+any witnesses and person
+ /
+s  
+directly involved in the complaint process will also learn of the 
+complainant’s identity  
+ii. 
+ Care is taken to prevent any disadvantage to or victimization of either the complainant or the 
+respondent  
+8. 
+ Resolution Process Through Conciliation  
+Once the complaint is received, before initiating the inquiry, the IC may take steps to conciliate the 
+complaint between the complainant and the respondent. This is only if requested by the aggrieved 
+person/complainant.  
+Provided that no monetary settlement shall be made as a basis of conciliation.  
+It is made clear to all parties that conciliation in itself does not necessarily mean acceptance of 
+complaint by the respondent. It is a practical mechanism through which issues are resolved, or 
+misunderstandings may get clarified, if the aggrieved person,  
+Suo motto, opts for doing so.  
+In case a settlement is arrived at, the Internal Committee records & reports the same to the 
+Employer for taking appropriate action.  
+Resolution through conciliation needs to happen within 14 (fourteen) working days  
+of receipt of the 
+complaint. The Internal Committee to provide copies of the settlement to the complainant & the 
+respondent. Once the action is implemented, no further inquiry is to be conducted.
+
+--- PAGE 10 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 10 
+9. 
+ Resolution Procedure Through Formal Inquiry  
+9.1 
+ Conducting Inquiry  
+The Internal Committee initiates inquiry in the following cases:  
+i. 
+ No conciliation is requested by aggrieved person/complainant;  
+ii. 
+ Conciliation has not resulted in any settlement;  
+iii. 
+ Complainant informs the committee that any term or condition of the settlement arrived 
+through conciliation, has not been complied with by the respondent.  
+The Committee proceeds to make an inquiry into the complaint within a period of seven (7) working 
+days of its receipt or the original complaint/closure or conciliation/repeat complaint.  
+9.2  
+ Manner Of Inquiry Into The Complaint  
+9.2.1 
+ Subject to the provisions at the time of filing the complaint for sexual harassment, the 
+complainant shall submit to the Internal Committee, a copy of the complaint along with 
+supporting documents and the names and addresses of the witnesses  
+9.2.2  
+ On receipt of the complaint, the Internal Committee shall send one (1) copy to the 
+Respondent within a period of seven (7) days  
+9.2.3  
+ The Respondent shall file their reply to the complaint along with the list of documents, 
+names and addresses of witnesses within a period not exceeding ten (10) working days 
+from the date of the receipt of the complaint from the Internal Committee.  
+9.2.4  
+ No legal practitioner is permitted to represent any party in their case at any stage of the 
+proceedings before the Internal Committee.  
+9.2.5  
+ The Internal Committee shall make inquiry into the complaint in accordance with the 
+principles of natural justice and for this purpose the Internal Committee shall have the 
+same powers as are vested in a Civil court under the Code of Civil Procedure, 1908 
+ when 
+trying a suit in respect of matters namely;  
+i. 
+ Summoning and enforcing the attendance of any person and examining them on oath;  
+ii. 
+ Requiring the discovery and production of documents; and  
+iii. 
+ Any other matter which may be prescribed.  
+9.2.6  
+ In conducting the inquiry, a minimum of three members of the Internal Committee 
+including the Chairperson shall be present  
+9.2.7  
+ Under no circumstances can the confidentiality of the information be compromised in any 
+manner whatsoever with any person who is not associated with the inquiry, except with the 
+committee and related senior management team. Breach of confidentiality shall 
+ be treated 
+as misconduct which will be dealt with, in accordance with Disciplinary Action Policy of the 
+employer.  
+9.3  
+ Interim Relief To Complainant During The Pendency Of Inquiry By The Internal Committee  
+During the Pendency of an Inquiry and based on a written request made by the complainant, the 
+Internal Committee may recommend the 
+ Head  
+Human Resources to:  
+i. 
+ Transfer the complainant or the respondent to any other workplace or  
+ii. 
+ Grant leave to the complainant up to a period of three months, in addition to the leave they 
+would be otherwise entitled.  
+iii. 
+ Grant such other relief to the complainant as may be appropriate once the recommendations 
+of interim relief are implemented (the employer will inform the committee regarding the 
+same)  
+iv. 
+ Prevent the respondent from assessing complainant’s work performance
+
+--- PAGE 11 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 11 
+9.4  
+ Termination Of Inquiry  
+The 
+ Internal committee  
+shall have the right to terminate the inquiry proceedings or to give an ex
+ -  
+parte decision on the complaint, if the complainant or the respondent fails, without sufficient reason, 
+to present themselves for three  
+(3) consecutive hearings convened by the Chairperson or the Presiding officer, as the case may be. 
+Provided that such termination or ex
+ -
+ parte order may not be passed without giving a notice in 
+writing, fifteen (15) days in advance to the accused party.  
+9.5  
+ Inquiry Procedure  
+9.5.1 
+ All proceedings of the inquiry shall be documented. At the first meeting, the Internal 
+Committee members shall hear the complainant and record the complainant’s allegations. 
+The complainant can also submit any corroborative material with a documentary (bot
+ h 
+physical and/or electronic) proof, oral or written material, etc., to substantiate the 
+complaint.  
+9.5.2  
+ If the complainant does not wish to divulge personally due to embarrassment of narration 
+of event, any officer as representative of the complainant may act on the complainant's 
+behalf for the purpose of recording the statement.  
+9.5.3  
+ The Internal Committee shall prepare and hand over the statement of allegations to the 
+person against whom the complaint is made and give them an opportunity to submit a 
+written explanation if they so desire, within seven (7) working days from receipt of t
+ he 
+statement. The respondent shall be provided with full opportunity to respond and submit 
+evidence, if any.  
+9.5.4  
+ The IC interviews the respondent separately and impartially. IC states exactly what the 
+allegation is and who has made the allegation.  
+9.5.5  
+ If the complainant or respondent against whom complaint is made desires any witness (es) 
+to be called, the same shall be communicated in writing to the Internal Committee along 
+with the names of the proposed witness(es).  
+9.5.6  
+ If the Complainant desires to tender any documents by way of evidence before the IC, they 
+shall submit original copies of such documents. Both shall affix their signatures on the 
+respective documents to certify these to be original copies  
+9.5.7  
+ The Internal Committee is required to review the authenticity of the documents/ evidence 
+provided to them by either of the parties. They are also required to meet with the witnesses 
+and record their statements  
+9.5.8  
+ If the complainant or respondent desires to cross examine any witnesses, the IC shall 
+facilitate the same and record the statements. In case complainant or respondent seeks to 
+ask questions to the other party, they may give the questions to the IC wh shall  
+ask them 
+and record the statement of the other party.  
+9.5.9  
+ The Internal Committee may call upon any documents (both physical and electronic) 
+including but not limited to video/audio recordings, photographs, e
+ -
+ mails, text messages, 
+WhatsApp (stored on handsets), mobile statements, credit card statements etc. which 
+ they 
+deem can serve as evidence.  
+9.5.10  
+ The Internal Committee shall review the inquiry and thereupon make a conclusion as to 
+whether or not disciplinary or corrective action is warranted. Total time period for the entire 
+inquiry should normally not exceed ninety (90) working days from the date 
+ on which the IC 
+received the complaint
+
+--- PAGE 12 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 12 
+9.6  
+ Considerations While Preparing Inquiry Report  
+While preparing the findings/recommendations, following are considered:  
+i. 
+ Whether the language used (written or spoken), visual material or physical behavior was of 
+sexual or derogatory nature  
+ii. 
+ Whether the allegations or events follow logically and reasonably from the evidence  
+iii. 
+ Credibility of complainant, respondent, witnesses and evidence  
+iv. 
+ Other similar facts, evidence, for e.g. if there have been any previous accounts of harassment 
+pertaining to the respondent  
+v. 
+ Both parties have been given an opportunity of being heard;  
+vi. 
+ A copy of the proceedings was made available to both parties enabling them to make 
+representation against the findings  
+vii. 
+ A copy of the final findings is shared with the complainant and the respondent to give them 
+an opportunity to make a representation on the findings to the committee  
+9.7 
+ Actions To Be Taken After Inquiry  
+Post the inquiry the IC shall submit its report containing the findings and recommendations to the 
+employer, within ten (10) working days of completion of the inquiry.  
+The findings and recommendations are reached from the facts established and is recorded 
+accurately. The documents pertaining to the inquiry shall be maintained by the Human Resource 
+Department and will be securely stored for future reference.  
+9.7.1 
+ Complaint Unsubstantiated  
+Where the Internal Committee arrives at the conclusion that the allegation against the accused party 
+has not been proved, it shall recommend to the 
+ Head  
+Human Resource & Administration that no action is required to be taken in the matter. Further, the IC 
+ensures that both parties understand that the matter has been fully investigated, that the matter is 
+now concluded and neither party will be disadvantaged  
+by the Employer.  
+In the event, the complaint does not fall under the purview of Sexual Harassment, or the complaint 
+does not mean an offence of Sexual Harassment, the same would be referred for taking up under the 
+Disciplinary Action Policy.  
+9.7.2  
+ Complaint Substantiated  
+Upon completion of inquiry, a detailed report with recommendation shall be prepared and submitted 
+to the concerned person(s) by the 
+ Head  
+Human Resource.  
+The disciplinary action initiated against the person(s) found guilty of sexual harassment and the 
+decision taken therefrom, shall be final and binding.  
+Where the Internal Committee arrives at the conclusion that the allegation against the accused party 
+has been proved, the IC may provide its recommendations to the 
+ Head  
+Human Resource to take 
+necessary action for sexual harassment as misconduct, in accordance with the applicable laws, rules 
+and policies, and this may include:  
+i. 
+ Counselling  
+ii. 
+ Written apology to be tendered by the Accused (respondent)  
+iii. 
+ Termination  
+iv. 
+ Change of location/duty/demotion  
+v. 
+ Withholding of benefits and perks, and/or promotion
+
+--- PAGE 13 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 13 
+vi. 
+ Written warning  
+vii. 
+ Criminal proceedings
+ ; or 
+viii.  
+ Any other appropriate action as may deem fit under the policy  
+9.7.3  
+ The 
+ Head  
+Human Resource at BFSL needs to act upon the recommendations within sixty 
+(60) working days and confirm to the Internal Committee.  
+9.7.4  
+ Post implementation of the actions, follow up to be done with the complainant to ascertain 
+whether the behavior has in fact stopped, the solution is working satisfactorily and if no 
+victimization of either party is occurring. This follow up is to be undert
+ aken by the 
+complainant’s Line Manager supported by HR.  
+9.7.5  
+ Action in terms of monetary punishment: If the IC deems it suitable for any sum to be paid 
+to the complainant, by the respondent, the sum shall be decided after due ratification by 
+the 
+ Head  
+Human Resource/ MD, based on the following:  
+i. 
+ The mental trauma, pain, suffering and emotional distress caused to the aggrieved person  
+ii. 
+ The loss in the career opportunity due to the incident of sexual harassment  
+iii. 
+ Medical expenses incurred by the victim for physical or psychiatric treatment  
+iv. 
+ The income and financial status of the accused party  
+v. 
+ Feasibility of such payment in lump sum or in installments  
+9.7.6  
+ Where sexual harassment occurs as a result of an act or omission by any third party or 
+outsider, BFSL shall take all necessary and reasonable steps to assist the affected person in 
+terms of psychological, legal and financial support.  
+9.7.7 
+ In case the Internal Committee finds the degree of offence within the scope of the Indian 
+Penal Code, 1860; then this fact shall be mentioned in its report and appropriate legal 
+recourse shall be sought by the Management in such cases. The company will pro
+ vide 
+assistance to the complainant, as deemed fit under the circumstances, to provide legal 
+recourse if required.  
+9.8  
+ Malicious Allegations  
+Where the Internal Committee arrives at the conclusion that the allegation against the respondent is 
+malicious or the complainant or any other person making the complaint has made the complaint 
+knowing it to be false or the complainant or any other person 
+ making the complaint has produced 
+any forged or misleading document, it may recommend to the 
+ Head  
+Human Resources/ MD as the 
+case may be, to take actions against the person making the complaint as per the Disciplinary action 
+policy applicable to false evid
+ ence.  
+10. 
+ Appeal  
+Any party aggrieved by implementation or non
+ -
+ implementation of recommendations made by the 
+Internal Committee may appeal to 
+ t
+he Appellate Authority, with reference to this policy of Bajaj 
+Financial Securities Limited, shall be the Managing Director / Chief Executive Officer of Bajaj 
+Financial Securities Limited  
+within ninety (90) days
+ . Appeals may be submitted to: 
+manish.jain@bajajfinserv.in   
+11. 
+     
+Prohibition Of Retaliation  
+Retaliation of any kind against anyone who is involved in the inquiry of, or in making an allegation of 
+sexual harassment, is prohibited and will result in disciplinary action against the retaliator, including 
+termination of employment.
+
+--- PAGE 14 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 14 
+12. 
+     
+Confidentiality (Non
+ -
+ Disclosure Of The Complaint)  
+The identity and address of the aggrieved person, accused party and witness, any information 
+relating to conciliation, enquiry and proceedings or recommendations of the 
+ Internal committee  
+as 
+the case may be and the action taken by the employer shall not be disclosed, published, 
+communicated or made known to the public, press and media in any manner, except the Company 
+may decide to communicate the broader guidelines of the incident on “no 
+ names” basis in order to 
+prevent recurrence of such issues within the Company.  
+Penalty for Contravention
+ : if any person contravenes by disclosure of the complaint or 
+recommendations as may be the case, the employer shall recover a sum of ₹5,000/
+ -
+ , as mentioned 
+in the clause 12 of the revised notification issued in the gazette published on December 09, 2013 b
+ y 
+the 'Ministry of Women & Child Development'. Further, such violation would be construed as “breach 
+of trust” and the Employer shall have the discretion to initiate civil / criminal action against such 
+person.  
+13. 
+     
+Miscellaneous  
+Reporting of Internal Committee: The committee carrying out the inquiry will report to the Internal 
+Committee. If required, they may seek assistance from any other department other than the 
+department from where the complaint has been received.  
+Grievance against any member of 
+ Internal committee  
+r
+epresentation should be addressed to the 
+Managing Director of the organization  
+The company will make appropriate arrangements to facilitate the inquiry by the 
+ Internal committee
+ . 
+14. 
+ M
+IS  
+& Reporting Guidelines  
+All inquiries will be tracked and reported via a monthly dashboard to the MD and all sensitivity with 
+regards to investigations shall be adhered to and reasonable judgment shall be exercised on the 
+disclosure of facts in each case.  
+All cases which are not resolved through the internal governance mechanism due to the need for 
+legal recourse shall also be tracked and reported by the Legal department as per the progress made 
+at regular intervals. This would be shared with the MD periodi
+ cally.  
+Format of the reporting grids are mentioned in Annexure D.  
+15. 
+      
+ Preparation Of Annual Report  
+The Annual Report shall have the following details and will be shared with MD by the HR Department.  
+i. 
+ Number of complaints of sexual harassment received in the year;  
+ii. 
+ Number of complaints disposed off during the year;  
+iii. 
+ Number of cases pending for more than 90 days;  
+iv. 
+ Number of workshops or awareness programs against sexual harassment carried out;  
+v. 
+ Nature of action taken by the employer
+
+--- PAGE 15 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 15 
+Annexure  
+Annexure 
+ – 
+A (Internal Committee Details)  
+INTERNAL COMMITTEE (IC) MEMBERS  
+ NOMINATED INTERNAL COMMITTEE (IC) 
+MEMBERS AND THEIR BANDS  
+ 
+Level 1/2 
+ – 
+Band (Woman employee who will be 
+the Chairperson of the IC)  
+ Jennifer 
+ Fern
+ andes  
+– 
+GB0
+ 11A 
+ 
+  
+Head 
+ -  
+HR  
+ Vikrant Birajdar  
+– 
+GB0
+ 9  
+ 
+General Counsel, Committee Member  
+ Saksham Kaushik 
+ – 
+GB07   
+C
+ ommittee  
+M
+embe
+ r  
+ Ankita Bhatewara  
+– 
+GB6
+ A  
+One Senior Level Lady Advocate & / or A Senior 
+Lady representing a non
+ -
+ governmental 
+organization/ association committed to the 
+cause of women, or who has legal expertise/ 
+experience in the field of social work or as an 
+external woman representative of the 
+ committee  
+Lolita Kewalramani / Meenal Joshi / Sonal Mattoo
+
+--- PAGE 16 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 16 
+Annexure 
+ – 
+B (Contact Details)  
+Sr 
+No
+. 
+IC Role  
+ Name  
+ Designatio
+n  
+Email ID/Contact No  
+ 
+1 
+ Chairperson  
+ Jennifer 
+Fernandes  
+CHRO 
+ – 
+Bajaj 
+Finance 
+Limited  
+jennifer.fernandes@bajajfinserv.in  
+ 
+2 
+ Committee 
+Member  
+Vikrant 
+Birajdar  
+Head 
+ -  
+HR  
+ vikrant.birajdar@bajajbroking.in  
+ 
+3 
+ Committee 
+Member  
+Saksham 
+Kaushik  
+General 
+Counsel  
+saksham.kaushik@bajajbroking.in   
+ 
+4  
+ Committee 
+Member  
+Ankita 
+Bhatewara  
+AVP 
+ -  
+Retail  
+ ankita.bhatewara@bajajbroking.in   
+5 
+ Nod
+ al 
+Offic
+ er  
+Rahul Dsilva  
+ AV
+ P 
+ – 
+HR 
+C
+ OE  
+rahul.dsilva@bajajbroking.in   
+6 
+ External 
+Member 
+representin
+g a legal 
+body and 
+NGO  
+Lolita 
+Kewalramani 
+/ Meenal 
+Joshi / Sonal 
+Mattoo  
+NGO  
+ lolita09@gmail.com
+ /
+meenalrajiv@gmail.com
+/
+sonalmattoo@helpinghands.org.in
+
+--- PAGE 17 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 17 
+Annexure 
+ – 
+C (Acts of sexual harassment are covered by the following provisions of law)  
+Legislation 
+(Act)  
+ Section  
+ Description of offence  
+ Punishment  
+Indian Penal 
+Code  
+ 292  
+Distribution, exhibition, 
+convey, advertise, 
+attempt to do any 
+obscene act  
+First conviction: 2 years 
+imprisonment and with 
+fine. Second conviction: 
+Imprisonment may 
+extend to 5 years and 
+with fine  
+Indian Penal 
+Code  
+ 294  
+ Obscene acts and songs  
+Imprisonment up to 3 
+months or with fine or 
+both  
+Indian Penal 
+Code  
+ 341  
+ Punishment for wrongful 
+restraint  
+Imprisonment up to 1 
+month or fine or both  
+Indian Penal Code  
+ 354  
+Assault or criminal force to 
+woman with intent to outrage 
+her modesty  
+Imprisonment, which 
+shall not be less than 1 
+years but may extend to 
+5 years along with fine  
+Indian Penal Code  
+ 354
+ -
+ A 
+Sexual harassment and 
+punishment for sexual 
+harassment  
+Rigorous imprisonment of 1 
+year to 3 years or with fine or 
+both  
+Indian Penal Code  
+ 354
+ -
+ B  
+Assault or use of criminal force 
+to woman with intent to 
+disrobe  
+Imprisonment from 3 years to 7 
+years along with fine  
+Indian Penal Code  
+ 354
+ -
+ C  
+ Voyeurism  
+First conviction: 1year 
+imprisonment, subject 
+to a maximum of 3 
+years imprisonment and 
+with fine. Second 
+conviction: 
+Imprisonment to be at 
+least for a period 3 
+years and subject to 
+maximum of 7 years 
+and with fine  
+Indian Penal Code  
+ 354
+ -
+ D 
+ Stalking  
+First conviction: 3 years 
+imprisonment and with 
+fine. Second conviction: 
+Imprisonment may 
+extend to 5 years and 
+with fine  
+Indian Penal Code  
+ 375 & 376  
+ Rape & Punishment for Rape  
+Rigorous imprisonment 
+up to 7 years but may 
+extend to life 
+imprisonment along with 
+fine  
+Indian Penal Code  
+ 509  
+Word, gesture or act intended 
+to insult the modesty of a 
+woman  
+Up to 3 years of imprisonment 
+along with fine
+
+--- PAGE 18 ---
+Policies/POSH Policy/V1.
+ 8
+ /
+Apr
+ '2
+6      
+                                                     
+ pg. 
+ 18 
+Information 
+Technology Act  
+ 67 
+Punishment for publishing or 
+transmitting obscene material 
+in electronic form  
+First conviction: 3 years 
+and with fine which 
+may extend to 5 lakh 
+rupees.  
+Second conviction: 
+Imprisonment may 
+extend to five years 
+and; also, with fine 
+which may extend to 
+ten lakh rupees  
+Information 
+Technology Act  
+ 67
+-
+ A 
+Punishment for publishing or 
+transmitting any sexually 
+explicit act etc., in electronic 
+form  
+First conviction: 5 years 
+and with fine which may 
+extend to 10 lakh 
+rupees.  
+Second conviction: 
+Imprisonment may 
+extend to 7 years and 
+also, with fine which 
+may extend to ten lakh 
+rupees  
+ 
+ 
+Annexure  
+D 
+-  
+The  
+monthly  
+reporting  
+grid:  
+ 
+S
+r 
+. 
+N 
+o 
+Locati
+o 
+n 
+Sever
+it 
+y 
+Related 
+dept.  
+where the  
+incident 
+has 
+occurre 
+ d 
+Name of 
+Investigatin 
+g 
+committee  
+Investigat
+io 
+n 
+start  
+date  
+Curre
+n 
+t  
+statu
+s  
+Detail
+e 
+d 
+updat
+e 
+Closu
+r 
+e 
+Date  
+Closu
+r 
+e 
+TAT  
+          
+ 
+S
+r 
+. 
+N 
+o 
+Incident 
+categor  
+y  
+Sever
+it 
+y 
+Relate
+d 
+dept. 
+where 
+the 
+inciden
+t 
+has 
+occurr
+e 
+d 
+Legal 
+recour
+s 
+ e 
+initiati
+o 
+n 
+date  
+Detail
+e 
+d 
+updat
+e 
+Case 
+succe
+s 
+ s 
+statu
+s  
+If 
+closed
+, 
+then 
+status 
+on the 
+outco
+m 
+e 
+Resoluti
+o 
+n TAT  
+Case learning 
+and 
+recommendatio
+n 
+s 
+to the internal 
+governance 
+committee

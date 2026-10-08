@@ -1,0 +1,28 @@
+{
+  "model_id": "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+  "precision": "bf16 mixed precision",
+  "optimizer": "paged_adamw_8bit",
+  "train_blocks": 170,
+  "block_size": 2048,
+  "tokens_per_update": 16384,
+  "optimizer_updates": 44,
+  "hyperparameters": {
+    "learning_rate": 5e-05,
+    "num_train_epochs": 2,
+    "max_steps": -1,
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "lr_scheduler_type": "cosine",
+    "logging_steps": 1,
+    "max_grad_norm": 1.0
+  },
+  "start_train_loss": 1.9704,
+  "start_eval_loss": 1.9527,
+  "final_logged_train_loss": 1.4353985786437988,
+  "mean_train_loss": 1.5216,
+  "train_minutes": 1.22,
+  "peak_gpu_memory_gb": 14.73,
+  "checkpoint_dir": "/home/jovyan/datavol-1/CorpPolicyLM/models/cpt"
+}

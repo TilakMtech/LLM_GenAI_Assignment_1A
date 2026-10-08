@@ -1,0 +1,4 @@
+candidate,learning_rate,gradient_accumulation_steps,updates,final_train_loss,final_heldout_loss,heldout_ppl,heldout_ppl_drop_%,general_facts_kept,unseen_ppl_drop_%
+"A: lr 5e-5, 16K tok/update",5e-05,8,44,1.436033010482788,1.908881425857544,6.654,5.63,3/3,9.27
+"B: lr 1e-4, 8K tok/update",0.0001,4,86,1.184150218963623,2.0405349731445312,7.588,-7.62,1/3,-0.35
+"C: lr 2e-4, 8K tok/update",0.0002,4,86,1.0104376077651978,2.2118351459503174,8.986,-27.44,0/3,-16.3

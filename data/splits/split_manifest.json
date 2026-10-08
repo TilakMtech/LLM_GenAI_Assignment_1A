@@ -1,33 +1,418 @@
 {
   "seed": 42,
-  "split_unit": "whole_document",
+  "split_unit": "eval: per-document tail (paragraph boundary); eval_unseen: whole documents",
   "requested_eval_fraction": 0.1,
-  "actual_eval_document_fraction": 0.25,
-  "actual_eval_word_fraction": 0.32948243992606285,
-  "note": "Four documents cannot yield an exact 10% whole-document holdout. Expand the corpus or explicitly revise the split strategy.",
+  "documents_total": 33,
+  "documents_train": 25,
+  "documents_eval": 25,
+  "documents_eval_unseen": 8,
+  "actual_eval_unseen_word_fraction": 0.0646,
+  "actual_eval_document_fraction": 0.7576,
+  "actual_eval_word_fraction": 0.0932,
+  "note": "eval = last 10% of each of 25 documents (9.3% of words); eval_unseen = 8 whole documents never used in CPT (6.5% of words); probe documents kept out of eval_unseen.",
   "documents": {
     "train": [
       {
-        "document_id": "attendance_policy",
-        "source": "attendance_policy.txt",
-        "sha256": "542963dae587c56ec6991aaa96ca1b3f5d7ba97753b24cfdc12c6e90c6cdbcef"
-      },
-      {
-        "document_id": "travel_policy",
-        "source": "travel_policy.txt",
-        "sha256": "6702c004f30a7794aac1a692fd03231406d98799e2868f8da50e74b14dafa57b"
+        "document_id": "3m_posh_policy",
+        "source": "3m_posh_policy.txt",
+        "sha256": "8162b85a11da4b4fc54af8810e8464cf3752189e82c0f5839656392c2606fdb1",
+        "words": 2242,
+        "part": "first 90%"
       },
       {
         "document_id": "Leave_Policy",
         "source": "Leave_Policy.txt",
-        "sha256": "cfe7e1ddf3fc291ab12930b9c7034d150d24e4167a449bba33487e873063be8b"
+        "sha256": "fd3694694d13b059974fc57ced0d2fca761410cba7432b02b5924bf00086d3ae",
+        "words": 1034,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "accelya_code_of_conduct",
+        "source": "accelya_code_of_conduct.txt",
+        "sha256": "8b5a60bcb9e0d4804beae05099fdc68ddc045d646c7e2658eb80e912a8361bb6",
+        "words": 5309,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "aicb_hr_manual",
+        "source": "aicb_hr_manual.txt",
+        "sha256": "109532b441c88bca2daf7179658d3066185ecfbcb7063d7afa5e165334c6eb86",
+        "words": 2484,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "astral_whistle_blower_policy",
+        "source": "astral_whistle_blower_policy.txt",
+        "sha256": "e88643880d0f04550aaa3f2fee7e605600e5200fbed4bd9a809faac1ba6b0fa9",
+        "words": 1293,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "attendance_policy",
+        "source": "attendance_policy.txt",
+        "sha256": "e00b8d8fd942ea18138920f8138e545ff9d35e4812a64f027982b802d168259b",
+        "words": 531,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "bajaj_broking_posh_policy",
+        "source": "bajaj_broking_posh_policy.txt",
+        "sha256": "e04bcc2983ac2b82f4843d9b5e09038399edf4d6745b88f56a06de85eac89e6b",
+        "words": 5998,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "beml_whistle_blower_policy",
+        "source": "beml_whistle_blower_policy.txt",
+        "sha256": "71c429cd42d3cd31c59003f5acdc3040c190f1f106c0fea49c08596d27254cf2",
+        "words": 2893,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "ccs_leave_rules_1972",
+        "source": "ccs_leave_rules_1972.txt",
+        "sha256": "033f7b6a7be347a0e75fb7fc361a02fc65eeb20c8ae22d7e708e8302ffd9f326",
+        "words": 20809,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "dav_university_hr_employee_manual",
+        "source": "dav_university_hr_employee_manual.txt",
+        "sha256": "92180767979cd134ad6e41a9f0c381e7607bfb4fc72e5d4ece73ac9629164f80",
+        "words": 12424,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "dreamfolks_vigil_mechanism_policy",
+        "source": "dreamfolks_vigil_mechanism_policy.txt",
+        "sha256": "8372eee82846df7782a09e6fcf894cccfe0dbd31bac0db17675cd067e7c204dc",
+        "words": 1890,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "exit_policy",
+        "source": "exit_policy.txt",
+        "sha256": "157b9d3fccfbc25716b82bca7b1fc4370ac94486f4fb5c92e40bf0c505d2975a",
+        "words": 1265,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "growxcd_vigil_mechanism_policy",
+        "source": "growxcd_vigil_mechanism_policy.txt",
+        "sha256": "6a2f5179877e325c64d4abc5b0ed0d070570428b91090d79ee39f94eebb1a2d8",
+        "words": 2833,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "homefirst_human_rights_policy",
+        "source": "homefirst_human_rights_policy.txt",
+        "sha256": "c30116a419b9e6cc9e2ad8367fbe0792e51a275f4943c89fd90012b3e1b42ea7",
+        "words": 1470,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "iihmr_hr_policy_manual",
+        "source": "iihmr_hr_policy_manual.txt",
+        "sha256": "7a6bd80ab50ab9aee56ee184fc5c8054aa7f55793d5fd6f869acf624ddca05a8",
+        "words": 9863,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "iim_raipur_hr_policy_service_rules",
+        "source": "iim_raipur_hr_policy_service_rules.txt",
+        "sha256": "a7e702d53e0cec70f93b5b9a30d3a6b22c8eb47f77b5ddc6553b44f260ad0054",
+        "words": 52650,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "indus_university_hr_manual",
+        "source": "indus_university_hr_manual.txt",
+        "sha256": "af94fa570f60155cee58b8faea85f09025dbcaaae0c2a45a5e47f271e9631f84",
+        "words": 36528,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "jiostar_posh_policy",
+        "source": "jiostar_posh_policy.txt",
+        "sha256": "83bea3e6b92e32d0002d406e3bfc41714c0626ef3b25ce98e0c3c2fe77dc4d19",
+        "words": 2687,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "mafatlal_posh_policy",
+        "source": "mafatlal_posh_policy.txt",
+        "sha256": "7b1df93e27aa9a00f273b9046850360c2bcb14f1efded7033a78dcd6ef493a84",
+        "words": 294,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "msrls_hr_manual",
+        "source": "msrls_hr_manual.txt",
+        "sha256": "99e06978cc6cb5fcb0cd7fe25720c0019a1fe569421ed6aaab2bf528b55d7752",
+        "words": 32397,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "mygov_internship_program",
+        "source": "mygov_internship_program.txt",
+        "sha256": "deba946fc1e29412a16aba581b5075c04655b506d16489d836df1b0ca091f352",
+        "words": 1040,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "mygov_talent_development_policy",
+        "source": "mygov_talent_development_policy.txt",
+        "sha256": "a2fd05b077b3c69b9ec01a1cdd02ab26ee189f863f292019e9f288c2663b3417",
+        "words": 1094,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "niramai_code_of_conduct",
+        "source": "niramai_code_of_conduct.txt",
+        "sha256": "20a11bbc302187483688e6bfedfcdc9e2b5cda4b2584134fe8c076978bce16a7",
+        "words": 2509,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "oilindia_human_rights_policy",
+        "source": "oilindia_human_rights_policy.txt",
+        "sha256": "e7e3a7a51b9f5cde4d493d1aa2e28d4c6cc48d7e33efede7e7edb92d67c227e7",
+        "words": 923,
+        "part": "first 90%"
+      },
+      {
+        "document_id": "travel_policy",
+        "source": "travel_policy.txt",
+        "sha256": "d4872a564e3bec98bb9a34ddbedc65ea3e9dd434ed42e0894d30a468c53adfd3",
+        "words": 950,
+        "part": "first 90%"
       }
     ],
     "eval": [
       {
+        "document_id": "3m_posh_policy",
+        "source": "3m_posh_policy.txt",
+        "sha256": "8162b85a11da4b4fc54af8810e8464cf3752189e82c0f5839656392c2606fdb1",
+        "words": 250,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "Leave_Policy",
+        "source": "Leave_Policy.txt",
+        "sha256": "fd3694694d13b059974fc57ced0d2fca761410cba7432b02b5924bf00086d3ae",
+        "words": 109,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "accelya_code_of_conduct",
+        "source": "accelya_code_of_conduct.txt",
+        "sha256": "8b5a60bcb9e0d4804beae05099fdc68ddc045d646c7e2658eb80e912a8361bb6",
+        "words": 556,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "aicb_hr_manual",
+        "source": "aicb_hr_manual.txt",
+        "sha256": "109532b441c88bca2daf7179658d3066185ecfbcb7063d7afa5e165334c6eb86",
+        "words": 192,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "astral_whistle_blower_policy",
+        "source": "astral_whistle_blower_policy.txt",
+        "sha256": "e88643880d0f04550aaa3f2fee7e605600e5200fbed4bd9a809faac1ba6b0fa9",
+        "words": 189,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "attendance_policy",
+        "source": "attendance_policy.txt",
+        "sha256": "e00b8d8fd942ea18138920f8138e545ff9d35e4812a64f027982b802d168259b",
+        "words": 83,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "bajaj_broking_posh_policy",
+        "source": "bajaj_broking_posh_policy.txt",
+        "sha256": "e04bcc2983ac2b82f4843d9b5e09038399edf4d6745b88f56a06de85eac89e6b",
+        "words": 670,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "beml_whistle_blower_policy",
+        "source": "beml_whistle_blower_policy.txt",
+        "sha256": "71c429cd42d3cd31c59003f5acdc3040c190f1f106c0fea49c08596d27254cf2",
+        "words": 330,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "ccs_leave_rules_1972",
+        "source": "ccs_leave_rules_1972.txt",
+        "sha256": "033f7b6a7be347a0e75fb7fc361a02fc65eeb20c8ae22d7e708e8302ffd9f326",
+        "words": 2309,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "dav_university_hr_employee_manual",
+        "source": "dav_university_hr_employee_manual.txt",
+        "sha256": "92180767979cd134ad6e41a9f0c381e7607bfb4fc72e5d4ece73ac9629164f80",
+        "words": 1323,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "dreamfolks_vigil_mechanism_policy",
+        "source": "dreamfolks_vigil_mechanism_policy.txt",
+        "sha256": "8372eee82846df7782a09e6fcf894cccfe0dbd31bac0db17675cd067e7c204dc",
+        "words": 203,
+        "part": "last 10%"
+      },
+      {
         "document_id": "exit_policy",
         "source": "exit_policy.txt",
-        "sha256": "2d137124357ea7f770580fdeeb67f6efa71a893376c438eb2387958184f4e874"
+        "sha256": "157b9d3fccfbc25716b82bca7b1fc4370ac94486f4fb5c92e40bf0c505d2975a",
+        "words": 126,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "growxcd_vigil_mechanism_policy",
+        "source": "growxcd_vigil_mechanism_policy.txt",
+        "sha256": "6a2f5179877e325c64d4abc5b0ed0d070570428b91090d79ee39f94eebb1a2d8",
+        "words": 338,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "homefirst_human_rights_policy",
+        "source": "homefirst_human_rights_policy.txt",
+        "sha256": "c30116a419b9e6cc9e2ad8367fbe0792e51a275f4943c89fd90012b3e1b42ea7",
+        "words": 161,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "iihmr_hr_policy_manual",
+        "source": "iihmr_hr_policy_manual.txt",
+        "sha256": "7a6bd80ab50ab9aee56ee184fc5c8054aa7f55793d5fd6f869acf624ddca05a8",
+        "words": 1094,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "iim_raipur_hr_policy_service_rules",
+        "source": "iim_raipur_hr_policy_service_rules.txt",
+        "sha256": "a7e702d53e0cec70f93b5b9a30d3a6b22c8eb47f77b5ddc6553b44f260ad0054",
+        "words": 5881,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "indus_university_hr_manual",
+        "source": "indus_university_hr_manual.txt",
+        "sha256": "af94fa570f60155cee58b8faea85f09025dbcaaae0c2a45a5e47f271e9631f84",
+        "words": 4029,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "jiostar_posh_policy",
+        "source": "jiostar_posh_policy.txt",
+        "sha256": "83bea3e6b92e32d0002d406e3bfc41714c0626ef3b25ce98e0c3c2fe77dc4d19",
+        "words": 328,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "mafatlal_posh_policy",
+        "source": "mafatlal_posh_policy.txt",
+        "sha256": "7b1df93e27aa9a00f273b9046850360c2bcb14f1efded7033a78dcd6ef493a84",
+        "words": 32,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "msrls_hr_manual",
+        "source": "msrls_hr_manual.txt",
+        "sha256": "99e06978cc6cb5fcb0cd7fe25720c0019a1fe569421ed6aaab2bf528b55d7752",
+        "words": 3648,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "mygov_internship_program",
+        "source": "mygov_internship_program.txt",
+        "sha256": "deba946fc1e29412a16aba581b5075c04655b506d16489d836df1b0ca091f352",
+        "words": 130,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "mygov_talent_development_policy",
+        "source": "mygov_talent_development_policy.txt",
+        "sha256": "a2fd05b077b3c69b9ec01a1cdd02ab26ee189f863f292019e9f288c2663b3417",
+        "words": 119,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "niramai_code_of_conduct",
+        "source": "niramai_code_of_conduct.txt",
+        "sha256": "20a11bbc302187483688e6bfedfcdc9e2b5cda4b2584134fe8c076978bce16a7",
+        "words": 182,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "oilindia_human_rights_policy",
+        "source": "oilindia_human_rights_policy.txt",
+        "sha256": "e7e3a7a51b9f5cde4d493d1aa2e28d4c6cc48d7e33efede7e7edb92d67c227e7",
+        "words": 102,
+        "part": "last 10%"
+      },
+      {
+        "document_id": "travel_policy",
+        "source": "travel_policy.txt",
+        "sha256": "d4872a564e3bec98bb9a34ddbedc65ea3e9dd434ed42e0894d30a468c53adfd3",
+        "words": 133,
+        "part": "last 10%"
+      }
+    ],
+    "eval_unseen": [
+      {
+        "document_id": "eidparry_human_rights_policy",
+        "source": "eidparry_human_rights_policy.txt",
+        "sha256": "ade48a95b6c2aa1fbf8f195980c0db7065db17b96d77791c483681b441a3cd4d",
+        "words": 717
+      },
+      {
+        "document_id": "ccs_conduct_rules_1964",
+        "source": "ccs_conduct_rules_1964.txt",
+        "sha256": "86a9ad37813cdd1fba73a56d259342558e3b2211335375c7f102de5bb6ad42b3",
+        "words": 1967
+      },
+      {
+        "document_id": "mygov_laptop_policy",
+        "source": "mygov_laptop_policy.txt",
+        "sha256": "1e140296989d28e19bf5bb4d308110168506b8e1a8334042974277c560c3e937",
+        "words": 1645
+      },
+      {
+        "document_id": "khannapaper_vigil_mechanism_policy",
+        "source": "khannapaper_vigil_mechanism_policy.txt",
+        "sha256": "1784e9f50d7f1b32cef16f1af39b5aed7141bc62914972179b2041125f5b21f1",
+        "words": 1268
+      },
+      {
+        "document_id": "aurobindo_human_rights_policy",
+        "source": "aurobindo_human_rights_policy.txt",
+        "sha256": "6d99bdb5ab12a75e15b0f8995e7d835e51a8dccea45c3d05b5723d95c5343c29",
+        "words": 1315
+      },
+      {
+        "document_id": "aubank_whistle_blower_policy",
+        "source": "aubank_whistle_blower_policy.txt",
+        "sha256": "7268d802429fb410446fe753f6f2148885ccb231311c348041fd7fc6f4e5dfbd",
+        "words": 1220
+      },
+      {
+        "document_id": "ghl_vigil_mechanism_policy",
+        "source": "ghl_vigil_mechanism_policy.txt",
+        "sha256": "cc21a0da829498dfe9bec27081fa0ff033f36a447ad0dbf058d696801ef891ab",
+        "words": 2047
+      },
+      {
+        "document_id": "bptp_posh_policy",
+        "source": "bptp_posh_policy.txt",
+        "sha256": "16ca8b33b4a595230d85df092a293b00e5e657fae70daa0e9c9f6a822e238ff8",
+        "words": 5427
       }
     ]
   }

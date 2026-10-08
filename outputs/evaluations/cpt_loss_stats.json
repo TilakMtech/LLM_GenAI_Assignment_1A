@@ -1,0 +1,11 @@
+{
+  "first_logged_loss": 2.005803108215332,
+  "last_logged_loss": 1.4353985786437988,
+  "min_loss": 1.047533392906189,
+  "loss_drop_percent": 32.55,
+  "plateau_step": 8,
+  "eval_plateau_step": 15,
+  "final_train_eval_gap": -0.6557,
+  "first_eval_loss": 1.9515950679779053,
+  "last_eval_loss": 1.9088953733444212
+}

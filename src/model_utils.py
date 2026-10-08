@@ -20,12 +20,21 @@ def native_bf16() -> bool:
 
 def load_model(model_id_or_path=config.MODEL_ID, dtype=torch.bfloat16,
                gradient_checkpointing: bool = False):
-    """AutoModelForCausalLM.from_pretrained with the requested precision."""
-    model = AutoModelForCausalLM.from_pretrained(model_id_or_path, dtype=dtype)
+    """AutoModelForCausalLM.from_pretrained with the requested precision.
+
+    On GPU the weights are streamed straight into GPU memory (device_map) instead
+    of being materialised in host RAM first: the BITS lab pod has a 6 GiB RAM
+    limit, and a 1.1B fp32 model alone is 4.4 GiB.
+    """
+    if torch.cuda.is_available():
+        model = AutoModelForCausalLM.from_pretrained(
+            model_id_or_path, dtype=dtype, device_map={"": 0}, low_cpu_mem_usage=True)
+    else:
+        model = AutoModelForCausalLM.from_pretrained(model_id_or_path, dtype=dtype)
     if gradient_checkpointing:
         model.gradient_checkpointing_enable()
         model.config.use_cache = False  # cache is incompatible with checkpointing
-    return model.to(device())
+    return model
 
 
 def count_parameters(model):

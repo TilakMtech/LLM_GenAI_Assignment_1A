@@ -27,12 +27,6 @@ d) If the employee has a planned meeting (out of office) on any day and will not
 be able to mark the attendance, the same should be shared with the reporting
 manager and HR on e -mail. Mark-In & Mark -Out is to be marked in biometric
 machine once the employee resumes office post meeting.
-Ref No: E-3079290/MG/19/2021-MyGov
-Version: 1.2
-Date of Issue: 03-Dec-24
-Effective Date: 03-Dec-24
-Document Owner: Director, MyGov
-Approved by: CEO, MyGov
 
 f) The attendance inputs are linked to payroll. If these inputs are at variance with
 the real / physical attendance these will be treated as unauthentic data.
